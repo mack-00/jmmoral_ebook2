@@ -1,0 +1,189 @@
+
+/*================================================
+ * 배경 설정
+ ================================================*/
+#screen{
+	background-image:url('./../ui/bg.png');
+}
+
+#content>header{
+	
+}
+	header #logo{
+		position:absolute;
+		left:80px; top:34px;
+	}
+		header #logo>img{
+			height:75px;
+		}
+	header [data-btn="close"]{
+		position:absolute;
+		right:40px; top:40px;
+		width:50px; height:50px;
+		background-image:url('./../ui/btns/btn-close.png');
+	}
+	
+	
+#view{
+	position:absolute;
+    left:115px;
+    top:163px;
+    width:1770px;
+    height:876px;
+}
+	#view section.view-1{
+		position:absolute;
+		left:0px;top:10px;
+		width:390px;
+	}
+		#view section.view-1>ul{
+			position:absolute;
+			left:20px;top:40px;width:100%;
+		}
+			#view section.view-1>ul>li{
+				cursor:pointer;
+				
+				font-size:26px;
+				font-weight:900;
+				line-height:48px;
+				height:44px;
+				
+				border-radius:22px 0px 0px 22px;
+				padding-left:20px;
+			}
+				#view section.view-1>ul>li.on,
+				#view section.view-1>ul>li:hover{
+					background-color:#FFE188;
+				}
+			#view section.view-1>ul>li+li{
+				margin-top:10px;
+			}
+				#view section.view-1>ul [data-icon]{
+					position:relative;
+					display: inline-block;
+					width:26px;height:26px;
+					font-size:0;top:8px;
+				}
+					#view section.view-1>ul [data-icon="Ⅰ"]{
+						background-image:url('./../ui/icons/chapter_1.png');
+					}
+					#view section.view-1>ul [data-icon="Ⅱ"]{
+						background-image:url('./../ui/icons/chapter_2.png');
+					}
+					#view section.view-1>ul [data-icon="Ⅲ"]{
+						background-image:url('./../ui/icons/chapter_3.png');
+					}
+					#view section.view-1>ul [data-icon="Ⅳ"]{
+						background-image:url('./../ui/icons/chapter_4.png');
+					}
+				
+	#view section.view-2{
+		position: absolute;
+	    left:425px;
+	    top:0px;
+	    width:1345px;
+	}
+		#view section.view-2>ul.header{
+			position:absolute;z-index:10;
+			left:40px;top:40px;width:100%;
+			line-height:78px;
+			text-align:center;
+			display:table;
+		}
+			#view section.view-2>ul.header>li{
+				float:left;
+				
+				font-weight:bold;
+				font-size:26px;
+				color:#B56D0D;
+			}
+				/*==============================*/
+				#view section.view-2>ul.header>li:nth-child(1){
+					width:680px;
+				}
+				#view section.view-2>ul.header>li:nth-child(2){
+					width:366px;
+				}
+				#view section.view-2>ul.header>li:nth-child(3){
+					width:222px;
+				}
+				
+				
+		#view section.view-2>[data-dp="1"]{
+			position:absolute;
+			left:40px;top:114px;width:100%;
+			line-height:55.5px;
+			text-align:center;
+		}
+			
+			/*==============================*/
+			#view section.view-2>[data-dp="1"]>li{
+				display:table; height:55.5px;
+				position:relative;z-index:10;
+			}
+			#view section.view-2>[data-dp="1"]>li>p{
+				float:left;
+				width:680px;
+				font-size:22px;
+				font-weight:bold;
+				color:#000000;
+				
+			}
+				#view section.view-2>[data-dp="1"]>li:nth-child(1)>p,
+				#view section.view-2>[data-dp="1"]>li:nth-child(2)>p,
+				#view section.view-2>[data-dp="1"]>li:nth-child(3)>p{
+					position:relative;top:80px;
+					text-align:left;
+					text-indent:40px;
+				}
+			
+			#view section.view-2>[data-dp="1"][data-lesson="4"]:before{
+				content:'';
+				display:inline-block;
+				width:1286px;height:808px;
+				background-image:url('./../ui/bg-2.png');
+				position:absolute;left:-10px;top:-80px;
+			}
+			#view section.view-2>[data-dp="1"][data-lesson="4"]>li:nth-child(2)>p{
+				top:0px;
+				text-align:center;
+			}
+			
+			
+			#view section.view-2>[data-dp="1"]>li>ul{
+				float:left; 
+				position:relative;
+				width:588px;
+			}
+			/*==============================*/
+			#view section.view-2 [data-dp="2"]>li{
+				display:table; height:55.5px;
+				position:relative;
+				font-size :20px;
+				font-weight:bold;
+				color:#000000;
+			}
+			#view section.view-2 [data-dp="2"]>li>p:nth-child(1){
+				float:left;
+				width:366px;
+			}
+			#view section.view-2 [data-dp="2"]>li>p:nth-child(2){
+				float:left;
+				width:222px;
+			}
+			#view section.view-2 [data-dp="2"] [data-icon]{
+				cursor:pointer;
+				font-size:0;
+				display:inline-block;
+				width:30px;height:30px;
+				position:relative;top:14px;
+			}
+				[data-icon="pdf"]{
+					background-image:url('./../ui/icons/pdf_icon.png');
+				}
+				[data-icon="ppt"]{
+					background-image:url('./../ui/icons/ppt_icon.png');
+				}
+				[data-icon="hwp"]{
+					background-image:url('./../ui/icons/hwp_icon.png');
+				}

@@ -1,0 +1,170 @@
+/*=====================
+ * 네비 설정
+ ======================*/
+
+[data-fn="step-navi"]{
+	position:relative;
+}
+	/*이동 네비 기능*/
+	[data-fn="step-navi"] .navi{
+		position:absolute;
+		right:54px; top:26px;
+	}
+		[data-fn="step-navi"] .navi>*{
+			display:inline-block;
+		}
+		[data-fn="step-navi"] .navi p{
+			width:215px; text-align:center;
+			font-size:20px; font-weight:bold;
+			line-height:48px; color:#014743;
+		}
+		[data-fn="step-navi"] .navi>[data-btn]{
+			width:43px; height:43px;
+		}
+			[data-fn="step-navi"] .navi>[data-btn="prev"]{
+				background-image:url('./../ui/btns/btn-prev.png');
+			}
+			[data-fn="step-navi"] .navi>[data-btn="next"]{
+				background-image:url('./../ui/btns/btn-next.png');
+			}
+			[data-fn="step-navi"] .navi>[data-btn].disabled{
+				opacity:0.5;
+			}
+	
+	/*목차 리스트 설정*/
+	[data-fn="step-navi"] [data-depth]{
+		position:absolute;
+		display:inline-block;
+	}
+		[data-fn="step-navi"] [data-depth].on{
+			z-index:100;
+		}
+		[data-fn="step-navi"] [data-depth]>.list{
+			display:none;
+			position:relative;
+			z-index:10;
+			width:100%;
+			background-color:#fff;
+			border:6px solid #6380ca;
+			border-radius:15px;
+			overflow:hidden;
+		}
+			[data-fn="step-navi"] [data-depth]>.list [data-val]{
+				border-top:2px dotted #d5d1dc;
+			}
+			[data-fn="step-navi"] [data-depth]>.list [data-val].on,
+			[data-fn="step-navi"] [data-depth]>.list [data-val]:hover{
+				background-color:#e4f9ff;
+			}
+				[data-fn="step-navi"] [data-depth]>.list [data-val]:nth-child(1){
+					border-top:0px;
+				}
+
+[data-fn="step-navi"] [data-depth="1"]{
+	left:45px; top:20px;
+	width:580px; height:50px;
+}
+	[data-fn="step-navi"] [data-depth="1"]>.select{
+		width:100%; height:100%;
+		
+		font-family:'One';
+		font-size:32px; font-weight:normal;
+		line-height:50px;
+		text-align:center;
+		color:#fff;
+	}
+		[data-fn="step-navi"] [data-depth="1"] [data-val]{
+			cursor:pointer;
+			width:100%; height:50px;
+		}
+		
+[data-fn="step-navi"] [data-depth="2"]{
+	left:45px; top:91px;
+	width:585px; height:50px;
+	background-color:#fff;
+	border-radius:50px;
+}
+	[data-fn="step-navi"] [data-depth="2"]>.select{
+		width:528px; height:100%;
+	}
+		[data-fn="step-navi"] [data-depth="2"] [data-val]{
+			cursor:pointer;
+			width:100%; height:50px;
+			font-size:23px; font-weight:900; color:#1c1c1c;
+			line-height:52px; letter-spacing: -1px;
+		}
+			/*아이콘 설정*/
+			[data-fn="step-navi"] [data-depth="2"] [data-val] [data-icon]{
+				position:relative;
+				
+				display:inline-block;
+				margin:0px 8px 0px 12px; top:10px; 
+				font-family:"One";
+				font-size:20px;
+				font-weight:bold;
+				text-align:center;
+				line-height:34px; 
+				width:32px; height:32px;
+				color:#090909;
+				
+				background-color:#c8deff;
+				border-radius:30px;
+			}
+			
+[data-fn="step-navi"] [data-depth="3"]{
+	left:650px; top:91px;
+	width:852px; height:50px;
+	background-color:#fff;
+	border-radius:50px;
+}
+	[data-fn="step-navi"] [data-depth="3"]>.select{
+		width:865px; height:100%;
+	}
+		[data-fn="step-navi"] [data-depth="3"] [data-val]{
+			cursor:pointer;
+			width:100%; 
+			height:50px;
+			
+			font-size:23px; 
+			font-weight:900;
+			color:#4b4b4b;
+			line-height:52px;
+		}
+			/*아이콘 설정*/
+			[data-fn="step-navi"] [data-depth="3"] [data-val] .step{
+				position:relative;
+				margin:0px 10px 0px 15px; top:9px; 
+				padding:0px 25px;
+				display:inline-block;
+				height:32px;
+				line-height:34px; 
+				
+				font-size:18px; 
+				font-weight:900;
+				text-align:center;
+				color:#1c1c1c;
+				
+				background-color:#a4efad;
+				border-radius:30px;
+			}
+	
+
+[data-fn="step-navi"] [data-depth="2"]>.select:after,
+[data-fn="step-navi"] [data-depth="3"]>.select:after{
+	cursor:pointer;
+	content:'';
+	display:inline-block;
+	width:58px; height:53px;
+	background-image:url('./../ui/btns/btn-dropdown-open.png');
+	background-size:200% 100%;
+	position:absolute;
+	right:-1px; top:-2px;
+}
+[data-fn="step-navi"] [data-depth="2"]>.select:hover:after,
+[data-fn="step-navi"] [data-depth="3"]>.select:hover:after{
+	background-position-x:100%;
+}
+[data-fn="step-navi"] [data-depth="2"].on>.select:after,
+[data-fn="step-navi"] [data-depth="3"].on>.select:after{
+	background-image:url('./../ui/btns/btn-dropdown-open-o.png');
+}

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.ui.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.fn.js" ></script>
+    <!--DATAS-->
+    <script type="text/javascript" src="../../com/datas/datas.user.js" ></script>
+    <script type="text/javascript" src="../../com/datas/datas.index.js" ></script>
+    <!--script type="text/javascript" src="../../com/datas/datas.room.js" ></script-->
+    <!--GROUPS-->
+    <link rel="stylesheet" type="text/css" href="css/index.dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/group.step.css" />
+    <link rel="stylesheet" type="text/css" href="css/group.room.css" />
+    <script type="text/javascript" src="js/index.dropdown.js" ></script>
+    <script type="text/javascript" src="js/group.step.js" ></script>
+    <script type="text/javascript" src="js/group.room.js" ></script>
+	<!--VIEW-->
+	<link rel="stylesheet" type="text/css" href="css/step.css" />
+	<script type="text/javascript" src="js/step.js" ></script>
+</head>
+
+<body>
+	<!--화면 전체 영역-->
+    <div id="screen">
+        <!--콘텐츠 전체 영역-->
+        <div id="content">
+	        
+            <div id="logo">로고</div>
+            
+            <div id="step-menu">
+                <div data-btn="home">
+                    <p>홈</p>
+                </div>
+                <div data-btn="fileroom">
+                    <p>자료실</p>
+                </div>
+                <div data-btn="ebook">
+                    <p>이북</p>
+                </div>
+            </div>
+            
+            <div id="step-view">
+                
+    	        <div id="step-navi">
+                    <div data-fn="step-navi">
+                        <div class="navi">
+                            <div data-btn="prev"></div>
+                            <div><p>이전 차시 · 다음 차시</p></div>
+                            <div data-btn="next"></div>
+                        </div>
+                        <div data-depth="1" class="disabled"></div>
+                        <div data-depth="2"></div>
+                        <div data-depth="3"></div>
+                    </div>
+                </div>
+                <div id="step-body">
+                    
+                    <div id="body-info">
+                        <p class="title">나만의 맞춤 수업</p>
+                        <p class="note">수업 순서는 드래그 앤 드롭으로 변경할 수 있으며, 변경한 순서는 자동 저장됩니다.</p>
+                    </div>
+                    
+                    <div id="body-content">
+                        
+                        <div class="step">
+                            <div data-btn="reset">
+                                <p>초기화</p>
+                            </div>
+                            <div data-fn="group-step"></div>
+                        </div>
+                        
+                        <div class="room">
+                            <p class="title">내 자료</p>
+                            <div data-btn="delete-room">
+                                <p>초기화</p>
+                            </div>
+                            
+                            <div class="room-choose"></div>
+                            
+                            <div class="list">
+                                <div data-fn="group-room"></div>
+                            </div>
+                            
+                            <div class="link">
+                                <div class="link-title">
+                                    <p>인터넷 주소 저장하기</p>
+                                </div>
+                                <div class="link-body">
+                                    <input class="url" 
+                                        type="text" 
+                                        placeholder="등록할 인터넷 주소를 입력하세요."
+                                        autocomplete="false"/>
+                                    <input class="name" 
+                                        type="text" 
+                                        placeholder="등록할 URL 저장명을 입력하세요."
+                                        autocomplete="false"/>
+                                    <div data-btn="add-url">
+                                        <p>URL 추가</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div data-btn="load">
+                                <p>불러오기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</div>
+</body>
+</html>
+

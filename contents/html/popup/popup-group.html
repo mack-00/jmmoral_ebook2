@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--메타 데이타-->
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <!--COMMON CSS-->
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../com/css/module.ui.css" />
+    <!--COMMON JS-->
+    <script type="text/javascript" src="../../com/js/module.exe.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.util.js" ></script>
+    <script type="text/javascript" src="../../com/js/module.fn.js" ></script>
+    <!--DATAS-->
+    <script type="text/javascript" src="../../com/datas/datas.user.js" ></script>
+    <script type="text/javascript" src="../../com/datas/datas.index.js" ></script>
+	
+    <!--PLUGINS-->
+    <link rel="stylesheet" type="text/css" href="../../com/plugins/plugins.css" />
+    <script type="text/javascript" src="../../com/plugins/plugins.js" ></script>
+    
+	<!-- VIEW -->
+	<link rel="stylesheet" type="text/css" href="css/popup-group.css" />
+	<script type="text/javascript" src="js/popup-group.js" ></script>
+</head>
+
+<body>
+    <!--화면 전체 영역-->
+    <div id="screen">
+        <!--콘텐츠 전체 영역-->
+        <main id="content">
+            
+	        <header id="head">
+	        	
+	            <div id="path">
+	                <div>
+	                    <p data-path="lesson">단원명</p>
+	                </div>
+	                <div>
+                        <p data-path="chapter">중원명</p>
+                    </div>
+	                <div>
+	                    <p data-path="corner">소원명</p>
+	                </div>
+	            </div>
+	            
+	            <div id="page">
+	                <p>
+	                	<span class="icon">북</span>
+	                	<span>교과서</span> 
+	                	<span class="page">00</span><span>쪽</span>
+	                </p>
+	            </div>
+	            
+	        </header>
+	        
+	        <section id="body"></section>
+	        
+	        <footer id="foot">
+	        	
+	        	<nav>
+	        		
+	        		<ul id="nav">
+	        			<li>
+	        				<button data-type="save"><span>진도 저장</span></button>
+	        			</li>
+	        			<li>
+	        				<button data-type="tools"><span>수업 도구</span></button>
+	        			</li>
+	        		</ul>
+	        		
+	        		<section id="tools">
+		                <ul>
+		                	
+		                    <li><button data-btn-plugin="blackboard"><span>칠판</span></button></li>
+		                    <li><button data-btn-plugin="drawing"><span>그리기</span></button></li>
+		                    <li><button data-btn-plugin="blind"><span>깜깜이</span></button></li>
+		                    
+		                    <li><button data-btn-plugin="pick"><span>발표자 뽑기</span></button></li>
+		                    <li><button data-btn-plugin="timer"><span>타이머</span></button></li>
+		                    <li><button data-btn-plugin="groups"><span>모둠 스티커판</span></button></li>
+		                    
+		                    <li><button data-btn-plugin="attention"><span>주의 집중</span></button></li>
+		                </ul>
+		            </section>
+	        	</nav>
+	        </footer>
+	    </main>
+    </div>
+</body>
+</html>
+

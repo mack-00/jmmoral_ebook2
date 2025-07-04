@@ -1,0 +1,314 @@
+/*================================================
+ * 배경 설정
+ ================================================*/
+
+#screen{
+	background-repeat:repeat;
+	background-color:#FFF7D7;
+}
+
+body.pointer *{
+	cursor:none !important;
+}
+.mouse-cursor{
+	cursor:none !important;
+	pointer-events: none;
+	background-image:url("./../ui/cusor.svg");
+	width:30px; height:30px;
+	background-size:100% 100%;
+	position:absolute;
+	margin-left:-15px;
+	margin-top:-15px;
+	z-index:999;
+}
+/*============
+ * main 설정
+ =============*/
+#bookHead{
+	position:absolute;left:0;top:0;z-index:0;
+	width:100%; height:60px;
+	border-bottom:1px solid #d1d3d4;
+	background-color:#fff;
+}
+	#bookHead h1{
+		position:absolute; left:230px; top:11px;
+	}
+		#bookHead h1 img{
+			height:38px;
+		}
+/*============
+ * main 설정
+ =============*/
+/*
+#content>[data-btn]{
+	position:absolute; right:20px;
+	width:112px; height:108px;
+}
+	#content>[data-btn]>p{
+		position:absolute;
+		left:0px; bottom:22px;
+		width:100%; height:20px;
+		line-height:20px;
+		font-size:16px; font-weight:bold;
+		text-align:center;
+	}
+		#content>[data-btn]:hover>p{
+			color:#fff;
+		}
+*/	
+/*============
+ * main 설정
+ =============*/	
+#ebook-body{
+	position:absolute; left:50%; bottom:0px;
+	transform:translateX(-50%);
+	width:1716px; height:1080px;
+	background-image: url('./../ui/book.png');
+}
+	#ebook-body>.ebook-container{
+		z-index:1;
+		position:absolute;
+		left:14px; top:0px;
+		width:1690px; height:1080px;
+		overflow:hidden;
+	}
+		#ebook{
+			position:absolute;
+			left:0px; top:0px;
+			/*북 한 페이지562*720*/
+			width:1690px; height:1080px;
+		}
+		
+	#ebook-body>[data-btn]{
+		position:absolute; top:470px;
+		width:40px; height:80px;
+	}
+		#ebook-body>[data-btn="prev"]{
+			left:-26px;
+			background-image: url('./../ui/btns/book-prev.png');
+		}
+			#ebook-body>[data-btn="prev"]:before{
+				content:'';
+				display:block;
+				width:34px; height:546px;
+				position:absolute;
+				left:24px; top:0px;
+			}
+		#ebook-body>[data-btn="next"]{
+			right:-26px;
+			background-image: url('./../ui/btns/book-next.png');
+		}
+			#ebook-body>[data-btn="next"]:before{
+				content:'';
+				display:block;
+				width:34px; height:546px;
+				position:absolute;
+				left:-11px; top:0px;
+			}
+
+
+/*============
+ * main 설정
+ =============*/
+#navi-bottom{
+	z-index:100;
+	position:absolute;left:50%; bottom:-90px;
+	transform:translateX(-50%);
+	width:1084px; height:90px;
+	
+	background-image: url('./../ui/bottom/bg-navi.png');
+}
+	#navi-bottom.on{bottom:0px;}
+	
+	#navi-bottom>[data-btn="openNavi"]{
+		position:relative;
+		display:table;
+		top:-26px;
+		width:76px; height:28px;
+		margin:0px auto;
+		background-image: url('./../ui/bottom/btn-open.png');
+	}
+		#navi-bottom>[data-btn="openNavi"]{background-position-x:0%;}
+		#navi-bottom.on>[data-btn="openNavi"]{background-position-x:100%;}
+	
+	
+	/*============
+	 * main 설정
+	 =============*/
+	#bookTools{
+		width:100%;
+		position:absolute;
+		left:35px; top:22px;
+	}
+	
+	#bookTools>*,
+	#bookTools>*>*{
+		display:inline-block;
+	}
+	#bookTools>ul+ul{
+		border-left:1px solid #4A669E;
+		/*opacity:0.5;*/
+		padding-right:5px;
+		margin-left:5px;
+	}
+	#bookTools [data-btn],
+	#bookTools [data-btn-plugin]{
+		position:relative;
+		width:42px;height:50px;
+		text-align:center;
+		font-size:10px; line-height:14px;
+	}
+	#bookTools [data-btn]:before,
+	#bookTools [data-btn-plugin]:before{
+		content:'';
+		display:inline-block;
+		width:28px;height:26px;
+		left:6px; top:0;
+		background-size:200% 100%;
+	}
+	#bookTools [data-btn]:hover:before,
+	#bookTools [data-btn-plugin]:hover:before{
+		background-position-x:100%;
+	}
+		[data-btn="home"]:before{background-image: url('./../ui/bottom/tool-home.png');}
+		[data-btn-plugin="index"]:before{background-image: url('./../ui/bottom/tool-index.png');}
+		[data-btn="fileroom"]:before{background-image: url('./../ui/bottom/tool-fileroom.png');}
+		[data-btn-plugin="bookmark"]:before{background-image: url('./../ui/bottom/tool-bookmark.png');}
+		[data-btn-plugin="zoom-in"]:before{background-image: url('./../ui/bottom/tool-zoomIn.png');}
+		[data-btn-plugin="zoom-out"]:before{background-image: url('./../ui/bottom/tool-zoomOut.png');}
+		[data-btn-plugin="drawing"]:before{background-image: url('./../ui/bottom/tool-drawing.png');}
+		[data-btn-plugin="memo"]:before{background-image: url('./../ui/bottom/tool-memo.png');}
+		[data-btn="myTools"]:before{background-image: url('./../ui/bottom/tool-myTools.png');}
+		[data-btn-plugin="print"]:before{background-image: url('./../ui/bottom/tool-print.png');}
+		[data-btn-plugin="help"]:before{background-image: url('./../ui/bottom/tool-help.png');}
+			
+	#bookTools [data-btn]>p,
+	#bookTools [data-btn-plugin]>p{
+		margin-top:5px;
+	}	
+
+	
+	#search{
+		margin-left:20px; margin-top:7px;
+		position:relative;
+		border: 1px solid #BCBEC0;
+		width:300px;
+		height:36px; 
+		border-radius:18px;
+	}
+		#search input{
+			width:230px;height:36px;
+			position:absolute;left:20px;top:0px;
+			line-height:36px;
+		}
+		#search [data-btn-plugin="search"]{
+			width:24px;height:26px;
+			position:absolute;right:12px;top:4px;
+		}
+		#search [data-btn-plugin="search"]>p{display:none;}
+		#search [data-btn-plugin="search"]:before{background-image: url('./../ui/bottom/tool-search.png');}
+		
+	#bookNav{
+		position:relative;
+		margin-left:15px; margin-top:11px;
+		background-color: #4A669E;
+		width:164px;
+		height:28px;
+		border-radius:14px;
+		/*font-family:'Tmoney RoundWind';*/
+		font-weight:bold;
+		font-size:14px;
+	}
+		#bookNav input{
+			text-align:center;
+			width:100px;height:28px;
+			line-height:28px;
+			color:#fff;
+		}
+		#bookNav [data-btn]{
+			position:relative;
+			width:28px;height:28px;
+			text-align:center;
+			font-size:0; 
+		}
+		#bookNav [data-btn="prev"]:before{background-image: url('./../ui/bottom/btn-prev.png');}
+		#bookNav [data-btn="next"]:before{background-image: url('./../ui/bottom/btn-next.png');}
+/*============
+ * main 설정
+ =============*/			
+			
+#myTools{
+	display:none;
+	z-index:10;
+	position:absolute;
+	left:359px; top:-363px;
+	background-image: url('./../ui/study/bg-study.png');
+	width:139px; height:363px;
+}
+	#myTools>.head{
+		width:100%; height:90px;
+	}
+		#myTools>.head>p{
+			position:relative;
+			width:100%;
+			top:50px;
+			
+			font-family:'One';
+			font-size:16px; 
+			font-weight:bold;
+			line-height:28px;
+			color:#055905;
+			text-align:center;
+		}
+		#myTools>.head>[data-btn="study-close"]{
+			cursor:pointer;
+			position:absolute;
+			right:14px; top:17px;
+			width:19px; height:18px;
+			margin-left:35px;
+			background-image: url('./../ui/study/btn-close.png');
+		}
+		
+	#myTools>.body{
+		padding:0px 2px;
+	}	
+		#myTools>.body>[data-btn-plugin].switch,
+		#myTools>.body>[data-btn].switch{
+			color:#a46c00;
+		}
+		#myTools>.body>[data-btn-plugin],
+		#myTools>.body>[data-btn]{
+			width:100%; height:45px;
+			color:#6f6f6f;
+			font-size:15px; font-weight:bold;
+			line-height:45px;
+			text-indent:54px;
+			letter-spacing:-1px;
+		}	
+			#myTools>.body>[data-btn-plugin="timer"]{
+				background-image: url('./../ui/study/btn-timer.png');
+				border-radius:0 0 10px 10px;
+			}
+			#myTools>.body>[data-btn-plugin="blackboard"]{
+				background-image: url('./../ui/study/btn-blackboard.png');
+			}
+			#myTools>.body>[data-btn-plugin="attention"]{
+				background-image: url('./../ui/study/btn-attention.png');
+			}
+			#myTools>.body>[data-btn-plugin="blind"]{
+				background-image: url('./../ui/study/btn-blind.png');
+			}
+			#myTools>.body>[data-btn-plugin="groups"]{
+				background-image: url('./../ui/study/btn-groups.png');
+			}
+			#myTools>.body>[data-btn-plugin="pick"]{
+				background-image: url('./../ui/study/btn-pick.png');
+			}
+			#myTools>.body>[data-btn-plugin="drawing"]{
+				background-image: url('./../ui/study/btn-drawing.png');
+			}
+			#myTools>.body>[data-btn="pointer"]{
+				background-image: url('./../ui/study/btn-pointer.png');
+			}
+
+			

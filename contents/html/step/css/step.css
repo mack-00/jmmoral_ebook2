@@ -1,0 +1,219 @@
+
+/*================================================
+ * 배경 설정
+ ================================================*/
+#screen{
+	background-color:#dde7fa;
+}
+
+#logo{
+	position:absolute;
+	left:32px; top:20px;
+	width:317px; height:50px;
+	font-size:0px;
+}
+	[data-grade="5-1"] #logo{
+		background-image:url('./../ui/logos/logo-5-1.png');
+	}
+	[data-grade="5-2"] #logo{
+		background-image:url('./../ui/logos/logo-5-2.png');
+	}
+	[data-grade="6-1"] #logo{
+		background-image:url('./../ui/logos/logo-6-1.png');
+	}
+	[data-grade="6-2"] #logo{
+		background-image:url('./../ui/logos/logo-6-2.png');
+	}
+	
+#step-menu{
+	position:absolute;
+	display:inline-block;
+	right:35px; top:20px;
+}
+	#step-menu>[data-btn]{
+		position:relative;
+		display:inline-block;
+		width:102px; 
+		margin-left:0px;
+	}
+	#step-menu>[data-btn]+[data-btn]{
+		margin-left:16px;
+	}
+		#step-menu>[data-btn="home"]{
+			height:77px; top:10px;
+			background-image: url('./../ui/btns/btn-home.png');
+		}
+		#step-menu>[data-btn="fileroom"]{
+			height:79px; top:8px;
+			background-image: url('./../ui/btns/btn-fileroom.png');
+		}
+		#step-menu>[data-btn="ebook"]{
+			height:87px;
+			background-image: url('./../ui/btns/btn-ebook.png');
+		}
+/*=====================
+ * 
+ ======================*/			
+#step-view{
+	position:absolute;
+	left:0px; bottom:0px;
+	width:1920px; height:972px;
+	background-image: url('./../ui/bg-step.png');
+}
+	/*=====================
+	 * 상단 네비
+	 ======================*/
+	#step-navi{
+		position:relative;
+		width:100%; height:160px;
+	}
+				
+	/*=====================
+	 * 추가 설정
+	 ======================*/
+	#step-body{
+		position:relative; 
+		width:100%; height:920px;
+	}
+		/*=====================
+		 * 추가 설정
+		 ======================*/
+		#body-info{
+			position:absolute;
+			width:1387px; height:126px;
+			left:25px; top:0px;
+		}
+			#body-info>.title{
+				position:absolute;
+				left:78px; top:10px;
+				font-size:0px; line-height:58px;
+			}
+			#body-info>.note{
+				position:absolute;
+				left:24px; top:78px;
+				font-size:18px; font-weight:bold;
+				line-height:30px;
+				color:#747070;
+			}
+			
+		/*=====================
+		 * 추가 설정
+		 ======================*/
+		#body-content{
+			width:100%;
+			position:absolute;
+			left:24px; top:75px;
+		}
+			#body-content>.step>[data-btn="reset"]{
+				width:101px; height:36px;
+				position:absolute;
+				right:0px; top:-50px;
+				background-image: url('./../ui/btns/btn-reset.png');
+			}
+			
+			#body-content>.step{
+				width:1402px; height:657px;
+				position:absolute;
+				left:25px; top:40px;
+			}
+			
+			#body-content>.room{
+				position:absolute; 
+				right:58px; top:0px;
+				width:416px; height:700px;
+			}
+			#body-content>.room>.title{
+				font-family:'One';
+				font-size:30px;
+				font-weight:normal;
+				line-height:50px;
+				color:#fff;
+				position:absolute;
+				left:160px; top:-59px;
+			}
+				
+				#body-content>.room>[data-btn="delete-room"]{
+					width:40px; height:40px;
+					position:absolute;
+					right:15px; top:-56px;
+					background-image: url('./../ui/btns/btn-delete.png');
+				}
+				
+				#body-content>.room>.room-choose{
+					width:100%; height:40px;
+					font-size:26px;
+					line-height:50px; text-align:center;
+				}
+					#body-content>.room>.room-choose>[data-val]{
+						cursor:pointer;
+						display:inline-block;
+						height:32px; 
+						line-height:32px;
+						font-size:16px; color:#1c1c1c;
+						text-align:center;
+						margin-top:5px;
+						margin-left:25px;
+					}
+						#body-content>.room>.room-choose>[data-val]:nth-child(1){
+							margin-left:0px;
+						}
+					#body-content>.room>.room-choose>[data-val]:before{
+						content:'';
+						display:inline-block;
+						width:32px; height:32px;
+						background-image: url('./../ui/btns/btn-room-check.png');
+						background-size:200% 100%;
+						float:left;
+						margin-right:8px;
+					}
+						#body-content>.room>.room-choose>[data-val].on:before{
+							background-position-x:100%;
+						}
+				#body-content>.room>.list{
+					width:100%; height:416px;
+					font-size:18px;
+					line-height:24px;
+				}
+				
+				#body-content>.room>.link{
+					width:100%; height:140px;
+					margin-top:16px;
+				}
+					#body-content>.room>.link>.link-title{
+						font-size:18px; color:#1c1c1c;
+						width:100%; height:40px;
+						line-height:44px; 
+						text-indent:42px;
+					}
+					
+					#body-content>.room>.link>.link-body{
+						position: relative;	
+					}
+						#body-content>.room>.link>.link-body .url{
+							font-size:16px; 
+							line-height:40px;
+							width:373px; height:40px;
+							margin-left:20px; margin-top:7px;
+						}
+						#body-content>.room>.link>.link-body .name{
+							font-size:16px;
+							line-height:40px;
+							width:268px; height:40px;
+							margin-left:20px; margin-top:7px;
+						}
+						#body-content>.room>.link>.link-body [data-btn="add-url"]{
+							position:absolute;
+							left:315px; top:53px;
+							width:97px; height:40px;
+							
+							background-image: url('./../ui/btns/btn-add-url.png');
+						}
+						
+				#body-content>.room>[data-btn="load"]{
+					position:absolute; 
+					left:0px; bottom:0px;
+					width:100%; height:82px;
+					
+					background-image: url('./../ui/btns/btn-load.png');
+				}
+	
