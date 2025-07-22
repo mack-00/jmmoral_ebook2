@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view" class="s">
+
+		<header data-ui="w:1720">
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>감정 성찰 일기 쓰기</span></h1>
+
+		</header>
+
+		<section data-ui="w:1720">
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<div data-box="녹색" data-ui="py:26 px:27 h:417">
+						<div class="scroll">
+							<p>
+								<img src="res/img-1.png" alt="도덕기준이미지" data-ui="w:650 A:r ml:30 mt:0" />
+								감정 성찰 일기란 하루 중 있었던 한 가지 일에 대해 사건, 생각, 감정을 써 보고, 더 긍정적인 감정이 나타날 수 있도록 사건에 대한 자신의 생각을 바꾸는 것이다. 
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="1" data-ui="LS:1"><span>1</span> <span>
+							최근 겪었던 도덕적 문제 상황 중 한 가지를 선택하여 그 상황에 대해 사건, 생각, 감정으로 나누어 분석해 보자.</span></h2>
+					<quizitem data-id="q-1" data-ui="mt:20">
+						<table>
+							<tbody>
+								<tr>
+									<th data-ui="w:521px Fs:56" class="ff-1">내가 겪은 사건
+									</th>
+									<td data-ui="h:155">
+										<assessmentitem data-response-type="show">
+											<assessfeedback>모둠 과제 중 친구가 준비하기로 한 것을 준비하지 않았다.
+											</assessfeedback>
+										</assessmentitem>
+									</td>
+								</tr>
+								<tr>
+									<th data-ui="w:521px Fs:56" class="ff-1">사건에 대한 <br>나의 생각</th>
+									<td data-ui="h:155">
+										<assessmentitem data-response-type="show">
+											<assessfeedback>친구가 약속을 중요하게 생각하지 않는 것 같고 나에 대한 배려심이 없는 것 같았다.
+											</assessfeedback>
+										</assessmentitem>
+									</td>
+								</tr>
+								<tr>
+									<th data-ui="w:521px Fs:56" class="ff-1">생각에 따른 감정</th>
+									<td data-ui="h:155" class="va_m">
+										<assessmentitem data-response-type="show">
+											<assessfeedback>친구에게 서운하고 화가 났다.
+											</assessfeedback>
+										</assessmentitem>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<quizbtn data-id="q-1" data-skill="answerReset" class="center">정답</quizbtn>
+					</quizitem>
+				</div>
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="2" data-ui="LS:1"><span>2</span> <span>
+							사건에 대한 나의 생각을 어떻게 바꿀 수 있을지 써 보자.</span></h2>
+					<quizItem data-id="q-2">
+
+						<assessmentItem data-response-type="show" data-box="종이">
+
+							<assessFeedback>
+								<p data-ui="LS:-1">친구에게 바쁜 일이 있었거나, 과제의 내용이 어려워 준비하기 힘들었나 보다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+
+						</assessmentItem>
+
+					</quizItem>
+				</div>
+				<div data-tab="4">
+					<!--질문-->
+					<h2 data-question="3" data-ui="LS:1"><span>3</span> <span>
+							위에서 쓴 내용을 포함하여 감정 성찰 일기를 구체적으로 써 보자.</span></h2>
+					<quizItem data-id="q-3">
+
+						<assessmentItem data-response-type="show" data-box="종이">
+
+							<assessFeedback>
+								<p data-ui="LS:-0.5">어제 모둠 과제를 하기 위해 각자 집에서 자료 조사를 해 오기로 하고 역할을 나눴다. 그런데 민수가 준비하기로 한 것을 해 오지 않아 모둠 친구들이 모두
+									난처해졌다. 나는 민수가 친구들에 대한 배려심이 없다고 생각했고, 민수에게 서운하고 화가 났다. 그래서 민수에게 화를 내고 말았다. 민수가 주눅이 들어서 아무 말도 하지 못하는 것을
+									보니 바쁜 일이 있었거나 사정이 있었을 텐데 과제를 하지 않은 까닭에 대해 물어보지도 않고 무턱대고 화를 내버린 것이 갑자기 후회스러웠다.
+								</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-3" data-skill="answerReset" class="center">정답</quizBtn>
+
+						</assessmentItem>
+
+					</quizItem>
+				</div>
+			</div>
+		</section>
+
+	</main>
+</body>
+
+</html>

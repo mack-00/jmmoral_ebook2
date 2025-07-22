@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view">
+
+		<header class="mb_no">
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span><span>조지나와 도덕 명탐정</span></h1>
+		</header>
+
+		<section>
+			<!--질문-->
+			<h2 data-question="활동하기"><span>●</span> <span>다음 여러 개의 판단을 아래 표 안에 분류해 보자.</span></h2>
+			<article>
+				<div data-ui="center mt:18">
+					<img src="res/15-1-1.png" />
+				</div>
+				<div data-ui="center mt:18 P:r">
+					<img src="res/15-1-2.png" />
+					<quizItem data-id="q-01" data-ui="P:a x:140 y:20 w:700 h:370 center">
+						<assessFeedback data-response-type="show">
+							<p data-ui="Fc:#655fff Fs:42">①, ③, ⑧</p>
+						</assessFeedback>
+						<quizBtn data-id="q-01" data-skill="answerReset" class="s">정답</quizBtn>
+					</quizItem>
+					<quizItem data-id="q-02" data-ui="P:a x:920 y:50 w:700 h:120 center">
+						<assessFeedback data-response-type="show">
+							<p data-ui="Fc:#655fff Fs:42">②, ④, ⑥</p>
+						</assessFeedback>
+						<quizBtn data-id="q-02" data-skill="answerReset" class="center s" data-ui="">정답</quizBtn>
+					</quizItem>
+					<quizItem data-id="q-03" data-ui="P:a x:970 y:250 w:300 h:120 center">
+						<assessFeedback data-response-type="show">
+							<p data-ui="Fc:#655fff Fs:42">⑦</p>
+						</assessFeedback>
+						<quizBtn data-id="q-03" data-skill="answerReset" class="center s" data-ui="">정답</quizBtn>
+					</quizItem>
+					<quizItem data-id="q-04" data-ui="P:a x:1270 y:250 w:300 h:120 center">
+						<assessFeedback data-response-type="show">
+							<p data-ui="Fc:#655fff Fs:42">⑤, ⑨</p>
+						</assessFeedback>
+						<quizBtn data-id="q-04" data-skill="answerReset" class="center s" data-ui="">정답</quizBtn>
+					</quizItem>
+				</div>
+			</article>
+		</section>
+
+	</main>
+</body>
+
+</html>

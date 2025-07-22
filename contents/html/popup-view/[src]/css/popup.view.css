@@ -3,9 +3,14 @@
 	position:absolute;
 	left:0px; top:0px;
 	width:1920px; height:953px;
-	
 	text-align:justify;
-	padding:20px 80px;
+	padding:35px 80px 60px;
+}
+#popup-view.s{
+	padding-inline:90px;
+}
+#popup-view.l{
+	padding-inline:60px;
 }
 
 small{
@@ -37,7 +42,7 @@ h1 b{
 
 header,section{position:relative;}
 header{margin-bottom:40px;}
-
+header.mb_no{margin-bottom:0;}
 
 /**=============
  * 	popupVideo
@@ -47,8 +52,8 @@ header{margin-bottom:40px;}
 }
 #popup-view .popupVideo>.VIDEO {
 	left:50%; transform:translateX(-50%);
-    width:1694px;
-    height:953px;
+    width:100%;
+    height: 100%;
 }
 
 
@@ -74,7 +79,7 @@ header{margin-bottom:40px;}
 		font-weight:normal;
 		color:#fff;
 		padding:0 40px 0 55px;
-		height:72px;line-height:70px;
+		height:70px;line-height:68px;
 		border-radius:0 100px 100px 0;
 		
 		left:-30px;top:18px;
@@ -85,7 +90,7 @@ header{margin-bottom:40px;}
 		background-image:url('../../[res]/titles/생각 열기.png');
 	}
 	[data-subject="자료 읽기"]>span:nth-child(1){
-		width:284px;height:84px;
+		width:200px;height:100px;
 		background-image:url('../../[res]/titles/자료 읽기.png');
 	}
 		[data-subject="자료 읽기"]>span:nth-child(2){
@@ -93,20 +98,21 @@ header{margin-bottom:40px;}
 			background-color:#58AFE2;
 		}
 	[data-subject="탐구"]>span:nth-child(1){
-		width:213px;height:88px;
+		width:165px;height:100px;
 		background-image:url('../../[res]/titles/탐구.png');
 	}
 		[data-subject="탐구"]>span:nth-child(2){
-			left:-30px;top:12px;
+			left:-30px;top:6px;
 			background-color:#20bec6;
 		}
 		
 	[data-subject="생각"]>span:nth-child(1){
-		width:213px;height:89px;
+		width:200px;height:100px;
 		background-image:url('../../[res]/titles/생각.png');
+		/*margin-top: 7px;*/
 	}
 		[data-subject="생각"]>span:nth-child(2){
-			left:-30px;top:12px;
+			left:-30px;top:5px;
 			background-color:#94ACF1;
 		}
 	[data-subject="수행 활동"]>span:nth-child(1){
@@ -114,11 +120,11 @@ header{margin-bottom:40px;}
 		background-image:url('../../[res]/titles/수행 활동.png');
 	}
 	[data-subject="활동하기"]>span:nth-child(1){
-		width:281px;height:95px;
+		width:200px;height:100px;
 		background-image:url('../../[res]/titles/활동하기.png');
 	}
 		[data-subject="활동하기"]>span:nth-child(2){
-			left:-30px;top:18px;
+			left:-30px;top:5px;
 			background-color:#8BC751;
 		}
 	
@@ -146,7 +152,7 @@ header{margin-bottom:40px;}
 		background-image:url('../../[res]/titles/스스로 평가하기.png');
 	}
 	[data-subject="스스로 점검하기"]>span:nth-child(1){
-		width:411px;height:90px;
+		width:384px;height:100px;
 		background-image:url('../../[res]/titles/스스로 점검하기.png');
 	}
 	[data-subject="중단원 마무리 풀어보기"]>span:nth-child(1){
@@ -154,7 +160,7 @@ header{margin-bottom:40px;}
 		background-image:url('../../[res]/titles/중단원 마무리 풀어보기.png');
 	}
 	[data-subject="중단원 마무리 정리하기"]>span:nth-child(1){
-		width:443px;height:91px;
+		width:394px;height:100px;
 		background-image:url('../../[res]/titles/중단원 마무리 정리하기.png');
 	}
 	[data-subject="대단원 마무리"]>span:nth-child(1){
@@ -204,22 +210,22 @@ header>[data-question]{
 }
 [data-question]{
 	position:relative;
-	
 	font-family:'Paper';
 	font-size:56px;
-	line-height:82px;
-	font-weight:normal;
+	line-height:1.2;
+	font-weight:bold;
 	color:#000;
 	padding-left:65px;
+	margin-bottom: 28px;
 }
 	[data-question]>span:nth-child(1){
-		position:absolute;top:18px;left:0;
+		position:absolute;top:12px;left:0;
 		display:inline-block;font-size:0;
 		background-size:100% 100%;
 		width:46px;height:46px;
 	}
 		[data-question="생각 열기"]>span:nth-child(1){
-			width:46px;height:52px;top:15px;
+			width:46px;height:52px;top:9px;
 			background-image:url('../../[res]/icons/생각열기.png');
 		}
 		[data-question="활동하기"]>span:nth-child(1){
@@ -276,6 +282,7 @@ header>[data-question]{
 		font-weight:bold;
 		line-height:82px;
 		color:#006a5b;
+		line-height: 1;
 	}
 	
 	[data-question="1"][data-color="보라"]>span:nth-child(1),
@@ -601,11 +608,12 @@ header>[data-question]{
 	position:relative;
 	background-color:#FFF7CC;
 	border-radius:35px;
-	padding:40px 75px;
+	padding:40px 60px;
 	
 	font-size:56px;
 	font-weight:900;
 	line-height:88px;
+	min-height: 344px;
 	
 	color:#000;
 }
@@ -618,13 +626,35 @@ header>[data-question]{
 	}
 
 [data-box]>.scroll{
-	width:calc(100% + 20px); height:100%;
-	padding-right:20px;
+	width: 100%; height:100%;
+   padding-right:20px;
 }
+
+.scroll::-webkit-scrollbar {
+  width: 13px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #777B7C;
+  border-radius: 13px;
+  background-clip: padding-box;
+}
+
+.scroll::-webkit-scrollbar-track {
+background: #EFF6F9;
+	border:1px solid #D9D9D9;
+  width: 13px;
+  border-radius: 13px;
+}
+
 
 [data-box="파랑"]{
 	background-color:#d1eefc;
 }
+[data-box="녹색"]{
+	background-color:#EBF6DB;
+}
+
 [data-box="회색"]{
 	background-color:#e4e6f0;
 }
@@ -750,8 +780,18 @@ table td{
 table tr+tr{border-top:4px solid #fff;}
 table tr>*+*{border-left:3px solid #fff;}
 
+table .ff-2{
+	font-family:'Paper';
+}
+table .ff-1{
+	font-family:'Nanum'; 
+	font-weight: 900;
+}
 
-
+table th.va_m,
+table td.va_m{
+	vertical-align: middle;
+}
 
 /**=============
  * 	quizItem
@@ -776,7 +816,13 @@ assessmentItem{position:relative;}
 		position:absolute;left:50%;top:50%;
 		transform:translate(-50%,-50%);
 	}
-	
+	quizItem assessFeedback .circle{
+    width: 60px;
+		height: 60px;
+		border:4px solid #655FFF;
+		border-radius:50%;
+		display: block;
+	}
 	quizBtn[data-skill="answer"]{
 		width:80px;height:85px;
 		font-size:0;
@@ -792,6 +838,10 @@ assessmentItem{position:relative;}
 		font-size:0;
 		background-image:url('../../[res]/btns/btn-answer.png');
 	}
+	quizBtn[data-skill="answerReset"].s{
+		width:57px;height:60px;
+	}
+	
 	quizBtn[data-skill="answerReset"].on{
 		display:none;
 		/*background-image:url('../../[res]/btns/btn-reset.png');*/
@@ -974,3 +1024,53 @@ quizItem[data-design="단어"]{
 	}
 	
 [data-tab]>[data-question]:nth-child(1){margin-top:-30px;}
+
+/**=============
+ * 	공통 화면
+ =============*/
+
+.com-flex{
+	display: flex;
+}
+.com-flex.between{
+	justify-content: space-between;
+}
+.com-flex > .col-1{
+	flex:1;
+}
+
+.com-flex.align-center{
+	align-items: center;
+}
+
+.c-text-1{
+	color:#000;
+}
+.c-text-2{
+	color:#231815;
+}
+.c-text-3{
+	color:#595757;
+}
+
+.p_center{
+	position:absolute;left:50%;top:50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+}
+
+
+
+/* 매칭 퀴즈 */
+.matching_quiz{
+	position: relative;
+}
+.matching_quiz quizitem{
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+}
+
+
