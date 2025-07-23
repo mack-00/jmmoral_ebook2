@@ -10,6 +10,9 @@
 #popup-view.s {
   padding-inline: 90px;
 }
+#popup-view.xs {
+  padding-inline: 100px;
+}
 #popup-view.l {
   padding-inline: 60px;
 }
@@ -794,6 +797,10 @@ quizItem[data-box] {
 [data-box='회색'] {
   background-color: #f0f0f0;
 }
+[data-box='보라'] {
+  background-color: #E2E8FF;
+}
+
 
 [data-box='종이']:after {
   content: '';

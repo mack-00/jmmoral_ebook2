@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view" class="s">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>내 삶을 소중하게 만드는 것</span></h1>
+		</header>
+		<section>
+			<div data-skill="tab">
+				<div data-tab="1">
+					<h2 data-question="1"><span>1</span>
+						<span>사람, 물건, 가치 등 내 삶에서 소중한 것을 다섯 가지 떠올려 보고, 아래 붙임쪽지에 하나씩 써 보자. </span>
+					</h2>
+
+					<quizItem data-id="q-1" data-ui="w:1720 h:366 BG:res/img-1.png mt:40">
+						<div data-ui="h:366 P:r">
+							<assessmentitem data-response-type="show">
+								<assessfeedback>
+									<p class="item" data-ui="P:a l:132 t:118"> 가족 </p>
+									<p class="item" data-ui="P:a l:462 t:130"> 친구 </p>
+									<p class="item" data-ui="P:a l:815 t:120"> 핸드폰 </p>
+									<p class="item" data-ui="P:a l:1210 t:150"> 키링 </p>
+									<p class="item" data-ui="P:a l:1500 t:125"> 지갑 </p>
+								</assessfeedback>
+							</assessmentitem>
+							<quizbtn data-id="q-1" data-skill="answerReset" class="center">정답</quizbtn>
+						</div>
+					</quizItem>
+				</div>
+				<div data-tab="2">
+					<h2 data-question="2" data-ui="LS:0.5">
+						<span>2</span>
+						<span>모둠원과 돌아가면서 포기할 수 있는 것 순서대로 붙임쪽지를 하나씩 떼어내 보자. 그리고 마지막 붙임쪽지에
+							쓰여 있는 가장 소중한 것이 무엇인지 이야기해 보자.</span>
+					</h2>
+
+					<quizItem data-id="q-2">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336">
+							<assessFeedback>
+								<p>가족과 친구 중에서 고민하다가, 결국 가족이 남았다. 집에 돌아갔을 때 가족이 없다면 슬플 것 같기
+									때문이다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+				<div data-tab="3">
+					<h2 data-question="3" data-ui="LS:0.5">
+						<span>3</span>
+						<span>붙임쪽지를 하나씩 떼어 낼 때마다 어떤 기분이 들었는지 이야기해 보자. </span>
+					</h2>
+
+					<quizItem data-id="q-3">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336">
+							<assessFeedback>
+								<p>소중한 것 하나하나 모두 잃기 싫고 포기하기 싫다는 생각이 들었다. 너무 아쉽고 서운한 기분이
+									들었다. </p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-3" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+					<span data-ui="P:a r:0 t:500 w:242 h:160 BG:res/bg.png"></span>
+				</div>
+			</div>
+		</section>
+		<style>
+			.item {
+				opacity: 0;
+				transform: translateX(-100px);
+				transition: 0.3s ease-in-out;
+			}
+
+			[data-state] [data-response-type='show'] assessFeedback .item {
+				opacity: 1;
+				transform: translateX(0);
+			}
+
+			/* delay */
+			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(1) {
+				transition-delay: 0s;
+			}
+
+			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(2) {
+				transition-delay: 0.1s;
+			}
+
+			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(3) {
+				transition-delay: 0.2s;
+			}
+
+			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(4) {
+				transition-delay: 0.3s;
+			}
+
+			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(5) {
+				transition-delay: 0.4s;
+			}
+		</style>
+	</main>
+</body>
+
+</html>
