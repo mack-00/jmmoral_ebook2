@@ -303,6 +303,7 @@ header > [data-question] {
 [data-question='생각'] > span:nth-child(1) {
   background-image: url('../../[res]/icons/중점-생각.png');
 }
+
 [data-question='대단원 마무리'] > span:nth-child(1) {
   background-image: url('../../[res]/icons/중점-대단원 마무리.png');
 }
@@ -611,6 +612,9 @@ header > [data-question] {
   display: flex;
   align-items: center;
 }
+[data-design='스스로 평가하기'] li:last-child {
+  border-bottom: none;
+}
 [data-design='스스로 평가하기'] [data-note] {
   padding-left: 68px;
   flex: 1;
@@ -644,7 +648,7 @@ header > [data-question] {
   font-weight: normal;
   color: #000;
   width: 60px;
-	text-align: center;
+  text-align: center;
   font-family: 'Tmoney';
 }
 [data-design='스스로 평가하기'] [data-skill='radio'] [data-radio].on::after {
@@ -798,9 +802,8 @@ quizItem[data-box] {
   background-color: #f0f0f0;
 }
 [data-box='보라'] {
-  background-color: #E2E8FF;
+  background-color: #e2e8ff;
 }
-
 
 [data-box='종이']:after {
   content: '';
@@ -947,6 +950,9 @@ table .ff-2 {
 table .ff-1 {
   font-family: 'Nanum';
   font-weight: 900;
+}
+quizItem table th.ff-1 {
+  font-size: 56px;
 }
 
 table th.va_m,
@@ -1307,10 +1313,6 @@ quizItem[data-design='단어'][data-state] quizBtn {
   color: #000;
 }
 
-[data-design='중단원 마무리 정리하기'] .d2 > li {
-  padding: 7px 0;
-}
-
 [data-design='중단원 마무리 정리하기'] .d2 > li > .title {
   position: relative;
   width: 283px;
@@ -1341,7 +1343,7 @@ quizItem[data-design='단어'][data-state] quizBtn {
 }
 
 [data-design='중단원 마무리 정리하기'] .d3 {
-  padding: 20px;
+  padding: 15px 20px;
   font-size: 30px;
   line-height: 1.5;
   font-weight: 700;
@@ -1349,6 +1351,9 @@ quizItem[data-design='단어'][data-state] quizBtn {
   border: 2px solid #b4b4b5;
   border-radius: 10px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 [data-design='중단원 마무리 정리하기'] .d3 [data-note='점'] > * {
