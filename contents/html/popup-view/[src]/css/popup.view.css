@@ -1,633 +1,770 @@
-
-#popup-view{
-	position:absolute;
-	left:0px; top:0px;
-	width:1920px; height:953px;
-	text-align:justify;
-	padding:35px 80px 60px;
+#popup-view {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 940px;
+  text-align: justify;
+  padding: 34px 80px 62px;
 }
-#popup-view.s{
-	padding-inline:90px;
+#popup-view.s {
+  padding-inline: 90px;
 }
-#popup-view.l{
-	padding-inline:60px;
-}
-
-small{
-	font-size:0.8em;
+#popup-view.l {
+  padding-inline: 60px;
 }
 
-.scroll{
-	position:relative;
-	overflow-x:hidden;overflow-y:auto;
-	padding-right:20px;
+small {
+  font-size: 0.8em;
 }
 
-
-p>b{
-	font-family:'Tmoney';
-	font-size:58px;
-	font-weight:normal;
-	text-indent:0;
-	color:#4764af;
+.scroll {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
 }
 
-h1 b{
-	color:#fff579;
+p > b {
+  font-family: 'Tmoney';
+  font-size: 58px;
+  font-weight: normal;
+  text-indent: 0;
+  color: #4764af;
+}
+
+h1 b {
+  color: #fff579;
 }
 
 /**=============
  * 	subject
  =============*/
 
-header,section{position:relative;}
-header{margin-bottom:40px;}
-header.mb_no{margin-bottom:0;}
+header,
+section {
+  position: relative;
+}
+header {
+  margin-bottom: 40px;
+}
+header.mb_no {
+  margin-bottom: 0;
+}
 
+header [data-subject] {
+  margin-bottom: 0;
+}
 /**=============
  * 	popupVideo
  =============*/
-#popup-view .popupVideo{
-	background-color:#fff;
+#popup-view .popupVideo {
+  /*background-color:#fff;*/
+  height: 913px;
+  /*width:1823px;*/
+  margin-inline: auto;
+  transform: translateX(-50%);
+  left: 50%;
 }
-#popup-view .popupVideo>.VIDEO {
-	left:50%; transform:translateX(-50%);
-    width:100%;
-    height: 100%;
+#popup-view .popupVideo > .VIDEO {
+  /*width: 1620px;*/
+  width: 100%;
+  height: 913px;
 }
-
 
 /**=============
  * 	subject
  =============*/
-[data-subject]{
-	position:relative;
-	margin-bottom:10px;
+[data-subject] {
+  position: relative;
+  margin-bottom: 10px;
 }
-	[data-subject]>span:nth-child(1){
-		position:relative;
-		display:inline-block;
-		font-size:0;
-		z-index:2;
-	}
-	[data-subject]>span:nth-child(2){
-		z-index:1;
-		display:inline-block;
-		position:relative;
-		font-family:'Tmoney';
-		font-size:50px;
-		font-weight:normal;
-		color:#fff;
-		padding:0 40px 0 55px;
-		height:70px;line-height:68px;
-		border-radius:0 100px 100px 0;
-		
-		left:-30px;top:18px;
-	}
-	
-	[data-subject="생각 열기"]>span:nth-child(1){
-		width:200px;height:100px;
-		background-image:url('../../[res]/titles/생각 열기.png');
-	}
-	[data-subject="자료 읽기"]>span:nth-child(1){
-		width:200px;height:100px;
-		background-image:url('../../[res]/titles/자료 읽기.png');
-	}
-		[data-subject="자료 읽기"]>span:nth-child(2){
-			left:-30px;top:8px;
-			background-color:#58AFE2;
-		}
-	[data-subject="탐구"]>span:nth-child(1){
-		width:165px;height:100px;
-		background-image:url('../../[res]/titles/탐구.png');
-	}
-		[data-subject="탐구"]>span:nth-child(2){
-			left:-30px;top:6px;
-			background-color:#20bec6;
-		}
-		
-	[data-subject="생각"]>span:nth-child(1){
-		width:200px;height:100px;
-		background-image:url('../../[res]/titles/생각.png');
-		/*margin-top: 7px;*/
-	}
-		[data-subject="생각"]>span:nth-child(2){
-			left:-30px;top:5px;
-			background-color:#94ACF1;
-		}
-	[data-subject="수행 활동"]>span:nth-child(1){
-		width:278px;height:90px;
-		background-image:url('../../[res]/titles/수행 활동.png');
-	}
-	[data-subject="활동하기"]>span:nth-child(1){
-		width:200px;height:100px;
-		background-image:url('../../[res]/titles/활동하기.png');
-	}
-		[data-subject="활동하기"]>span:nth-child(2){
-			left:-30px;top:5px;
-			background-color:#8BC751;
-		}
-	
-	[data-subject="세상속으로"]>span:nth-child(1){
-		width:330px;height:91px;
-		background-image:url('../../[res]/titles/세상속으로.png');
-	}
-		[data-subject="세상속으로"]>span:nth-child(2){
-			left:-30px;top:12px;
-			background-color:#6f9dd4;
-		}
-	
-	[data-subject="도덕으로 세상보기"]>span:nth-child(1){
-		width:388px;height:90px;
-		background-image:url('../../[res]/titles/도덕으로 세상보기.png');
-	}
-		[data-subject="도덕으로 세상보기"]>span:nth-child(2){
-			left:-30px;top:20px;
-			background-color:#729dd2;
-			height:66px;line-height:62px;
-		}
-	
-	[data-subject="스스로 평가하기"]>span:nth-child(1){
-		width:413px;height:90px;
-		background-image:url('../../[res]/titles/스스로 평가하기.png');
-	}
-	[data-subject="스스로 점검하기"]>span:nth-child(1){
-		width:384px;height:100px;
-		background-image:url('../../[res]/titles/스스로 점검하기.png');
-	}
-	[data-subject="중단원 마무리 풀어보기"]>span:nth-child(1){
-		width:443px;height:91px;
-		background-image:url('../../[res]/titles/중단원 마무리 풀어보기.png');
-	}
-	[data-subject="중단원 마무리 정리하기"]>span:nth-child(1){
-		width:394px;height:100px;
-		background-image:url('../../[res]/titles/중단원 마무리 정리하기.png');
-	}
-	[data-subject="대단원 마무리"]>span:nth-child(1){
-		width:512px;height:91px;
-		background-image:url('../../[res]/titles/대단원 마무리.png');
-	}
-		[data-subject="대단원 마무리-2"]>span:nth-child(1){
-			width:512px;height:91px;
-			background-image:url('../../[res]/titles/대단원 마무리-2.png');
-		}
-		[data-subject="대단원 마무리-3"]>span:nth-child(1){
-			width:512px;height:91px;
-			background-image:url('../../[res]/titles/대단원 마무리-3.png');
-		}
-		[data-subject="대단원 마무리-4"]>span:nth-child(1){
-			width:512px;height:91px;
-			background-image:url('../../[res]/titles/대단원 마무리-4.png');
-		}
-		
-		[data-subject="대단원 마무리-2"]>span:nth-child(2){
-			left:-30px;top:12px;
-			background-color:#af9ecb;
-		}
-		[data-subject="대단원 마무리-3"]>span:nth-child(2){
-			left:-30px;top:12px;
-			background-color:#83c7ec;
-		}
-		[data-subject="대단원 마무리-4"]>span:nth-child(2){
-			left:-30px;top:12px;
-			background-color:#8dcc95;
-		}
-		
-	[data-subject="활동 방법"]>span:nth-child(1){
-		width:281px;height:95px;
-		background-image:url('../../[res]/titles/활동 방법.png');
-	}
-		[data-subject="이 단원을들어가며"]>span:nth-child(1){
-		width:462px;height:144px;
-		background-image:url('../../[res]/titles/이 단원을들어가며.png');
-	}
-	
+[data-subject] > span:nth-child(1) {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  z-index: 2;
+}
+[data-subject] > span:nth-child(2) {
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  font-family: 'Tmoney';
+  font-size: 50px;
+  font-weight: normal;
+  color: #fff;
+  padding: 0 40px 0 55px;
+  height: 70px;
+  line-height: 68px;
+  border-radius: 0 100px 100px 0;
+
+  left: -30px;
+  top: 18px;
+}
+
+[data-subject='생각 열기'] > span:nth-child(1) {
+  width: 200px;
+  height: 100px;
+  background-image: url('../../[res]/titles/생각 열기.png');
+}
+[data-subject='자료 읽기'] > span:nth-child(1) {
+  width: 200px;
+  height: 100px;
+  background-image: url('../../[res]/titles/자료 읽기.png');
+}
+[data-subject='자료 읽기'] > span:nth-child(2) {
+  left: -30px;
+  top: 8px;
+  background-color: #58afe2;
+}
+[data-subject='탐구'] > span:nth-child(1) {
+  width: 165px;
+  height: 100px;
+  background-image: url('../../[res]/titles/탐구.png');
+}
+[data-subject='탐구'] > span:nth-child(2) {
+  left: -30px;
+  top: 6px;
+  background-color: #20bec6;
+}
+
+[data-subject='생각'] > span:nth-child(1) {
+  width: 170px;
+  height: 100px;
+  background-image: url('../../[res]/titles/생각.png');
+  /*margin-top: 7px;*/
+}
+[data-subject='생각'] > span:nth-child(2) {
+  left: -30px;
+  top: 5px;
+  background-color: #94acf1;
+}
+[data-subject='수행 활동'] > span:nth-child(1) {
+  width: 200px;
+  height: 100px;
+  background-image: url('../../[res]/titles/수행 활동.png');
+}
+[data-subject='수행 활동'] > span:nth-child(2) {
+  left: -30px;
+  top: 6px;
+  background-color: #b69081;
+}
+[data-subject='활동하기'] > span:nth-child(1) {
+  width: 200px;
+  height: 100px;
+  background-image: url('../../[res]/titles/활동하기.png');
+}
+[data-subject='활동하기'] > span:nth-child(2) {
+  left: -30px;
+  top: 5px;
+  background-color: #8bc751;
+}
+
+[data-subject='세상속으로'] > span:nth-child(1) {
+  width: 330px;
+  height: 91px;
+  background-image: url('../../[res]/titles/세상속으로.png');
+}
+[data-subject='세상속으로'] > span:nth-child(2) {
+  left: -30px;
+  top: 12px;
+  background-color: #6f9dd4;
+}
+
+[data-subject='도덕으로 세상보기'] > span:nth-child(1) {
+  width: 388px;
+  height: 90px;
+  background-image: url('../../[res]/titles/도덕으로 세상보기.png');
+}
+[data-subject='도덕으로 세상보기'] > span:nth-child(2) {
+  left: -30px;
+  top: 20px;
+  background-color: #729dd2;
+  height: 66px;
+  line-height: 62px;
+}
+
+[data-subject='스스로 평가하기'] > span:nth-child(1) {
+  width: 385px;
+  height: 100px;
+  background-image: url('../../[res]/titles/스스로 평가하기.png');
+}
+[data-subject='스스로 점검하기'] > span:nth-child(1) {
+  width: 384px;
+  height: 100px;
+  background-image: url('../../[res]/titles/스스로 점검하기.png');
+}
+[data-subject='중단원 마무리 풀어보기'] > span:nth-child(1) {
+  width: 443px;
+  height: 91px;
+  background-image: url('../../[res]/titles/중단원 마무리 풀어보기.png');
+}
+[data-subject='중단원 마무리 정리하기'] > span:nth-child(1) {
+  width: 394px;
+  height: 100px;
+  background-image: url('../../[res]/titles/중단원 마무리 정리하기.png');
+}
+[data-subject='대단원 마무리'] > span:nth-child(1) {
+  width: 512px;
+  height: 91px;
+  background-image: url('../../[res]/titles/대단원 마무리.png');
+}
+[data-subject='대단원 마무리-2'] > span:nth-child(1) {
+  width: 512px;
+  height: 91px;
+  background-image: url('../../[res]/titles/대단원 마무리-2.png');
+}
+[data-subject='대단원 마무리-3'] > span:nth-child(1) {
+  width: 512px;
+  height: 91px;
+  background-image: url('../../[res]/titles/대단원 마무리-3.png');
+}
+[data-subject='대단원 마무리-4'] > span:nth-child(1) {
+  width: 512px;
+  height: 91px;
+  background-image: url('../../[res]/titles/대단원 마무리-4.png');
+}
+
+[data-subject='대단원 마무리-2'] > span:nth-child(2) {
+  left: -30px;
+  top: 12px;
+  background-color: #af9ecb;
+}
+[data-subject='대단원 마무리-3'] > span:nth-child(2) {
+  left: -30px;
+  top: 12px;
+  background-color: #83c7ec;
+}
+[data-subject='대단원 마무리-4'] > span:nth-child(2) {
+  left: -30px;
+  top: 12px;
+  background-color: #8dcc95;
+}
+
+[data-subject='활동 방법'] > span:nth-child(1) {
+  width: 281px;
+  height: 95px;
+  background-image: url('../../[res]/titles/활동 방법.png');
+}
+[data-subject='이 단원을들어가며'] > span:nth-child(1) {
+  width: 462px;
+  height: 144px;
+  background-image: url('../../[res]/titles/이 단원을들어가며.png');
+}
+
 /**=============
  * 	question
  =============*/
-header>[data-question]{
-	margin-left:10px;
+header > [data-question] {
+  margin-left: 10px;
+  margin-top: 10px;
 }
-[data-question]{
-	position:relative;
-	font-family:'Paper';
-	font-size:56px;
-	line-height:1.2;
-	font-weight:bold;
-	color:#000;
-	padding-left:65px;
-	margin-bottom: 28px;
+[data-question] {
+  position: relative;
+  font-family: 'Paper';
+  font-size: 56px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #000;
+  padding-left: 65px;
+  margin-bottom: 28px;
 }
-	[data-question]>span:nth-child(1){
-		position:absolute;top:12px;left:0;
-		display:inline-block;font-size:0;
-		background-size:100% 100%;
-		width:46px;height:46px;
-	}
-		[data-question="생각 열기"]>span:nth-child(1){
-			width:46px;height:52px;top:9px;
-			background-image:url('../../[res]/icons/생각열기.png');
-		}
-		[data-question="활동하기"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-활동하기.png');
-		}
-		[data-question="중단원"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-중단원.png');
-		}
-		[data-question="자료 읽기"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-자료 읽기.png');
-		}
-		[data-question="스스로 점검하기"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-스스로 점검하기.png');
-		}
-		[data-question="생각"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-생각.png');
-		}
-		[data-question="대단원 마무리"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-대단원 마무리.png');
-		}
-			[data-question="대단원 마무리-2"]>span:nth-child(1){
-				background-image:url('../../[res]/icons/중점-대단원 마무리-2.png');
-			}
-			[data-question="대단원 마무리-3"]>span:nth-child(1){
-				background-image:url('../../[res]/icons/중점-대단원 마무리-3.png');
-			}
-			[data-question="대단원 마무리-4"]>span:nth-child(1){
-				background-image:url('../../[res]/icons/중점-대단원 마무리-4.png');
-			}
-		[data-question="수행 활동"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-생각 열기.png');
-		}
-		[data-question="탐구"]>span:nth-child(1){
-			background-image:url('../../[res]/icons/중점-활동하기.png');
-		}
-		
-[data-question="1"],
-[data-question="2"],
-[data-question="3"],
-[data-question="4"],
-[data-question="5"]{
-	padding-left:65px;
-}		
-	[data-question="1"]>span:nth-child(1),
-	[data-question="2"]>span:nth-child(1),
-	[data-question="3"]>span:nth-child(1),
-	[data-question="4"]>span:nth-child(1),
-	[data-question="5"]>span:nth-child(1){
-		position:absolute;left:0;top:0;
-		display:inline;
-		
-		font-family:'Tmoney';
-		font-size:70px;
-		font-weight:bold;
-		line-height:82px;
-		color:#006a5b;
-		line-height: 1;
-	}
-	
-	[data-question="1"][data-color="보라"]>span:nth-child(1),
-	[data-question="2"][data-color="보라"]>span:nth-child(1),
-	[data-question="3"][data-color="보라"]>span:nth-child(1),
-	[data-question="4"][data-color="보라"]>span:nth-child(1),
-	[data-question="5"][data-color="보라"]>span:nth-child(1){
-		color:#67568d;
-	}
-	[data-question="1"][data-color="파랑"]>span:nth-child(1),
-	[data-question="2"][data-color="파랑"]>span:nth-child(1),
-	[data-question="3"][data-color="파랑"]>span:nth-child(1),
-	[data-question="4"][data-color="파랑"]>span:nth-child(1),
-	[data-question="5"][data-color="파랑"]>span:nth-child(1){
-		color:#5566ae;
-	}
-	[data-question="1"][data-color="녹색"]>span:nth-child(1),
-	[data-question="2"][data-color="녹색"]>span:nth-child(1),
-	[data-question="3"][data-color="녹색"]>span:nth-child(1),
-	[data-question="4"][data-color="녹색"]>span:nth-child(1),
-	[data-question="5"][data-color="녹색"]>span:nth-child(1){
-		color:#327d69;
-	}
-	
-	
-[data-question="수행 1"],
-[data-question="수행 2"],
-[data-question="수행 3"],
-[data-question="수행 4"],
-[data-question="수행 5"]{
-	padding-left:80px;
+[data-question] > span:nth-child(1) {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: inline-block;
+  font-size: 0;
+  background-size: 100% 100%;
+  width: 46px;
+  height: 46px;
 }
-	[data-question="수행 1"]>span:nth-child(1),
-	[data-question="수행 2"]>span:nth-child(1),
-	[data-question="수행 3"]>span:nth-child(1),
-	[data-question="수행 4"]>span:nth-child(1),
-	[data-question="수행 5"]>span:nth-child(1){
-		position:absolute;left:0;top:13px;
-		display:inline-block;
-		width:54px; height:54px;
-		font-family:'Tmoney';
-		font-size:48px;
-		font-weight:bold;
-		line-height:50px;
-		text-align:center;
-		color:#fff;
-		background-color:#7a5e50;
-		border-radius:0 14px 0 0;
-	}
-	
-	
+[data-question='생각 열기'] > span:nth-child(1) {
+  width: 46px;
+  height: 52px;
+  top: 9px;
+  background-image: url('../../[res]/icons/생각열기.png');
+}
+[data-question='활동하기'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-활동하기.png');
+}
+[data-question='중단원'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-중단원.png');
+}
+[data-question='자료 읽기'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-자료 읽기.png');
+}
+[data-question='스스로 점검하기'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-스스로 점검하기.png');
+}
+[data-question='생각'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-생각.png');
+}
+[data-question='대단원 마무리'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-대단원 마무리.png');
+}
+[data-question='대단원 마무리-2'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-대단원 마무리-2.png');
+}
+[data-question='대단원 마무리-3'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-대단원 마무리-3.png');
+}
+[data-question='대단원 마무리-4'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-대단원 마무리-4.png');
+}
+[data-question='수행 활동'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-생각 열기.png');
+}
+[data-question='탐구'] > span:nth-child(1) {
+  background-image: url('../../[res]/icons/중점-활동하기.png');
+}
+
+[data-question='수행 활동'] > span:nth-child(1).number {
+  width: 55px;
+  height: 55px;
+  border-radius: 0 20px 0 0;
+  background: #7a5e50;
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Tmoney';
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+}
+
+[data-question='1'],
+[data-question='2'],
+[data-question='3'],
+[data-question='4'],
+[data-question='5'] {
+  padding-left: 65px;
+}
+[data-question='1'] > span:nth-child(1),
+[data-question='2'] > span:nth-child(1),
+[data-question='3'] > span:nth-child(1),
+[data-question='4'] > span:nth-child(1),
+[data-question='5'] > span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline;
+
+  font-family: 'Tmoney';
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 82px;
+  color: #006a5b;
+  line-height: 1;
+}
+
+[data-question='1'][data-color='보라'] > span:nth-child(1),
+[data-question='2'][data-color='보라'] > span:nth-child(1),
+[data-question='3'][data-color='보라'] > span:nth-child(1),
+[data-question='4'][data-color='보라'] > span:nth-child(1),
+[data-question='5'][data-color='보라'] > span:nth-child(1) {
+  color: #67568d;
+}
+[data-question='1'][data-color='파랑'] > span:nth-child(1),
+[data-question='2'][data-color='파랑'] > span:nth-child(1),
+[data-question='3'][data-color='파랑'] > span:nth-child(1),
+[data-question='4'][data-color='파랑'] > span:nth-child(1),
+[data-question='5'][data-color='파랑'] > span:nth-child(1) {
+  color: #5566ae;
+}
+[data-question='1'][data-color='녹색'] > span:nth-child(1),
+[data-question='2'][data-color='녹색'] > span:nth-child(1),
+[data-question='3'][data-color='녹색'] > span:nth-child(1),
+[data-question='4'][data-color='녹색'] > span:nth-child(1),
+[data-question='5'][data-color='녹색'] > span:nth-child(1) {
+  color: #327d69;
+}
+
+[data-question='수행 1'],
+[data-question='수행 2'],
+[data-question='수행 3'],
+[data-question='수행 4'],
+[data-question='수행 5'] {
+  padding-left: 80px;
+}
+[data-question='수행 1'] > span:nth-child(1),
+[data-question='수행 2'] > span:nth-child(1),
+[data-question='수행 3'] > span:nth-child(1),
+[data-question='수행 4'] > span:nth-child(1),
+[data-question='수행 5'] > span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  font-family: 'Tmoney';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #7a5e50;
+  border-radius: 0 14px 0 0;
+}
+
 /**=============
  * 	note
  =============*/
-[data-note]{
-	position:relative;
+[data-note] {
+  position: relative;
 }
 
-	[data-note="점"]{
-		padding-left:30px;
-	}
-	[data-note="점"]>*:nth-child(1){
-		position:absolute;left:0;top:0px;
-	}
-	
-	
-	[data-note="소점"]{
-		padding-left:44px;
-	}
-	[data-note="소점"]>*:nth-child(1){
-		position:absolute;left:0;top:28px;
-		width:24px;height:24px;
-		font-size:0;
-		background-image:url('../../[res]/icons/소점.png'); 
-	}
+[data-note='점'] {
+  padding-left: 25px;
+}
+[data-note='점'] > *:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-weight: 900;
+}
 
+[data-note='소점'] {
+  padding-left: 44px;
+}
+[data-note='소점'] > *:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-image: url('../../[res]/icons/소점.png');
+}
 
-	[data-note="그림"]{
-		margin-top:20px;
-		font-size:30px;
-		font-weight:bold;
-		line-height:40px;
-	}
-		[data-note="그림"]>*:nth-child(1){
-			position:relative;top:4px;
-			display:inline-block;
-			width:34px;height:34px;
-			font-size:0;
-			background-image:url('../../[res]/icons/caption.png'); 
-			margin-right:4px;
-		}
-		[data-note="그림"]>p{
-			display:inline-block;
-			text-align:left;
-		}
-	
+[data-note='그림'] {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+}
+[data-note='그림'] > *:nth-child(1) {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  font-size: 0;
+  background-image: url('../../[res]/icons/caption.png');
+  margin-right: 4px;
+}
+[data-note='그림'] > p {
+  display: inline-block;
+  text-align: left;
+}
+
 /**=============
  * 	icon
  =============*/
 
-[data-icon="예시"]{
-	display:inline-block;
-	background-color:#bca8a0;
-	border-radius:14px;
-	color:#fff;
-	font-size:32px;
-	text-align:center;
-	width:106px; height:52px;
-	line-height:56px;
+[data-icon='예시'] {
+  display: inline-block;
+  background-color: #bca8a0;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  width: 106px;
+  height: 52px;
+  line-height: 56px;
 }
 
-[data-icon="스티커"]{
-	display:inline-block;
-	position:absolute;left:30px; top:25px;
-	width:auto; height:70px;
-	background-image:url('../../[res]/bgs/메모-스틱커.png');
-	background-size:calc(100% - 60px) 100%;
-	text-align:left;
+[data-icon='스티커'] {
+  display: inline-block;
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  width: auto;
+  height: 70px;
+  background-image: url('../../[res]/bgs/메모-스틱커.png');
+  background-size: calc(100% - 60px) 100%;
+  text-align: left;
 }
-	[data-icon="스티커"]:before{
-		content:'';
-		display:inline-block;
-		position:absolute;left:0px; top:0px;
-		width:30px; height:70px;
-		background-image:url('../../[res]/bgs/메모-스틱커-head.png');
-	}
-	[data-icon="스티커"]:after{
-		content:'';
-		display:inline-block;
-		position:absolute;right:-58px; top:0px;
-		width:120px; height:70px;
-		background-image:url('../../[res]/bgs/메모-스틱커-tail.png');
-	}
-	[data-icon="스티커"]>*{
-		z-index:1;
-		font-size:30px;
-		font-weight:bold;
-		line-height:50px;
-		letter-spacing:0px;
-		padding-right:20px;
-		color:#4d4d4f;
-		position:relative;
-		left:40px;top:8px;
-	}
-	
-[data-icon="수행 1"],
-[data-icon="수행 2"],
-[data-icon="수행 3"],
-[data-icon="수행 4"],
-[data-icon="수행 5"]{
-	position:relative; top:23px;
-	display:inline-block;
-	width:42px; height:42px;
-	font-family:'Tmoney';
-	font-size:40px;
-	font-weight:bold;
-	line-height:40px;
-	text-align:center;
-	color:#fff;
-	background-color:#7a5e50;
-	border-radius:0 10px 0 0;
+[data-icon='스티커']:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 30px;
+  height: 70px;
+  background-image: url('../../[res]/bgs/메모-스틱커-head.png');
+}
+[data-icon='스티커']:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: -58px;
+  top: 0px;
+  width: 120px;
+  height: 70px;
+  background-image: url('../../[res]/bgs/메모-스틱커-tail.png');
+}
+[data-icon='스티커'] > * {
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0px;
+  padding-right: 20px;
+  color: #4d4d4f;
+  position: relative;
+  left: 40px;
+  top: 8px;
 }
 
+[data-icon='수행 1'],
+[data-icon='수행 2'],
+[data-icon='수행 3'],
+[data-icon='수행 4'],
+[data-icon='수행 5'] {
+  position: relative;
+  top: 23px;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  font-family: 'Tmoney';
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #7a5e50;
+  border-radius: 0 10px 0 0;
+}
 
 /**=============
  * 	mp3
  =============*/
-[data-skill="mp3"] {
-    background-color:transparent;
-    border-radius:0px;
-    padding:0px;
-    text-align:left;
-    width:0px;
-    height:0px;
+[data-skill='mp3'] {
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 0px;
+  text-align: left;
+  width: 0px;
+  height: 0px;
 }
-[data-skill="mp3"] [data-mp3="controls"] {
-    position:absolute;left:0px;top:0px;
-    left:0px;
-    bottom:auto;
-    margin:0px;
-    display:inline-block;
-    font-size:0px;
-    width:auto;
-    height:auto;
-    background-color:transparent;
-    border-radius:0px;
+[data-skill='mp3'] [data-mp3='controls'] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  left: 0px;
+  bottom: auto;
+  margin: 0px;
+  display: inline-block;
+  font-size: 0px;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border-radius: 0px;
 }
-	[data-skill="mp3"] [data-mp3="controls"] [data-btn]{
-		position:absolute;left:0px;top:0px;
-		margin:0 !important;
-		width:80px;height:80px;
-	}
-	[data-skill="mp3"] [data-mp3="controls"] [data-btn="pause"]{
-		display:none;
-	}
-	[data-skill="mp3"] [data-mp3="controls"] [data-btn="play"]{
-		z-index:1;
-		background-image:url('../../[res]/btns/btn-play.png');
-	}
-	[data-skill="mp3"] [data-mp3="controls"] [data-btn="play"].on{
-		display:none;
-	}
-	[data-skill="mp3"] [data-mp3="controls"] [data-btn="stop"]{
-		background-image:url('../../[res]/btns/btn-stop.png');
-	}
+[data-skill='mp3'] [data-mp3='controls'] [data-btn] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0 !important;
+  width: 80px;
+  height: 80px;
+}
+[data-skill='mp3'] [data-mp3='controls'] [data-btn='pause'] {
+  display: none;
+}
+[data-skill='mp3'] [data-mp3='controls'] [data-btn='play'] {
+  z-index: 1;
+  background-image: url('../../[res]/btns/btn-play.png');
+}
+[data-skill='mp3'] [data-mp3='controls'] [data-btn='play'].on {
+  display: none;
+}
+[data-skill='mp3'] [data-mp3='controls'] [data-btn='stop'] {
+  background-image: url('../../[res]/btns/btn-stop.png');
+}
+/**=============
+ * 	스스로 평가하기
+ =============*/
+[data-design='스스로 평가하기'] .info {
+  font-family: 'Tmoney';
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 50px;
+  text-align: right;
+  color: rgb(99, 100, 102);
+}
+[data-design='스스로 평가하기'] .info span:nth-child(1) {
+  margin-right: 75px;
+}
+
+[data-design='스스로 평가하기'] li {
+  position: relative;
+  border-bottom: 3px dashed #626da6;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+[data-design='스스로 평가하기'] [data-note] {
+  padding-left: 68px;
+  flex: 1;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 78px;
+  letter-spacing: -1px;
+  color: #000;
+}
+[data-design='스스로 평가하기'] [data-note] > *:nth-child(1) {
+  width: 54px;
+  height: 54px;
+  font-family: 'Tmoney';
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #626da6;
+  border-radius: 100px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+[data-design='스스로 평가하기'] [data-skill='radio'] {
+  min-width: 310px;
+  margin-left: auto;
+}
+[data-design='스스로 평가하기'] [data-skill='radio'] [data-radio] {
+  position: relative;
+  font-size: 42px;
+  font-weight: normal;
+  color: #000;
+  width: 60px;
+	text-align: center;
+  font-family: 'Tmoney';
+}
+[data-design='스스로 평가하기'] [data-skill='radio'] [data-radio].on::after {
+  content: '';
+  width: 88px;
+  height: 88px;
+  border: 10px solid #655fff;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /**=============
  * 	스스로 점검하기
  =============*/
-[data-design="스스로 평가하기"] .info{
-	font-family:'Tmoney';
-	font-size:30px;
-	font-weight:normal;
-	line-height:50px;
-	text-align:right;
-	color:rgb(99, 100, 102);
+[data-design='스스로 점검하기'] .info {
+  font-family: 'Tmoney';
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 50px;
+  text-align: right;
+  color: rgb(99, 100, 102);
 }
-	[data-design="스스로 평가하기"] .info span:nth-child(1){
-		margin-right:75px;
-	}
+[data-design='스스로 점검하기'] .info span:nth-child(1) {
+  margin-right: 75px;
+}
 
-[data-design="스스로 평가하기"] li{
-	position:relative;
-	border-bottom:2px dotted #626DA6;
-	padding:30px 0;
+[data-design='스스로 점검하기'] li {
+  position: relative;
+  border-bottom: 3px dashed #626da6;
+  padding: 30px 0;
 }
-[data-design="스스로 평가하기"] [data-note]{
-	padding-left:68px;
-	width:1460px;
-	font-size:54px;
-	font-weight:900;
-	line-height:78px;
-	letter-spacing:-1px;
-	color:#000;
+[data-design='스스로 점검하기'] [data-note] {
+  padding-left: 68px;
+  width: 1460px;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 78px;
+  letter-spacing: -1px;
+  color: #000;
 }
-	[data-design="스스로 평가하기"] [data-note]>*:nth-child(1){
-		width:54px;height:54px;
-		
-		font-family:'Tmoney';
-		font-size:40px;
-		line-height:50px;
-		text-align:center;
-		color:#006a5b;
-			
-		background-color:#c9d8e9;
-		border-radius:100px;
-		color:#fff;
-		
-		position:absolute;left:0;top:8px;
-	}
-	
-/**=============
- * 	스스로 점검하기
- =============*/
-[data-design="스스로 점검하기"] .info{
-	font-family:'Tmoney';
-	font-size:30px;
-	font-weight:normal;
-	line-height:50px;
-	text-align:right;
-	color:rgb(99, 100, 102);
-}
-	[data-design="스스로 점검하기"] .info span:nth-child(1){
-		margin-right:75px;
-	}
+[data-design='스스로 점검하기'] [data-note] > *:nth-child(1) {
+  width: 54px;
+  height: 54px;
 
-[data-design="스스로 점검하기"] li{
-	position:relative;
-	border-bottom:2px dotted #626DA6;
-	padding:30px 0;
+  font-family: 'Tmoney';
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #006a5b;
+
+  background-color: #626da6;
+  border-radius: 100px;
+  color: #fff;
+
+  position: absolute;
+  left: 0;
+  top: 8px;
 }
-[data-design="스스로 점검하기"] [data-note]{
-	padding-left:68px;
-	width:1460px;
-	font-size:54px;
-	font-weight:900;
-	line-height:78px;
-	letter-spacing:-1px;
-	color:#000;
+
+[data-design='스스로 점검하기'] [data-skill='radio'] {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 205px;
+  height: 35px;
+  background-image: url('../../[res]/bgs/self-bar.png');
 }
-	[data-design="스스로 점검하기"] [data-note]>*:nth-child(1){
-		width:54px;height:54px;
-		
-		font-family:'Tmoney';
-		font-size:40px;
-		line-height:50px;
-		text-align:center;
-		color:#006a5b;
-			
-		background-color:#626da6;
-		border-radius:100px;
-		color:#fff;
-		
-		position:absolute;left:0;top:8px;
-	}
-	
-[data-design="스스로 점검하기"] [data-skill="radio"]{
-	position:absolute;right:20px;top:50%;
-	transform:translateY(-50%);
-	width:205px;height:35px;
-	background-image:url('../../[res]/bgs/self-bar.png'); 
+[data-design='스스로 점검하기'] [data-skill='radio'] [data-radio] {
+  background-size: 200% 100%;
+  font-size: 0;
 }
-	[data-design="스스로 점검하기"] [data-skill="radio"] [data-radio]{
-		background-size:200% 100%;
-		font-size:0;
-	}
-		[data-design="스스로 점검하기"] [data-skill="radio"] [data-radio].on{
-			background-position-x:100%;
-		}
-	[data-design="스스로 점검하기"] [data-skill="radio"] [data-radio="yes"]{
-		position:absolute;left:-16px;top:-16px;
-		width:73px;height:69px;
-		background-image:url('../../[res]/btns/btn-yes.png'); 
-	}
-	[data-design="스스로 점검하기"] [data-skill="radio"] [data-radio="no"]{
-		position:absolute;right:-16px;top:-16px;
-		width:74px;height:69px;
-		background-image:url('../../[res]/btns/btn-no.png'); 
-	}
+[data-design='스스로 점검하기'] [data-skill='radio'] [data-radio].on {
+  background-position-x: 100%;
+}
+[data-design='스스로 점검하기'] [data-skill='radio'] [data-radio='yes'] {
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  width: 73px;
+  height: 69px;
+  background-image: url('../../[res]/btns/btn-yes.png');
+}
+[data-design='스스로 점검하기'] [data-skill='radio'] [data-radio='no'] {
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  width: 74px;
+  height: 69px;
+  background-image: url('../../[res]/btns/btn-no.png');
+}
 /**=============
  * 	box
  =============*/
-[data-box]{
-	position:relative;
-	background-color:#FFF7CC;
-	border-radius:35px;
-	padding:40px 60px;
-	
-	font-size:56px;
-	font-weight:900;
-	line-height:88px;
-	min-height: 344px;
-	
-	color:#000;
-}
-	quizItem[data-box]{
-		font-size:56px;
-		font-weight:900;
-		line-height:88px;
-		
-		color:#655FFF;
-	}
+[data-box] {
+  position: relative;
+  background-color: #fff7cc;
+  border-radius: 35px;
+  padding: 40px 60px;
 
-[data-box]>.scroll{
-	width: 100%; height:100%;
-   padding-right:20px;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 88px;
+  min-height: 344px;
+
+  color: #000;
+}
+quizItem[data-box] {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 88px;
+
+  color: #655fff;
+}
+
+[data-box] > .scroll {
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
 }
 
 .scroll::-webkit-scrollbar {
@@ -635,442 +772,610 @@ header>[data-question]{
 }
 
 .scroll::-webkit-scrollbar-thumb {
-  background-color: #777B7C;
+  background-color: #777b7c;
   border-radius: 13px;
   background-clip: padding-box;
 }
 
 .scroll::-webkit-scrollbar-track {
-background: #EFF6F9;
-	border:1px solid #D9D9D9;
+  background: #eff6f9;
+  border: 1px solid #d9d9d9;
   width: 13px;
   border-radius: 13px;
 }
 
-
-[data-box="파랑"]{
-	background-color:#d1eefc;
+[data-box='파랑'] {
+  background-color: #d1eefc;
 }
-[data-box="녹색"]{
-	background-color:#EBF6DB;
-}
-
-[data-box="회색"]{
-	background-color:#e4e6f0;
+[data-box='녹색'] {
+  background-color: #ebf6db;
 }
 
-	[data-box="종이"]:after{
-		content:'';
-		display:inline-block;
-		width:63px; height:63px;
-		position:absolute;
-		right:0;bottom:0;
-		background-image:url('../../[res]/icons/box_deco.png'); 
-	}
-
-[data-box="책갈피"]{
-	padding-right:320px;
-	background-image:url('../../[res]/bgs/박스-책갈피.png'); 
-	background-color:transparent;
+[data-box='회색'] {
+  background-color: #f0f0f0;
 }
 
-[data-box="활동 방법"]{
-	position:relative;
-	font-family:'Tmoney';
-	font-size:56px;
-	font-weight:normal;
-	line-height:64px;
-	
-	padding:25px 50px 25px 220px;
-	
-	margin:0 50px;
-	background-color:#fff2e8;
+[data-box='종이']:after {
+  content: '';
+  display: inline-block;
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../[res]/icons/box_deco.png');
 }
-	[data-box="활동 방법"]>span{
-		position:absolute;left:30px;top:14px;
-		display:inline-block;
-		width:157px;height:72px;
-		font-size:0;
-		background-image:url('../../[res]/titles/활동 방법.png');
-	}
 
+[data-box='책갈피'] {
+  padding-right: 320px;
+  background-image: url('../../[res]/bgs/박스-책갈피.png');
+  background-color: transparent;
+}
 
-[data-box="테두리-1"]{
-	display:inline-block;
-	padding:10px;
-}
-	[data-box="테두리-1"]:after{
-		content:'';
-		display:inline-block;
-		background-image:url('../../[res]/bgs/테두리-1.png');
-		pointer-events:none;
-		position:absolute;left:0;top:0;
-		width:100%;height:100%;
-	}
-[data-box="테두리-2"]{
-	display:inline-block;
-	padding:10px;
-}
-	[data-box="테두리-2"]:after{
-		content:'';
-		display:inline-block;
-		background-image:url('../../[res]/bgs/테두리-2.png');
-		pointer-events:none;
-		position:absolute;left:0;top:0;
-		width:100%;height:100%;
-	}
-	
+[data-box='활동 방법'] {
+  position: relative;
+  font-family: 'Tmoney';
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 64px;
 
-[data-box="스티커"]{
-	
-	position:relative;
-	
-	padding:50px 50px;
-	
-	/*font-family:'Paper';*/
-	font-size:56px;
-	font-weight:800;
-	line-height:86px;
-	
-	background-color:#d1eefc;
+  padding: 25px 50px 25px 220px;
+
+  margin: 0 50px;
+  background-color: #fff2e8;
 }
-	[data-box="스티커"]:after{
-		content:'';
-		display:inline-block;
-		background-image:url('../../[res]/icons/스티커.png');
-		pointer-events:none;
-		position:absolute;left:50%;top:-30px;
-		transform:translateX(-50%);
-		width:145px;height:55px;
-	}
-	[data-box="스티커"] .copyright{
-		margin-top:20px;
-		font-size:48px;
-		font-weight:bold;
-		line-height:86px;
-		text-align:right;
-	}
+[data-box='활동 방법'] > span {
+  position: absolute;
+  left: 30px;
+  top: 14px;
+  display: inline-block;
+  width: 157px;
+  height: 72px;
+  font-size: 0;
+  background-image: url('../../[res]/titles/활동 방법.png');
+}
+
+[data-box='테두리-1'] {
+  display: inline-block;
+  padding: 10px;
+}
+[data-box='테두리-1']:after {
+  content: '';
+  display: inline-block;
+  background-image: url('../../[res]/bgs/테두리-1.png');
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+[data-box='테두리-2'] {
+  display: inline-block;
+  padding: 10px;
+}
+[data-box='테두리-2']:after {
+  content: '';
+  display: inline-block;
+  background-image: url('../../[res]/bgs/테두리-2.png');
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+[data-box='스티커'] {
+  position: relative;
+
+  padding: 50px 50px;
+
+  /*font-family:'Paper';*/
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 86px;
+
+  background-color: #d1eefc;
+}
+[data-box='스티커']:after {
+  content: '';
+  display: inline-block;
+  background-image: url('../../[res]/icons/스티커.png');
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  width: 145px;
+  height: 55px;
+}
+[data-box='스티커'] .copyright {
+  margin-top: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 86px;
+  text-align: right;
+}
 /**=============
  * 	table
  =============*/
-table{
-	background-color:#fff;
-	border-radius:40px;
-	overflow:hidden;
-	width:100%;
-	
-	font-size:50px;
-	font-weight:900;
-	line-height:70px;
+table {
+  background-color: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 100%;
+
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 70px;
 }
-table tr{}
+table tr {
+}
 table th,
-table td{padding:20px 40px;}
-
-table th{
-	font-family:'Paper';
-	background-color:#edf4dc; 
-	text-align:center;
-	vertical-align:middle;
-}
-table td{
-	background-color:#f0f0f0;
+table td {
+  padding: 20px 40px;
 }
 
-table tr+tr{border-top:4px solid #fff;}
-table tr>*+*{border-left:3px solid #fff;}
-
-table .ff-2{
-	font-family:'Paper';
+table th {
+  font-family: 'Paper';
+  background-color: #edf4dc;
+  text-align: center;
+  vertical-align: middle;
 }
-table .ff-1{
-	font-family:'Nanum'; 
-	font-weight: 900;
+table td {
+  background-color: #f0f0f0;
+}
+
+table tr + tr {
+  border-top: 4px solid #fff;
+}
+table tr > * + * {
+  border-left: 3px solid #fff;
+}
+
+table .ff-2 {
+  font-family: 'Paper';
+}
+table .ff-1 {
+  font-family: 'Nanum';
+  font-weight: 900;
 }
 
 table th.va_m,
-table td.va_m{
-	vertical-align: middle;
+table td.va_m {
+  vertical-align: middle;
 }
 
 /**=============
  * 	quizItem
  =============*/
-quizItem{position:relative;}
+quizItem {
+  position: relative;
+}
 
-assessmentItem{position:relative;}
+assessmentItem {
+  position: relative;
+}
 
-	quizItem assessFeedback{
-		display:none;
-		font-size:56px;
-		font-weight:900;
-		line-height:88px;
-		
-		color:#655FFF;
-	}
-	quizItem[data-state] assessFeedback{
-		display:block;
-	}
+quizItem assessFeedback {
+  display: none;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 88px;
 
-	quizBtn.center{
-		position:absolute;left:50%;top:50%;
-		transform:translate(-50%,-50%);
-	}
-	quizItem assessFeedback .circle{
-    width: 60px;
-		height: 60px;
-		border:4px solid #655FFF;
-		border-radius:50%;
-		display: block;
-	}
-	quizBtn[data-skill="answer"]{
-		width:80px;height:85px;
-		font-size:0;
-		background-image:url('../../[res]/btns/btn-answer.png');
-	}
-		quizitem[data-state] quizBtn[data-skill="answer"]{
-			background-image:none;
-			display:none;
-		}
-		
-	quizBtn[data-skill="answerReset"]{
-		width:80px;height:85px;
-		font-size:0;
-		background-image:url('../../[res]/btns/btn-answer.png');
-	}
-	quizBtn[data-skill="answerReset"].s{
-		width:57px;height:60px;
-	}
-	
-	quizBtn[data-skill="answerReset"].on{
-		display:none;
-		/*background-image:url('../../[res]/btns/btn-reset.png');*/
-	}
-	
-	
-	
+  color: #655fff;
+}
+quizItem[data-state] assessFeedback {
+  display: block;
+}
+
+quizBtn.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+quizItem assessFeedback .circle {
+  width: 60px;
+  height: 60px;
+  border: 4px solid #655fff;
+  border-radius: 50%;
+  display: block;
+}
+quizBtn[data-skill='answer'] {
+  width: 80px;
+  height: 85px;
+  font-size: 0;
+  background-image: url('../../[res]/btns/btn-answer.png');
+}
+quizitem[data-state] quizBtn[data-skill='answer'] {
+  background-image: none;
+  display: none;
+}
+
+quizBtn[data-skill='answerReset'] {
+  width: 80px;
+  height: 85px;
+  font-size: 0;
+  background-image: url('../../[res]/btns/btn-answer.png');
+}
+quizBtn[data-skill='answerReset'].s {
+  width: 57px;
+  height: 60px;
+}
+
+quizBtn[data-skill='answerReset'].on {
+  display: none;
+  /*background-image:url('../../[res]/btns/btn-reset.png');*/
+}
+
 /**=============
  * 	show
  =============*/
-[data-response-type="show"] assessFeedback{
-	display:block;opacity:0;
+[data-response-type='show'] assessFeedback {
+  display: block;
+  opacity: 0;
 }
-[data-response-type="show"] assessFeedback.scroll{
-	width:calc(100% + 40px);
-	height:100%;
-	overflow-x:hidden;overflow-y:auto;
-	padding-right:20px;
+[data-response-type='show'] assessFeedback.scroll {
+  width: calc(100% + 40px);
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 20px;
 }
-[data-state] [data-response-type="show"] assessFeedback{
-	opacity:1;
+[data-state] [data-response-type='show'] assessFeedback {
+  opacity: 1;
 }
-
-
-/**=============
- * 	초성
- =============*/
-quizItem[data-design="초성"]{
-	position:relative;
-	display:inline-block;
-	
-	font-family:'Tmoney';
-	font-size:40px;
-	line-height:70px;
-	font-weight:bold;
-}
-	quizItem[data-design="초성"]>.icon{
-		position:absolute; left:-40px; top:20px;
-		display:inline-block;
-		width:40px; height:40px;
-		font-size:24px;
-		font-family:'Tmoney';
-		line-height:40px;
-		text-align:center;
-		border-radius:100px;
-		background-color:#aaa;
-		color:#fff;
-	}
-	quizItem[data-design="초성"]>assessmentItem{
-		position:relative;
-		display:inline-block;
-	}
-	quizItem[data-design="초성"]>assessmentItem>itemBody{
-		position:relative;
-		display:inline-block !important
-	}
-	quizItem[data-design="초성"]>assessmentItem>itemBody input{
-		position:relative;top:-2px;
-		text-align:center;
-	}
-		quizItem[data-design="초성"][data-state]>assessmentItem>itemBody input{
-			color:#655fff;
-		}
-	
-	quizItem[data-design="초성"] quizBtn[data-skill="answer"]{
-		right:-90px;
-		top:50%;
-		transform:translateY(-50%);
-	}
-		quizItem[data-design="초성"][data-state] quizBtn[data-skill="answer"]{
-			display:none;
-		}
-	
-	quizItem[data-design="초성"]>assessmentItem>correctResponse{
-		display:none !important;
-	}
-
 
 /**=============
  * 	초성
  =============*/
-quizItem[data-design="단어"]{
-	position:relative; top:3px;
-	
-	display:inline-block;
-	
-	height:66px;line-height:66px;
-	
-	background-color:#FFF7CC;
-	border:3px solid #c49a6c;
-	padding:0 20px;
-	border-radius:12px;
-}
-	quizItem[data-design="단어"]>quizfeedback{
-		position:relative;top:0px;
-		display:inline-block;
-		
-		/*font-family:'Tmoney';*/
-		font-size:44px;
-		font-weight:800;
-		color:#655FFF;
-		
-		opacity:0;
-		pointer-events:none;
-	}
-	quizItem[data-design="단어"][data-state]>quizfeedback{
-		display:inline-block;
-		opacity:1;
-		pointer-events:auto;
-	}
+quizItem[data-design='초성'] {
+  position: relative;
+  display: inline-block;
 
-	quizItem[data-design="단어"] quizBtn{
-		width:55px; height:58px;
-	}
-		quizItem[data-design="단어"][data-state] quizBtn{
-			display:none;
-		}
+  font-family: 'Tmoney';
+  font-size: 40px;
+  line-height: 70px;
+  font-weight: bold;
+}
+quizItem[data-design='초성'] > .icon {
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-family: 'Tmoney';
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #aaa;
+  color: #fff;
+}
+quizItem[data-design='초성'] > assessmentItem {
+  position: relative;
+  display: inline-block;
+}
+quizItem[data-design='초성'] > assessmentItem > itemBody {
+  position: relative;
+  display: inline-block !important;
+}
+quizItem[data-design='초성'] > assessmentItem > itemBody input {
+  position: relative;
+  top: -2px;
+  text-align: center;
+}
+quizItem[data-design='초성'][data-state] > assessmentItem > itemBody input {
+  color: #655fff;
+}
+
+quizItem[data-design='초성'] quizBtn[data-skill='answer'] {
+  right: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+quizItem[data-design='초성'][data-state] quizBtn[data-skill='answer'] {
+  display: none;
+}
+
+quizItem[data-design='초성'] > assessmentItem > correctResponse {
+  display: none !important;
+}
+
+/**=============
+ * 	초성
+ =============*/
+quizItem[data-design='단어'] {
+  position: relative;
+  top: 3px;
+
+  display: inline-block;
+
+  height: 66px;
+  line-height: 66px;
+
+  background-color: #fff7cc;
+  border: 3px solid #c49a6c;
+  padding: 0 20px;
+  border-radius: 12px;
+}
+quizItem[data-design='단어'] > quizfeedback {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+
+  /*font-family:'Tmoney';*/
+  font-size: 44px;
+  font-weight: 800;
+  color: #655fff;
+
+  opacity: 0;
+  pointer-events: none;
+}
+quizItem[data-design='단어'][data-state] > quizfeedback {
+  display: inline-block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+quizItem[data-design='단어'] quizBtn {
+  width: 55px;
+  height: 58px;
+}
+quizItem[data-design='단어'][data-state] quizBtn {
+  display: none;
+}
 /**=============
  * 	비디오
  =============*/
-[data-skill="video"]{
-	position:relative;
-	font-size:0;
-	display:inline-block;
-	width:auto;height:auto;
-	
-	left:50%; 
-	transform:translateX(-50%); 
-}
-[data-skill="video"].center{
-	position:absolute;left:50%;top:50%;
-	transform:translate(-50%,-50%);
-}
-[data-skill="video"]>img{
-	position:static;
-	border:0 !important; 
-	border-radius:60px !important; 
-	height:660px;
-	background-color:transparent;
-}
-[data-skill="video"] [data-btn="play"]{
-	width:120px;height:120px;
-	left:50% !important; 
-	top:50% !important; 
-	transform:translate(-50%,-50%) !important; 
-}
-#popup-view .popupVideo{
-	z-index:999;
-}
+[data-skill='video'] {
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
 
-
+  left: 50%;
+  transform: translateX(-50%);
+}
+[data-skill='video'].center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+[data-skill='video'] > img {
+  position: static;
+  border: 0 !important;
+  border-radius: 60px !important;
+  height: 660px;
+  background-color: transparent;
+}
+[data-skill='video'] [data-btn='play'] {
+  width: 120px;
+  height: 120px;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+#popup-view .popupVideo {
+  z-index: 999;
+}
 
 /**=============
  * 	data-skill="tab"
  =============*/
-#popup-view>section>[data-skill="tab"]{}
-#popup-view>section>[data-skill="tab"]>.tab-head{
-	top:-115px;
+#popup-view > section > [data-skill='tab'] {
 }
-	
-[data-skill="tab"]{position:relative; width:100%;}
+#popup-view > section > [data-skill='tab'] > .tab-head {
+  top: -115px;
+}
 
-	[data-skill="tab"]>.tab-head{top:20px;}
-	[data-skill="tab"]>.tab-head>.tab-index>[data-val]{
-		width:40px;height:40px;
-		border-radius:40px;
-		background-color:#D1D3D4;
-	}
-	[data-skill="tab"]>.tab-head>.tab-index>[data-val].on{
-		background-color:#20BEC6;
-	}
-	[data-skill="tab"]>.tab-head>.tab-index>[data-val]>*{
-		display:inline-block;
-		width:100%;
-		line-height:38px;
-		font-family:'Tmoney';
-		font-size:30px;
-		text-align:center;
-		color:#fff;
-	}
-	
-[data-tab]>[data-question]:nth-child(1){margin-top:-30px;}
+[data-skill='tab'] {
+  position: relative;
+  width: 100%;
+}
+
+[data-skill='tab'] > .tab-head {
+  top: 20px;
+}
+[data-skill='tab'] > .tab-head > .tab-index > [data-val] {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #d1d3d4;
+}
+[data-skill='tab'] > .tab-head > .tab-index > [data-val].on {
+  background-color: #20bec6;
+}
+[data-skill='tab'] > .tab-head > .tab-index > [data-val] > * {
+  display: inline-block;
+  width: 100%;
+  line-height: 38px;
+  font-family: 'Tmoney';
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+[data-tab] > [data-question]:nth-child(1) {
+  margin-top: -30px;
+}
 
 /**=============
  * 	공통 화면
  =============*/
 
-.com-flex{
-	display: flex;
+.com-flex {
+  display: flex;
 }
-.com-flex.between{
-	justify-content: space-between;
+.com-flex.between {
+  justify-content: space-between;
 }
-.com-flex > .col-1{
-	flex:1;
-}
-
-.com-flex.align-center{
-	align-items: center;
+.com-flex > .col-1 {
+  flex: 1;
 }
 
-.c-text-1{
-	color:#000;
-}
-.c-text-2{
-	color:#231815;
-}
-.c-text-3{
-	color:#595757;
+.com-flex.align-center {
+  align-items: center;
 }
 
-.p_center{
-	position:absolute;left:50%;top:50%;
-	transform:translate(-50%,-50%);
-	text-align: center;
+.c-text-1 {
+  color: #000;
+}
+.c-text-2 {
+  color: #231815;
+}
+.c-text-3 {
+  color: #595757;
 }
 
-
+.p_center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 /* 매칭 퀴즈 */
-.matching_quiz{
-	position: relative;
+.matching_quiz {
+  position: relative;
 }
-.matching_quiz quizitem{
-	position: absolute;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
+.matching_quiz quizitem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
+/**=============
+ * 	 중단원 마무리 정리하기
+ =============*/
+[data-design='중단원 마무리 정리하기'] .d1 > li,
+[data-design='중단원 마무리 정리하기'] .d2 > li {
+  display: flex;
+  align-items: center;
+}
 
+[data-design='중단원 마무리 정리하기'] .d1 {
+  position: relative;
+}
+
+[data-design='중단원 마무리 정리하기'] .d1 > li > .title {
+  position: relative;
+  width: 242px;
+  height: 172px;
+  margin-right: 76px;
+  display: flex;
+  align-items: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: flex-start;
+}
+[data-design='중단원 마무리 정리하기'] .d1 > li > .title .text {
+  font-size: 30px;
+  line-height: 1.35;
+  font-weight: 800;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+[data-design='중단원 마무리 정리하기'] .line {
+  position: absolute;
+  left: 274px;
+  z-index: -1;
+}
+
+[data-design='중단원 마무리 정리하기'] .d2,
+[data-design='중단원 마무리 정리하기'] .d3 {
+  flex: 1;
+  color: #000;
+}
+
+[data-design='중단원 마무리 정리하기'] .d2 > li {
+  padding: 7px 0;
+}
+
+[data-design='중단원 마무리 정리하기'] .d2 > li > .title {
+  position: relative;
+  width: 283px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 35px;
+  padding: 10px 15px;
+  font-size: 30px;
+  line-height: 1.3;
+  font-weight: 900;
+  color: #000;
+  border: 2px solid #b4b4b5;
+  border-radius: 10px;
+  background-color: #e6f3f9;
+}
+
+[data-design='중단원 마무리 정리하기'] .d2 > li > .title:after {
+  content: '';
+  border-top: 2px solid #b4b4b5;
+  width: 38px;
+  position: absolute;
+  right: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+[data-design='중단원 마무리 정리하기'] .d3 {
+  padding: 20px;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #000;
+  border: 2px solid #b4b4b5;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+[data-design='중단원 마무리 정리하기'] .d3 [data-note='점'] > * {
+  vertical-align: middle;
+}
+
+[data-design='중단원 마무리 정리하기'] .d3 [data-note='점']:not(:first-child) {
+  margin-top: 10px;
+}
+
+[data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'] {
+  width: 161px;
+  height: 50px;
+  margin-top: -8px;
+  padding-inline: 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+[data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'].s {
+  width: 118px;
+}
+
+[data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'].l {
+  width: 200px;
+}
+
+[data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'] > quizfeedback {
+  width: 100%;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+[data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'] quizBtn {
+  width: 43px;
+  height: 46px;
+}
