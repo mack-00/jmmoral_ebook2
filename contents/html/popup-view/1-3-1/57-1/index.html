@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
+	<style>
+		.range {
+			border: 0px solid red;
+			width: 190px;
+			height: 92px;
+			transition: 0.3s ease;
+		}
+
+		.range.range_1 {
+			bottom: 268px;
+			left: 152px;
+			border-width: 4px;
+		}
+
+		.range.range_2 {
+			bottom: 176px;
+			left: 152px;
+			border-width: 4px;
+		}
+
+		.range.range_3 {
+			bottom: 84px;
+			left: 152px;
+			border-width: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>나만의 회복 탄력성 지수 확인하기</span></h1>
+		</header>
+		<section>
+			<div data-skill="tab">
+				<div data-tab="1">
+					<h2 data-question="활동하기"><span>●</span>
+						<span>다음은 회복 탄력성 지수 검사이다. 검사 후 나의 회복 탄력성 향상을 위해 앞으로 어떤 노력이 필요할지 써 보자.</span>
+					</h2>
+
+					<div class="scroll" data-ui="h:560">
+						<div data-ui=" Ta:center P:r">
+
+							<img src="res/img-1.png" alt="회복탄력성 지수검사 이미지" />
+							<ul class="check-list" data-design='도덕적 성찰 점검' data-ui="P:a l:540 t:95">
+								<li data-note="1">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+								<li data-note="2">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:104">1</div>
+										<div data-radio="2" data-ui="w:62 h:104">2</div>
+										<div data-radio="3" data-ui="w:62 h:104">3</div>
+										<div data-radio="4" data-ui="w:62 h:104">4</div>
+										<div data-radio="5" data-ui="w:62 h:104">5</div>
+									</div>
+								</li>
+								<li data-note="3">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:154">1</div>
+										<div data-radio="2" data-ui="w:62 h:154">2</div>
+										<div data-radio="3" data-ui="w:62 h:154">3</div>
+										<div data-radio="4" data-ui="w:62 h:154">4</div>
+										<div data-radio="5" data-ui="w:62 h:154">5</div>
+									</div>
+								</li>
+								<li data-note="4">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="5">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="6">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+								<li data-note="7">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="8">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="check-list" data-design='도덕적 성찰 점검' data-ui="P:a l:1244 t:95">
+								<li data-note="9">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+								<li data-note="10">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:104">1</div>
+										<div data-radio="2" data-ui="w:62 h:104">2</div>
+										<div data-radio="3" data-ui="w:62 h:104">3</div>
+										<div data-radio="4" data-ui="w:62 h:104">4</div>
+										<div data-radio="5" data-ui="w:62 h:104">5</div>
+									</div>
+								</li>
+								<li data-note="11">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:154">1</div>
+										<div data-radio="2" data-ui="w:62 h:154">2</div>
+										<div data-radio="3" data-ui="w:62 h:154">3</div>
+										<div data-radio="4" data-ui="w:62 h:154">4</div>
+										<div data-radio="5" data-ui="w:62 h:154">5</div>
+									</div>
+								</li>
+								<li data-note="12">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="13">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="14">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+								<li data-note="15">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:108">1</div>
+										<div data-radio="2" data-ui="w:62 h:108">2</div>
+										<div data-radio="3" data-ui="w:62 h:108">3</div>
+										<div data-radio="4" data-ui="w:62 h:108">4</div>
+										<div data-radio="5" data-ui="w:62 h:108">5</div>
+									</div>
+								</li>
+								<li data-note="16">
+									<div data-skill="radio">
+										<div data-radio="1" data-ui="w:62 h:58">1</div>
+										<div data-radio="2" data-ui="w:62 h:58">2</div>
+										<div data-radio="3" data-ui="w:62 h:58">3</div>
+										<div data-radio="4" data-ui="w:62 h:58">4</div>
+										<div data-radio="5" data-ui="w:62 h:58">5</div>
+									</div>
+								</li>
+							</ul>
+							<span id="totalScore" data-ui="P:a b:445 l:550 Fs:30 Fw:900"></span>
+
+							<!-- 구간표시 -->
+							<div id="range" class="range" data-ui="P:a"></div>
+						</div>
+					</div>
+
+				</div>
+				<div data-tab="2">
+						<h2 data-question="활동하기"><span>●</span>
+						<span>다음은 회복 탄력성 지수 검사이다. 검사 후 나의 회복 탄력성 향상을 위해 앞으로 어떤 노력이 필요할지 써 보자.</span>
+					</h2>
+					<quizItem data-id="q-1">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336 px:50">
+							<assessFeedback>
+								<p>나는 회복 탄력성 지수가 45점이 나왔다. 회복 탄력성을 높이기 위해 매일 감사한 일을 일기에 쓰고, 앞으로 일어날 일을 긍정적으로 생각하는 연습을 할 것이다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+			</div>
+		</section>
+		<script>
+			$(function () {
+				// 총점 계산
+				$('.check-list [data-radio]').click(function () {
+					var $this = $(this);
+					var $parent = $this.closest('[data-skill="radio"]');
+
+					$parent.find('[data-radio]').removeClass('radio-on');
+					$this.addClass('radio-on');
+					// 체크된 항목 개수 확인
+					var checkedCount = $('.check-list li').filter(function () {
+						return $(this).find('.radio-on[data-radio]').length > 0;
+					}).length;
+
+					var totalItems = $('.check-list li').length;
+
+					if (checkedCount !== totalItems) return;
+
+					var total = 0;
+					$('.check-list li').each(function () {
+						var selected = $(this).find('.radio-on[data-radio]').data('radio');
+
+						if (selected) {
+							console.log(parseInt(selected));
+							total += parseInt(selected);
+						}
+					});
+
+					$('#totalScore').text(total);
+					//구간 추가
+					var $target = $('#range');
+					$target.removeClass('range_1 range_2 range_3');
+					console.log(total);
+
+
+					if (total >= 16 && total <= 37) {
+						$target.addClass('range_1');
+					} else if (total >= 38 && total <= 59) {
+						$target.addClass('range_2');
+					} else if (total >= 60 && total <= 80) {
+						$target.addClass('range_3');
+					}
+				});
+			});
+
+
+
+		</script>
+	</main>
+</body>
+
+</html>
