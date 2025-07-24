@@ -23,11 +23,12 @@
 	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
 	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
 	<!-- VIEW -->
+	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
 	<!--script type="text/javascript" src="index.js" ></script-->
 </head>
 
 <body>
-	<main id="popup-view">
+	<main id="popup-view" class="s" data-ui="pl:100">
 
 		<header>
 			<!--주제-->
@@ -56,6 +57,8 @@
 							</p>
 						</div>
 
+
+
 					</div>
 				</div>
 
@@ -66,9 +69,16 @@
 							보자.</span></h2>
 					<article class="matching_quiz" data-ui="w:1702 h:588 ml:auto">
 						<quizItem data-id="q-1" data-ui="BG:res/matching.png">
-							<assessmentItem data-response-type="show" >
+							<assessmentItem data-response-type="show">
 								<assessFeedback>
-									<img src="res/line_1.png" alt="line" data-ui="w:100%" />
+									<p data-ui="P:a t:115 l:242">
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="354" height="141" viewBox="0 0 354 141" fill="none">
+											<path d="M2.64844 3.11328L351.351 137.884" class="draw" stroke="#655FFF" stroke-width="5"
+												stroke-linecap="round" />
+										</svg>
+									</p>
+
 								</assessFeedback>
 
 								<quizBtn data-id="q-1" data-skill="answerReset" class="s" data-ui="P:a t:97 l:-65">정답</quizBtn>
@@ -77,9 +87,17 @@
 						</quizItem>
 
 						<quizItem data-id="q-2">
-							<assessmentItem data-response-type="show" >
+							<assessmentItem data-response-type="show">
 								<assessFeedback>
-									<img src="res/line_2.png" alt="line" data-ui="w:100%" />
+									<p data-ui="P:a t:307 l:248">
+										<svg xmlns="http://www.w3.org/2000/svg" width="357" height="167" viewBox="0 0 357 167" fill="none">
+											<path d="M3.06934 3.33984L353.929 164.152" stroke="#655FFF" class="draw2" stroke-width="5"
+												stroke-linecap="round" />
+								
+										</svg>
+									</p>
+
+
 								</assessFeedback>
 
 								<quizBtn data-id="q-2" data-skill="answerReset" class="s" data-ui="P:a t:268 l:-65">정답</quizBtn>
@@ -87,9 +105,15 @@
 							</assessmentItem>
 						</quizItem>
 						<quizItem data-id="q-3">
-							<assessmentItem data-response-type="show" >
+							<assessmentItem data-response-type="show">
 								<assessFeedback>
-									<img src="res/line_3.png" alt="line" data-ui="w:100%" />
+									<p data-ui="P:a t:76 l:247">
+										<svg xmlns="http://www.w3.org/2000/svg" width="355" height="405" viewBox="0 0 355 405" fill="none">
+											<path d="M3.06543 402.059L352.434 2.94367" class="draw3" stroke="#655FFF" stroke-width="5"
+												stroke-linecap="round" />
+										</svg>
+										</p>
+
 								</assessFeedback>
 
 								<quizBtn data-id="q-3" data-skill="answerReset" class="s" data-ui="P:a t:442 l:-65">정답</quizBtn>
@@ -126,6 +150,50 @@
 				</div>
 			</div>
 		</section>
+		<style>
+  path{
+		transition: 0.4s linear;
+	}
+		</style>
+
+		<script>
+			$(function () {
+				// 초기 설정
+				$('.draw').css({
+					'stroke-dasharray': $('.draw')[0].getTotalLength(),
+					'stroke-dashoffset': $('.draw')[0].getTotalLength()
+				});
+				$('.draw2').css({
+					'stroke-dasharray': $('.draw2')[0].getTotalLength(),
+					'stroke-dashoffset': $('.draw2')[0].getTotalLength()
+				});
+				$('.draw3').css({
+					'stroke-dasharray': $('.draw3')[0].getTotalLength(),
+					'stroke-dashoffset': $('.draw3')[0].getTotalLength()
+				});
+
+				$('.matching_quiz quizBtn[data-id="q-1"]').on('click', function () {
+					$('.draw').css({
+						'transition': 'stroke-dashoffset 0.4s linear',
+						'stroke-dashoffset': 0
+					});
+				});
+
+				$('.matching_quiz quizBtn[data-id="q-2"]').on('click', function () {
+					$('.draw2').css({
+						'transition': 'stroke-dashoffset 0.4s linear',
+						'stroke-dashoffset': 0
+					});
+				});
+
+				$('.matching_quiz quizBtn[data-id="q-3"]').on('click', function () {
+					$('.draw3').css({
+						'transition': 'stroke-dashoffset 0.4s linear',
+						'stroke-dashoffset': 0
+					});
+				});
+			});
+		</script>
 
 	</main>
 </body>

@@ -112,6 +112,17 @@
 	url('../../files/fonts/otf/NanumSquareRoundEB.otf') format("otf");
 }
 
+@font-face {
+    font-family: 'KCC-DodamdodamR';
+   	src: 
+		url('../../files/fonts/woff/KCC-DodamdodamR.woff2') format('woff2'),
+		url('../../files/fonts/woff/KCC-DodamdodamR.woff') format('woff'),
+	  url('../../files/fonts/otf/KCC-DodamdodamR.otf') format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*--------------------------------------------------------------
   	폰트 기본 셋팅 [띄어 쓰기 : &#xA0; / &#160; / &#32; 줄 바꿈 <br>]
 ----------------------------------------------------------------*/

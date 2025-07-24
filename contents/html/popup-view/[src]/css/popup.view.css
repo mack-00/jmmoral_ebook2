@@ -745,6 +745,30 @@ header > [data-question] {
   background-image: url('../../[res]/btns/btn-no.png');
 }
 /**=============
+ * 	도덕적 성찰 점검
+ =============*/
+
+[data-design='도덕적 성찰 점검'] [data-skill='radio'] {
+  display: flex;
+}
+[data-design='도덕적 성찰 점검'] [data-skill='radio'] [data-radio] {
+  position: relative;
+  width: 61px;
+  height: 56px;
+	font-size: 0;
+}
+[data-design='도덕적 성찰 점검'] [data-skill='radio'] [data-radio].on::after {
+  content: '';
+  width: 61px;
+  height: 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('../../[res]/btns/check.png') no-repeat 0 0;
+}
+
+/**=============
  * 	box
  =============*/
 [data-box] {
@@ -1390,4 +1414,82 @@ quizItem[data-design='단어'][data-state] quizBtn {
 [data-design='중단원 마무리 정리하기'] quizItem[data-design='단어'] quizBtn {
   width: 43px;
   height: 46px;
+}
+
+/* 애니메이션 */
+[data-animate] {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-on[data-animate='fade-in'] {
+  animation: fade-in 0.3s ease forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on[data-animate='fade-up'] {
+  animation: fade-up 0.3s ease forwards;
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on[data-animate='fade-down'] {
+  animation: fade-down 0.3s ease forwards;
+}
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on[data-animate='fade-left'] {
+  animation: fade-left 0.3s ease forwards;
+}
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-on[data-animate='fade-right'] {
+  animation: fade-right 0.3s ease forwards;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  30% { transform: translateX(-8px); }
+  60% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
 }
