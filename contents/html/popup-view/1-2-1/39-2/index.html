@@ -25,6 +25,40 @@
 	<!-- VIEW -->
 	<!--link rel="stylesheet" type="text/css" href="index.css" />
 <script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		.item {
+			opacity: 0;
+			transform: translateX(-100px);
+			transition: 0.3s ease-in-out;
+		}
+
+		[data-state] [data-response-type='show'] assessFeedback .item {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		/* delay */
+		[data-state] [data-response-type='show'] assessFeedback .item:nth-child(1) {
+			transition-delay: 0s;
+		}
+
+		[data-state] [data-response-type='show'] assessFeedback .item:nth-child(2) {
+			transition-delay: 0.1s;
+		}
+
+		[data-state] [data-response-type='show'] assessFeedback .item:nth-child(3) {
+			transition-delay: 0.2s;
+		}
+
+		[data-state] [data-response-type='show'] assessFeedback .item:nth-child(4) {
+			transition-delay: 0.3s;
+		}
+
+		[data-state] [data-response-type='show'] assessFeedback .item:nth-child(5) {
+			transition-delay: 0.4s;
+		}
+	</style>
 </head>
 
 <body>
@@ -93,39 +127,6 @@
 				</div>
 			</div>
 		</section>
-		<style>
-			.item {
-				opacity: 0;
-				transform: translateX(-100px);
-				transition: 0.3s ease-in-out;
-			}
-
-			[data-state] [data-response-type='show'] assessFeedback .item {
-				opacity: 1;
-				transform: translateX(0);
-			}
-
-			/* delay */
-			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(1) {
-				transition-delay: 0s;
-			}
-
-			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(2) {
-				transition-delay: 0.1s;
-			}
-
-			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(3) {
-				transition-delay: 0.2s;
-			}
-
-			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(4) {
-				transition-delay: 0.3s;
-			}
-
-			[data-state] [data-response-type='show'] assessFeedback .item:nth-child(5) {
-				transition-delay: 0.4s;
-			}
-		</style>
 	</main>
 </body>
 
