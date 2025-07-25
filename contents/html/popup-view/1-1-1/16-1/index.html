@@ -25,6 +25,21 @@
 	<!-- VIEW -->
 	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
 	<!--script type="text/javascript" src="index.js" ></script-->
+	<style>
+		.list li {
+			border-radius: 40px;
+			border: 3px solid #C9CACA;
+			padding: 15px 25px;
+			color: #000;
+			text-align: justify;
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 65px; 
+			letter-spacing: -1.44px;
+
+		}
+	</style>
 </head>
 
 <body>
@@ -67,12 +82,11 @@
 
 					<h2 data-question="2"><span>2</span> <span data-ui="LS:2">다음 글을 읽고 세 가지 도덕 판단은 각각 서양의 어떤 도덕 판단 기준에 따른 것인지 연결해
 							보자.</span></h2>
-					<article class="matching_quiz" data-ui="w:1702 h:588 ml:auto">
-						<quizItem data-id="q-1" data-ui="BG:res/matching.png">
+					<article class="matching_quiz" data-ui="w:1702 h:588 ml:auto BG:res/matching.png">
+						<quizItem data-id="q-1">
 							<assessmentItem data-response-type="show">
 								<assessFeedback>
 									<p data-ui="P:a t:115 l:242">
-
 										<svg xmlns="http://www.w3.org/2000/svg" width="354" height="141" viewBox="0 0 354 141" fill="none">
 											<path d="M2.64844 3.11328L351.351 137.884" class="draw" stroke="#655FFF" stroke-width="5"
 												stroke-linecap="round" />
@@ -93,7 +107,7 @@
 										<svg xmlns="http://www.w3.org/2000/svg" width="357" height="167" viewBox="0 0 357 167" fill="none">
 											<path d="M3.06934 3.33984L353.929 164.152" stroke="#655FFF" class="draw2" stroke-width="5"
 												stroke-linecap="round" />
-								
+
 										</svg>
 									</p>
 
@@ -112,7 +126,7 @@
 											<path d="M3.06543 402.059L352.434 2.94367" class="draw3" stroke="#655FFF" stroke-width="5"
 												stroke-linecap="round" />
 										</svg>
-										</p>
+									</p>
 
 								</assessFeedback>
 
@@ -120,7 +134,17 @@
 
 							</assessmentItem>
 						</quizItem>
-
+						<ul class="list" data-ui="w:1061 ml:auto">
+							<li>
+								선생님이라면 정성이 담긴 그림이라고 칭찬해주셨을거야. 나도 수진이가 정성껏 그린 것을 칭찬해야겠어.
+							</li>
+							<li data-ui="mt:15">
+								인간이라면 누구나 거짓말해서는 안 되기 때문에 그림을 잘 그리지 못했다고 솔직하게 말해 줘야겠어.
+							</li>
+							<li data-ui="mt:15">
+								내가 거짓말하면 수진이가 기분 좋을 테고 나 역시도 좋을 테니 더 많은 사람이 행복해지는 거야. 수진이에게 그림을 잘 그렸다고 말해 줘야겠어.
+							</li>
+						</ul>
 					</article>
 				</div>
 
@@ -151,9 +175,9 @@
 			</div>
 		</section>
 		<style>
-  path{
-		transition: 0.4s linear;
-	}
+			path {
+				transition: 0.4s linear;
+			}
 		</style>
 
 		<script>
