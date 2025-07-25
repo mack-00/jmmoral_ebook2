@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="index.js" ></script-->
+	<style>
+		.badge {
+			font-family: 'Nanum';
+			background-color: #b79e8a;
+			border-radius: 16px;
+			padding: 5px 10px;
+			display: inline-block;
+			color: #fff;
+			font-size: 30px;
+			font-weight: 5600;
+		}
+
+		[data-tab='2'] table,
+		[data-tab='2'] table td {
+			background-color: transparent;
+		}
+
+		[data-tab='2'] table tr {
+			border-top: 0;
+		}
+
+		[data-tab='2'] table td {
+			font-size: 42px;
+			color: #655fff;
+			vertical-align: middle;
+			text-align: center;
+			padding: 0;
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="s">
+		<!--data-tab="아이콘 타입"-->
+
+		<div data-skill="tab">
+			<!--data-tab="1~|file|activity"-->
+			<div data-tab="1">
+				<header>
+					<!--주제-->
+					<h1 data-subject="수행 활동"><span>수행 활동</span><span>직업윤리 빙고 게임</span></h1>
+					<h2 data-question="수행 활동" data-ui="pl:70 mb:10"><span class="number">1</span>
+						<span>내가 희망하는 직업과 그 직업을 선택한 까닭을 이야기해 보자. </span>
+					</h2>
+				</header>
+				<quizItem data-id="q-1">
+					<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336">
+						<div data-ui="LS:-0.9">
+							<assessFeedback>
+								<span data-ui="">나는 판사가 되고 싶다. 평상시에 논리적으로 사고하고 옳지 못한 행동에 대해서는 그에 합당한 벌을
+									받아야 한다고 생각하기 때문이다.</span>
+							</assessFeedback>
+
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+						</div>
+					</assessmentItem>
+				</quizItem>
+			</div>
+			<!--data-tab="1~|file|activity"-->
+			<div data-tab="2">
+				<header>
+					<!--주제-->
+					<h1 data-subject="수행 활동"><span>수행 활동</span><span>직업윤리 빙고 게임</span></h1>
+
+					<h2 data-question="수행 활동" data-ui="pl:70 mb:10"><span class="number">2</span>
+						<span>다음 <span class="badge" data-ui="Fs:40">활동 방법</span>을 읽고 나의 희망 직업에 필요한 직업윤리와
+							관련한 가치를 빙고 칸에 채워 보자. </span>
+					</h2>
+				</header>
+
+				<div class="com-flex scroll" data-ui="h:550 mt:-50">
+					<p data-ui="mr:74 mt:120">
+						<img src="res/img-1.png" alt="활동 방법, 가치" />
+					</p>
+					<quizItem data-id="q-2" data-ui="w:918 h:902 BG:res/bingo.png">
+						<assessmentItem data-response-type="show">
+							<assessFeedback>
+								<table data-ui="w:700 h:700 mt:120 ml:20">
+									<tbody>
+										<tr>
+											<td data-ui="w:25%">감사</td>
+											<td data-ui="w:25%">헌신</td>
+											<td data-ui="w:25%">충직</td>
+											<td data-ui="w:25%">소신</td>
+										</tr>
+										<tr>
+											<td>유연성</td>
+											<td>청렴</td>
+											<td>광용</td>
+											<td>배려</td>
+										</tr>
+										<tr>
+											<td>공감</td>
+											<td>근면</td>
+											<td>정직</td>
+											<td>책임</td>
+										</tr>
+										<tr>
+											<td>용기</td>
+											<td>절제</td>
+											<td>믿음</td>
+											<td>신중</td>
+										</tr>
+									</tbody>
+								</table>
+							</assessFeedback>
+						</assessmentItem>
+
+						<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="ml:-80">정답</quizBtn>
+					</quizItem>
+				</div>
+			</div>
+
+			<div data-tab="3">
+				<header>
+					<!--주제-->
+					<h1 data-subject="수행 활동"><span>수행 활동</span><span>직업윤리 빙고 게임</span></h1>
+
+					<h2 data-question="수행 활동" data-ui="pl:70 mb:10 LS:1"><span class="number">3</span>
+						<span>나의 희망 직업에 필요한 직업윤리와 관련한 가치를 바탕으로 실천 강령을 만들어 보자.</span>
+					</h2>
+				</header>
+
+				<quizItem data-id="q-3">
+					<assessmentItem data-response-type="show" data-box="종이" data-ui="h:515">
+						<div>
+							<p class="com-flex align-center">
+								<span data-icon="예시" data-ui="mr:20">예시</span>
+								<span>판사는 모든 사람에게 신중하고 공평한 판결을 내려야 한다.</span>
+							</p>
+							<assessFeedback>
+								<span data-ui="">판사는 양심에 어긋남 없이 소신을 가지고 판결하고 항상 청렴하게 생활해야 한다. 또한 어느 한쪽으로
+									치우치지 않는 자세로 자신의 판결에 책임감을 가져야 한다.</span>
+							</assessFeedback>
+
+							<quizBtn data-id="q-3" data-skill="answerReset" class="center">정답</quizBtn>
+						</div>
+					</assessmentItem>
+				</quizItem>
+			</div>
+
+			<!--data-tab="1~|file|activity"-->
+			<div data-tab="4">
+				<header data-ui="mb:20">
+					<!--주제-->
+					<h1 data-subject="스스로 평가하기"><span>스스로 평가하기</span></h1>
+				</header>
+
+				<div data-design="스스로 평가하기">
+					<div class="info">
+						<p><span data-ui="Fs:42" style="color: #231815">평가 점수</span></p>
+					</div>
+					<ul>
+						<li>
+							<div data-note="1" data-ui="w:1365 mr:40 LS:1">
+								<span>1</span>
+								<p>직업과 직업윤리의 의미에 대해 이해하였다.</p>
+							</div>
+							<div data-skill="radio">
+								<div data-radio="1">1</div>
+								<div data-radio="2">2</div>
+								<div data-radio="3">3</div>
+								<div data-radio="4">4</div>
+								<div data-radio="5">5</div>
+							</div>
+						</li>
+						<li>
+							<div data-note="2" data-ui="w:1365 mr:40 LS:1">
+								<span>2</span>
+								<p>자신이 희망하는 직업과 그 까닭을 파악하였다.</p>
+							</div>
+							<div data-skill="radio">
+								<div data-radio="1">1</div>
+								<div data-radio="2">2</div>
+								<div data-radio="3">3</div>
+								<div data-radio="4">4</div>
+								<div data-radio="5">5</div>
+							</div>
+						</li>
+						<li>
+							<div data-note="3" data-ui="w:1365 mr:40 LS:1">
+								<span>3</span>
+								<p>
+									다양한 직업에 필요한 직업윤리 덕목을 제시하였다.</p>
+							</div>
+							<div data-skill="radio">
+								<div data-radio="1">1</div>
+								<div data-radio="2">2</div>
+								<div data-radio="3">3</div>
+								<div data-radio="4">4</div>
+								<div data-radio="5">5</div>
+							</div>
+						</li>
+						<li>
+							<div data-note="4" data-ui="w:1365 mr:40">
+								<span>4</span>
+								<p data-ui="LS:0.1">
+									자신의 희망 직업에 필요한 직업윤리를 실천 강령으로 만들었다. </p>
+							</div>
+							<div data-skill="radio" data-ui="mt:-80">
+								<div data-radio="1">1</div>
+								<div data-radio="2">2</div>
+								<div data-radio="3">3</div>
+								<div data-radio="4">4</div>
+								<div data-radio="5">5</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

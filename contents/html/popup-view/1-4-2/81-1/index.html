@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="index.js" ></script-->
+</head>
+
+
+<body>
+	<main id="popup-view" class="s">
+		<header>
+			<!--주제-->
+			<h1 data-subject="세상속으로"><span>생각 열기</span> <span>교실 밖 <b>생각 수업</b> | 도덕적 딜레마</span></h1>
+		</header>
+		<section>
+
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="세상속으로" data-ui="pl:160"><span data-icon="단계">1단계</span> <span>다음 글을 읽고, 「연명의료결정법」에 대해
+							알아보자.</span></h2>
+					<div data-box="파랑" data-ui="py:26 px:45 h:650 LS:-0.1">
+						<div class="scroll">
+							<p>
+								<img src="res/img-1.png" alt="관련이미지" data-ui="w:100% mb:30" />
+							</p>
+							<p>2018년 3월부터 우리나라에서는 「연명의료결정법」, 이른바 존엄사법이 합법화되었다.
+								이 법은 무의미한 연명 치료를 거부하고 존엄한 죽음을
+								맞는 것에 대한 법이다. 이 법은 생존 가능성이 없고 치료를 지속해도 회
+								복되지 않으며 증상이 빠르게 악화하여 사망이 임박했다고 의학적 판단을 받은 경우 환자의 선택이나 가족의 동의에 따라 연명 치료를 중단할 수 있다는 내용을
+								담고 있다. 이는 병의 유무를 떠나 고통 없이 삶을 마감하고자 하는 안락사와는 다르다.
+							</p>
+
+							<p data-ui="Fs:45 mt:10 Ta:r"> - KONIBP 국립 연명 의료 관리 기관</p>
+						</div>
+					</div>
+
+				</div>
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="2">
+
+					<h2 data-question="세상속으로" data-ui="pl:160"><span data-icon="단계">2단계</span> <span>환자가 의식이 없는 상황에서 내가 환자의 자녀라면
+							어떤 결정을 내릴지 선택하고, 그 근거를 써 보자.</span></h2>
+
+					<div class="scroll" data-ui="h:560">
+						<p data-ui="Ta:center">
+							<img src="res/img-2.png" alt="관련이미지" data-ui="w:1335 mb:30" />
+						</p>
+						<quizItem data-id="q-2" data-ui="mt:10">
+							<table>
+								<tr>
+									<th data-ui="w:326" class="ff-1">입장</th>
+									<th  class="ff-1">근거</th>
+
+								</tr>
+								<tr>
+									<th data-ui="w:326" class="ff-1">중단</th>
+									<td data-ui="LS:-1">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<span>나는 연명 치료를 중단해야 한다고 생각한다. 왜냐하면 고통스러운 치료를 의미 없이 계속 받도록 하는 것은 환자의 삶의 질을 떨어뜨리는 것이기 때문이다.</span>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+								</tr>
+								<tr>
+									<th class="ff-1" data-ui="w:326">지속</th>
+									<td data-ui="LS:-1">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<span>나는 연명 치료를 지속해야 한다고 생각한다. 왜냐하면 희박한 확률이더라도 미래에 대한 희망을 포기할 수는 없으 며, 의식이 없는 순간도 가족들과 함께하는 삶의 일부라고 생각하기 때문이다.</span>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+								</tr>
+							</table>
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="ml:150">정답</quizBtn>
+						</quizItem>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
