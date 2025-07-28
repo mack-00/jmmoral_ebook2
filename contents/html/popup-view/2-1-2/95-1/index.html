@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+	<style>
+		table th.ff-1.round .text {
+			border-radius: 50px 50px 0 0;
+			background-color: #EBD6B5;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>그때 그러지 말걸</span></h1>
+		</header>
+
+		<section>
+			<h2 data-question="활동하기" data-ui="LS:1"><span>●</span>
+				<span>우리는 종종 다른 사람과의 관계에서 책임을 다하지 못할 때가 있다. 지금까지 내가 했던 말과 행동 중에 가장 후회되는 것 을 생각해 보고, 어떻게 했으면 좋았을지 써 보자.</span>
+			</h2>
+			<quizItem data-id="q-2">
+				<table>
+					<tr>
+						<th data-ui="w:50%" class="ff-1 round">
+							<p class="text">가장 후회되는 말 또는 행동</p>
+						</th>
+
+						<th data-ui="w:50%" class="ff-1 round">
+							<p class="text">그때 내가 해야 했을 말 또는 행동</p>
+						</th>
+					</tr>
+					<tr>
+
+						<td data-ui="py:50 LS:-1.5">
+							<assessmentItem data-response-type="show">
+								<assessFeedback>
+									<p>“네가 이곳 자장면 맛있다고 해서 왔는데 맛이 없어. 괜히 온 것 같아.”</p>
+								</assessFeedback>
+							</assessmentItem>
+						</td>
+
+						<td data-ui="py:50 LS:-1.5">
+							<assessmentItem data-response-type="show">
+								<assessFeedback>
+									<p>“내가 자장면 맛집을 또 아는데, 다음에는 그곳을 가 보는 것이 어때?”</p>
+								</assessFeedback>
+							</assessmentItem>
+						</td>
+					</tr>
+				</table>
+				<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="mt:60">정답</quizBtn>
+			</quizItem>
+		</section>
+
+	</main>
+</body>
+
+</html>

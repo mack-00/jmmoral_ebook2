@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+	<style>
+		.answer {
+			height: 50px;
+			padding-inline: 10px;
+			font-weight: 800;
+			color: #655fff;
+			font-size: 30px;
+			line-height: 50px;
+			display: inline-block;
+			display: none;
+		}
+
+		.btn-link {
+			background-color: #9DBAE0;
+			width: 89px;
+			height: 43px;
+			line-height: 43px;
+			border-radius: 43px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 600;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		.btn-link:hover {
+			background-color: #76a3dd;
+		}
+
+		.btn-back {
+			background-color: #577532;
+			width: 157px;
+			height: 43px;
+			line-height: 43px;
+			border-radius: 43px;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 600;
+			cursor: pointer;
+			color: #fff;
+			display: inline-block;
+		}
+
+		.btn-back:hover {
+			background-color: #425f1e;
+		}
+
+		.popup {
+			position: absolute;
+			top: 34px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #fff;
+			z-index: 100;
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="s">
+		<header data-ui="mb:10">
+			<!--주제-->
+			<h1 data-subject="중단원 마무리 정리하기"><span>중단원 마무리 정리하기</span></h1>
+			<!--질문-->
+
+			<h2 data-question="중단원"><span>●</span> <span>다음은 <span data-ui="BGc:#F7DC82 px:10 Br:25 mr:3">본문 속 단어</span>를 이용하여
+					만든 팥빙수이다. 아래 <span class="badge" data-ui="Fs:40">활동 방법</span>을 읽고 빈칸을 채워 완성된 문장을 완성해 보자. </span></h2>
+
+		</header>
+
+		<section class="scroll" data-ui="h:610 pr:20 mt:-40">
+			<div data-ui="w:1720 h:1062 BG:res/bg.png">
+				<quizItem data-id="q-1" data-design="단어" data-ui="P:a t:438 l:612 w:146">
+					<quizFeedback>속에서</quizFeedback>
+					<quizBtn data-id="q-1" class="center" data-skill="answer">정답</quizBtn>
+				</quizItem>
+				<quizItem data-id="q-2" data-design="단어" data-ui="P:a t:606 l:118 w:146">
+					<quizFeedback>행복을</quizFeedback>
+					<quizBtn data-id="q-2" class="center" data-skill="answer">정답</quizBtn>
+				</quizItem>
+				<quizItem data-id="q-3" data-design="단어" data-ui="P:a t:748 l:579 w:146">
+					<quizFeedback>느낀다.</quizFeedback>
+					<quizBtn data-id="q-3" class="center" data-skill="answer">정답</quizBtn>
+				</quizItem>
+
+				<p class="answer" data-id="q-1" data-ui="P:a t:844 l:984">속에서</p>
+				<p class="answer" data-id="q-2" data-ui="P:a t:844 l:1148">행복을</p>
+				<p class="answer" data-id="q-3" data-ui="P:a t:844 l:1314">느낀다.</p>
+				<p class="answer" data-id="q-all" data-ui="P:a t:929 l:944">관계 속에서 행복을 느낀다.</p>
+				<span class="btn-link BtnLink" data-id="p-88" data-ui="P:a t:60 r:82">
+					이동
+				</span>
+				<span class="btn-link BtnLink" data-id="p-95" data-ui="P:a t:240 r:167">
+					이동
+				</span>
+				<span class="btn-link BtnLink" data-id="p-90" data-ui="P:a t:505 r:50">
+					이동
+				</span>
+				<span class="btn-link BtnLink" data-id="p-93" data-ui="P:a t:700 r:50">
+					이동
+				</span>
+			</div>
+		</section>
+		<section class="popup" data-id="p-88">
+			<div class="scroll" data-ui="h:845">
+				<div data-ui="P:r">
+					<img src="res/p-88.png" alt="88쪽">
+					<span class="btn-back BtnBack" data-ui="P:a r:0 b:10">돌아가기</span>
+				</div>
+			</div>
+		</section>
+		<section class="popup" data-id="p-95">
+			<div class="scroll" data-ui="h:845">
+				<div data-ui="P:r">
+					<img src="res/p-95.png" alt="95쪽">
+					<span class="btn-back BtnBack" data-ui="P:a r:10 b:10">돌아가기</span>
+				</div>
+			</div>
+		</section>
+		<section class="popup" data-id="p-90">
+			<div class="scroll" data-ui="h:845">
+				<div data-ui="P:r">
+					<img src="res/p-90.png" alt="90쪽">
+					<span class="btn-back BtnBack" data-ui="P:a r:373 b:42">돌아가기</span>
+				</div>
+			</div>
+		</section>
+		<section class="popup" data-id="p-93">
+			<div class="scroll" data-ui="h:845">
+				<div data-ui="P:r">
+					<img src="res/p-93.png" alt="93쪽">
+					<span class="btn-back BtnBack" data-ui="P:a r:500 b:30">돌아가기</span>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script>
+		$(function () {
+			$(document).on('click', 'quizitem', function () {
+				const id = $(this).data('id');
+				$(`.answer[data-id="${id}"]`).show();
+
+				if (
+					$('.answer[data-id="q-1"]').is(':visible') &&
+					$('.answer[data-id="q-2"]').is(':visible') &&
+					$('.answer[data-id="q-3"]').is(':visible')
+				) {
+					$('.answer[data-id="q-all"]').show();
+				}
+			});
+			$('.BtnLink').on('click', function () {
+				const id = $(this).data('id');
+				$(`.popup[data-id="${id}"]`).show();
+			});
+			$('.BtnBack').on('click', function () {
+				$(this).closest('.popup').hide();
+			});
+
+		});
+	</script>
+</body>
+
+</html>
