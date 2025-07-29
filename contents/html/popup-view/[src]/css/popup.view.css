@@ -2,11 +2,12 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 1920px;
+  max-width: 1920px;
+  width: 100%;
   height: 940px;
   text-align: justify;
-  padding: 34px 90px 62px;
-  border-bottom: 1px solid #ddd;
+  padding: 30px 90px 60px;
+  border-bottom: 1px solid #000;
 }
 #popup-view.xs {
   padding-inline: 100px;
@@ -25,7 +26,6 @@ small {
   overflow-y: auto;
   padding-right: 20px;
 }
-
 
 .ff-1 {
   font-family: 'Nanum';
@@ -47,6 +47,10 @@ h1 b {
   color: #fff579;
 }
 
+.break{
+	word-break: break-all;
+}
+
 /**=============
  * 	subject
  =============*/
@@ -54,9 +58,9 @@ h1 b {
 header,
 section {
   position: relative;
-	width: 1720px;
-	margin-left: auto;
-	margin-right:auto;
+  width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   margin-bottom: 25px;
@@ -127,7 +131,7 @@ header [data-subject] {
 }
 [data-subject='자료 읽기'] > span:nth-child(2) {
   left: -30px;
-  top: 8px;
+  top: 6px;
   background-color: #58afe2;
 }
 [data-subject='탐구'] > span:nth-child(1) {
@@ -209,8 +213,8 @@ header [data-subject] {
   background-image: url('../../[res]/titles/스스로 점검하기.png');
 }
 [data-subject='중단원 마무리 풀어보기'] > span:nth-child(1) {
-  width: 443px;
-  height: 91px;
+  width: 394px;
+  height: 100px;
   background-image: url('../../[res]/titles/중단원 마무리 풀어보기.png');
 }
 [data-subject='중단원 마무리 정리하기'] > span:nth-child(1) {
@@ -508,8 +512,23 @@ header > [data-question] {
   line-height: 60px;
   font-size: 36px;
 }
+[data-icon='보기'] {
+  font-family: 'Nanum';
+  display: inline-block;
+  background-color: #456EAA;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+	font-weight: 600;
+	margin-top: 13px;
+}
 
-[data-icon='사례'] {
+/*[data-icon='사례'] {
   font-family: 'Paper';
   display: inline-block;
   background-color: #b79b82;
@@ -529,7 +548,42 @@ header > [data-question] {
   color: #fff;
   font-style: normal;
   line-height: 60px;
+}*/
+
+
+.text-dote{
+	background-color: #f2706c;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: flex;
 }
+
+[data-icon='사례'] {
+  display: inline-block;
+  background-color: #b79b82;
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+  width: 100px;
+  height: 45px;
+  line-height: 48px;
+  font-size: 30px;
+  font-weight: 900;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+[data-icon='사례'] b {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+	margin-top: -5px;
+}
+
 [data-icon='스티커'] {
   display: inline-block;
   position: absolute;
@@ -834,8 +888,11 @@ header > [data-question] {
   font-weight: 900;
   line-height: 85px;
   min-height: 344px;
-
   color: #000;
+}
+
+[data-box].mh-auto{
+	min-height: auto;
 }
 
 quizItem[data-box] {
@@ -878,6 +935,10 @@ quizItem[data-box] {
 
 [data-box='회색'] {
   background-color: #f0f0f0;
+}
+[data-box='라인'] {
+  background-color: #fff;
+  border: 2px solid #aaabab;
 }
 [data-box='보라'] {
   background-color: #e2e8ff;
@@ -989,13 +1050,13 @@ quizItem[data-box] {
  * 	table
  =============*/
 
-[data-table='베이지'].line{
-	border-radius: 0;
+[data-table='베이지'].line {
+  border-radius: 0;
 }
-[data-table='베이지'].line table td{
+[data-table='베이지'].line table td {
   border-bottom: 4px solid #d7bb8e;
   border-top: 4px solid #d7bb8e;
-	border-right:4px solid #d7bb8e;
+  border-right: 4px solid #d7bb8e;
 }
 [data-table='베이지'].line table th p {
   background-color: #ebd6b5;
@@ -1004,18 +1065,18 @@ quizItem[data-box] {
   align-items: center;
   justify-content: center;
   height: 100%;
-	border-left:0;
-	border-top:2px solid #fff;
-	border-bottom:2px solid #fff;
-	border-left: 4px solid #fff;
-	border-radius: 40px 0 0 40px;
+  border-left: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 4px solid #fff;
+  border-radius: 40px 0 0 40px;
 }
 
-[data-table='베이지'].line table tr:first-child th p{
-	border-top:4px solid #fff;
+[data-table='베이지'].line table tr:first-child th p {
+  border-top: 4px solid #fff;
 }
-[data-table='베이지'].line table tr:last-child th p{
-	border-bottom:4px solid #fff;
+[data-table='베이지'].line table tr:last-child th p {
+  border-bottom: 4px solid #fff;
 }
 [data-table='베이지'].line table td {
   border-top-color: #d7bb8e;
@@ -1033,8 +1094,8 @@ quizItem[data-box] {
   padding: 0;
   border-bottom: 0;
   border-top: 0;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   position: relative;
 }
 [data-table='베이지'] table th p {
@@ -1044,11 +1105,10 @@ quizItem[data-box] {
   align-items: center;
   justify-content: center;
   height: 100%;
-	border-left:4px solid #fff;
-	border-top:2px solid #fff;
-	border-bottom:2px solid #fff;
+  border-left: 4px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
-
 
 table {
   table-layout: fixed;
@@ -1069,11 +1129,11 @@ table td {
 table th {
   background-color: #edf4dc;
   text-align: center;
-	line-height: 1.2;
+  line-height: 1.2;
 }
 table td {
   background-color: #f0f0f0;
-	line-height: 1.3;
+  line-height: 1.3;
 }
 
 table td,
@@ -1083,7 +1143,7 @@ table th {
 
 table tr:last-child td,
 table tr:last-child th {
-	border-bottom: 0;
+  border-bottom: 0;
 }
 
 table tr > * + * {
@@ -1477,13 +1537,24 @@ quizItem[data-design='단어'] quizBtn {
 .badge {
   font-family: 'Nanum';
   background-color: #b79e8a;
-  border-radius: 16px;
-  padding: 5px 10px;
+  border-radius: 14px;
+  padding: 0 15px;
   display: inline-block;
   vertical-align: middle;
   color: #fff;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 60px;
+  height: 60px;
+}
+h2 .badge {
+  margin-top: -10px;
+}
+.badge.s {
+  font-size: 32px;
+  height: 50px;
+  line-height: 50px;
+  min-width: 106px;
 }
 
 /* 매칭 퀴즈 */
@@ -1509,8 +1580,8 @@ quizItem[data-design='단어'] quizBtn {
 
 [data-design='중단원 마무리 정리하기'] .d1 {
   position: relative;
-	width: 1740px;
-	margin-left: -10px;
+  width: 1740px;
+  margin-left: -10px;
 }
 
 [data-design='중단원 마무리 정리하기'] .d1 > li > .title {
@@ -1538,7 +1609,7 @@ quizItem[data-design='단어'] quizBtn {
 [data-design='중단원 마무리 정리하기'] .line {
   position: absolute;
   left: 274px;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 [data-design='중단원 마무리 정리하기'] .d2,
@@ -1573,7 +1644,7 @@ quizItem[data-design='단어'] quizBtn {
   right: -38px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 [data-design='중단원 마무리 정리하기'] .d3 {
