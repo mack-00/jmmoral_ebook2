@@ -27,52 +27,30 @@
 </head>
 
 <body>
+	<main id="popup-view" class="xs">
 
-	<main id="popup-view" >
-
-		<header  data-ui="w:1740">
+		<header>
 			<!--주제-->
-			<h1 data-subject="스스로 점검하기"><span>스스로 점검하기</span></h1>
-			<!--질문-->
-			<h2 data-question="스스로 점검하기"><span>●</span> <span>다음 내용을 스스로 점검해 보자.</span></h2>
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>나의 갈등 분석하기</span></h1>
 		</header>
-		<section data-ui="w:1740">
-			<div data-design="스스로 점검하기">
-				<div class="info">
-					<p><span>그렇다</span><span>아니다</span></p>
-				</div>
-				<ul>
-					<li>
-						<div data-note="1">
-							<span>1</span>
-							<p>도덕 판단의 의미를 알고 설명할 수 있다.</p>
-						</div>
-						<div data-skill="radio">
-							<div data-radio="yes">그렇다</div>
-							<div data-radio="no">아니다</div>
-							</choice>
-					</li>
-					<li>
-						<div data-note="2">
-							<span>2</span>
-							<p>서양과 동양의 도덕 판단 기준을 설명할 수 있다.</p>
-						</div>
-						<div data-skill="radio">
-							<div data-radio="yes">그렇다</div>
-							<div data-radio="no">아니다</div>
-							</choice>
-					</li>
-					<li>
-						<div data-note="3">
-							<span>3</span>
-							<p>일상생활 속 도덕적 문제 상황에 도덕 판단 기준을 적용할 수 있다.</p>
-						</div>
-						<div data-skill="radio">
-							<div data-radio="yes">그렇다</div>
-							<div data-radio="no">아니다</div>
-							</choice>
-					</li>
-				</ul>
+
+		<section>
+			<div>
+
+			<h2 data-question="활동하기"><span>●</span> <span>내가 경험했던 갈등을 떠올려 보고 그 유형과 원인을 분석하여 보자.</span></h2>
+				<quizItem data-id="q-1" data-ui="w:1716 h:644 BG:res/bg.png mx:auto">
+					<assessmentItem data-response-type="show">
+						<assessFeedback>
+							<p data-note="점" data-ui="P:a l:910 t:87 Fs:30 w:778 LH:40 Ta:left">
+								<span>·</span>갈등 경험: 나는 미술을 전공하고 싶었으나, 의사가 되기를 원
+   하시는 아버지와 진로에 대한 갈등이 있었다. 
+							</p>
+							<p data-ui="P:a l:990 t:436 Fs:30 LH:40">개인 간의 갈등</p>
+							<p data-ui="P:a l:1328 t:436 Fs:30 LH:40 w:344">아버지와 자식 간에 자식의 진로를 두고 갈등하고 있다. </p>
+						</assessFeedback>
+					</assessmentItem>
+					<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+				</quizItem>
 			</div>
 		</section>
 

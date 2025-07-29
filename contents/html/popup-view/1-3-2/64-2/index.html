@@ -51,7 +51,6 @@
 		}
 
 		#drawingSvg path {
-			/*stroke: transparent;*/
 			stroke-width: 8;
 			stroke-linecap: round;
 			stroke-linejoin: round;
@@ -90,23 +89,23 @@
 			position: relative;
 			font-size: 56px;
 			font-weight: 700;
-			display: flex;
-			align-items: center;
-			text-align: center;
-			width: 100%;
 			z-index: 1;
+			display: inline-block;
 			border-radius: 80px;
 			width: 80px;
 			height: 80px;
+			line-height: 80px;
 			margin: 0 auto;
 			cursor: pointer;
+			text-align: center;
 		}
 
 		.list .text.on span {
 			cursor: pointer;
 			z-index: 10;
 		}
-/*
+
+/*		
 		.list [data-id="1"].on span {
 			background-color: rgba(202, 232, 250, 0.5);
 		}
@@ -141,165 +140,165 @@
 			</h2>
 		</header>
 		<section data-design="중단원 마무리 정리하기">
-		
+
 			<div class="scroll" data-ui="h:560">
-					<div data-ui="w:1720 h:794 P:r ml:auto mr:auto" id="imgArea">
-				<ul class="list" data-ui="w:1720 h:794  BG:res/bg.png">
-					<li>
-						<div class="text" data-id="1"><span>화</span></div>
-						<div class="text" data-id=""><span>진</span></div>
-						<div class="text" data-id=""><span>하</span></div>
-						<div class="text" data-id="3"><span>속</span></div>
-						<div class="text" data-id=""><span>연</span></div>
-						<div class="text" data-id=""><span>황</span></div>
-						<div class="text" data-id=""><span>원</span></div>
-						<div class="text" data-id="2"><span>이</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>동</span></div>
-						<div class="text" data-id="1"><span>가</span></div>
-						<div class="text" data-id=""><span>술</span></div>
-						<div class="text" data-id="3"><span>상</span></div>
-						<div class="text" data-id=""><span>석</span></div>
-						<div class="text" data-id=""><span>찬</span></div>
-						<div class="text" data-id="2"><span>또</span></div>
-						<div class="text" data-id=""><span>슬</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>민</span></div>
-						<div class="text" data-id=""><span>제</span></div>
-						<div class="text" data-id="1"><span>날</span></div>
-						<div class="text" data-id="3"><span>할</span></div>
-						<div class="text" data-id=""><span>순</span></div>
-						<div class="text" data-id="2"><span>한</span></div>
-						<div class="text" data-id=""><span>상</span></div>
-						<div class="text" data-id=""><span>서</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>겸</span></div>
-						<div class="text" data-id=""><span>세</span></div>
-						<div class="text" data-id=""><span>수</span></div>
-						<div class="text" data-id="1,3"><span>땐</span></div>
-						<div class="text" data-id="2"><span>지</span></div>
-						<div class="text" data-id=""><span>동</span></div>
-						<div class="text" data-id=""><span>지</span></div>
-						<div class="text" data-id=""><span>안</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>하</span></div>
-						<div class="text" data-id=""><span>연</span></div>
-						<div class="text" data-id=""><span>지</span></div>
-						<div class="text" data-id="2,3"><span>나</span></div>
-						<div class="text" data-id="1"><span>화</span></div>
-						<div class="text" data-id=""><span>현</span></div>
-						<div class="text" data-id=""><span>율</span></div>
-						<div class="text" data-id=""><span>루</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>진</span></div>
-						<div class="text" data-id=""><span>후</span></div>
-						<div class="text" data-id="2"><span>가</span></div>
-						<div class="text" data-id="3"><span>를</span></div>
-						<div class="text" data-id=""><span>주</span></div>
-						<div class="text" data-id="1"><span>내</span></div>
-						<div class="text" data-id=""><span>유</span></div>
-						<div class="text" data-id=""><span>아</span></div>
-					</li>
-					<li>
-						<div class="text" data-id=""><span>희</span></div>
-						<div class="text" data-id="2"><span>리</span></div>
-						<div class="text" data-id=""><span>기</span></div>
-						<div class="text" data-id="3"><span>돌</span></div>
-						<div class="text" data-id=""><span>임</span></div>
-						<div class="text" data-id=""><span>희</span></div>
-						<div class="text" data-id="1"><span>도</span></div>
-						<div class="text" data-id=""><span>권</span></div>
-					</li>
-					<li>
-						<div class="text" data-id="2"><span>라</span></div>
-						<div class="text" data-id=""><span>애</span></div>
-						<div class="text" data-id=""><span>름</span></div>
-						<div class="text" data-id="3"><span>봐</span></div>
-						<div class="text" data-id=""><span>열</span></div>
-						<div class="text" data-id=""><span>제</span></div>
-						<div class="text" data-id=""><span>니</span></div>
-						<div class="text" data-id="1"><span>돼</span></div>
-					</li>
-				</ul>
-				<p class="answerArea" data-id="1" data-ui="P:a l:20 t:20">
-					<svg xmlns="http://www.w3.org/2000/svg" width="1596" height="742" viewBox="0 0 1596 742" fill="none">
-						<path
-							d="M1561.56 635.238C1589.65 647.165 1602.77 679.619 1590.84 707.715C1578.92 735.822 1546.46 748.929 1518.36 737.002L34.5179 107.147C6.42209 95.2198 -6.69568 62.7656 5.23149 34.6698C17.1587 6.57393 49.6129 -6.54382 77.7087 5.38335L1561.56 635.238Z"
-							fill="#CAE8FA" fill-opacity="0.8" />
-					</svg>
-				</p>
-				<p class="answerArea" data-id="2" data-ui="P:a l:60 t:20">
-					<svg xmlns="http://www.w3.org/2000/svg" width="1596" height="741" viewBox="0 0 1596 741" fill="none">
-						<path
-							d="M34.4012 634.326C6.30539 646.253 -6.81238 678.707 5.11479 706.803C17.042 734.909 49.4962 748.017 77.592 736.089L1561.43 106.235C1589.53 94.3077 1602.64 61.8535 1590.72 33.7577C1578.79 5.66185 1546.33 -7.45593 1518.24 4.47124L34.4012 634.326Z"
-							fill="#F4D1E8" fill-opacity="0.8" />
-					</svg>
-				</p>
-				<p class="answerArea" data-id="3" data-ui="P:a l:700 t:40">
-					<svg xmlns="http://www.w3.org/2000/svg" width="111" height="715" viewBox="0 0 111 715" fill="none">
-						<path
-							d="M0.428223 659.095C0.428223 689.625 25.1755 714.373 55.7057 714.373C86.2358 714.373 110.983 689.625 110.983 659.095V56.0821C110.983 25.552 86.2358 0.804688 55.7057 0.804688C25.1755 0.804688 0.428223 25.552 0.428223 56.0821V659.095Z"
-							fill="#D0D1FE" fill-opacity="0.8" />
-					</svg>
-				</p>
-			</div>
+				<div data-ui="w:1720 h:794 P:r ml:auto mr:auto" id="imgArea">
+					<ul class="list" data-ui="w:1720 h:794  BG:res/bg.png">
+						<li>
+							<div class="text" data-id="1"><span>화</span></div>
+							<div class="text" data-id=""><span>진</span></div>
+							<div class="text" data-id=""><span>하</span></div>
+							<div class="text" data-id="3"><span>속</span></div>
+							<div class="text" data-id=""><span>연</span></div>
+							<div class="text" data-id=""><span>황</span></div>
+							<div class="text" data-id=""><span>원</span></div>
+							<div class="text" data-id="2"><span>이</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>동</span></div>
+							<div class="text" data-id="1"><span>가</span></div>
+							<div class="text" data-id=""><span>술</span></div>
+							<div class="text" data-id="3"><span>상</span></div>
+							<div class="text" data-id=""><span>석</span></div>
+							<div class="text" data-id=""><span>찬</span></div>
+							<div class="text" data-id="2"><span>또</span></div>
+							<div class="text" data-id=""><span>슬</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>민</span></div>
+							<div class="text" data-id=""><span>제</span></div>
+							<div class="text" data-id="1"><span>날</span></div>
+							<div class="text" data-id="3"><span>할</span></div>
+							<div class="text" data-id=""><span>순</span></div>
+							<div class="text" data-id="2"><span>한</span></div>
+							<div class="text" data-id=""><span>상</span></div>
+							<div class="text" data-id=""><span>서</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>겸</span></div>
+							<div class="text" data-id=""><span>세</span></div>
+							<div class="text" data-id=""><span>수</span></div>
+							<div class="text" data-id="1,3"><span>땐</span></div>
+							<div class="text" data-id="2"><span>지</span></div>
+							<div class="text" data-id=""><span>동</span></div>
+							<div class="text" data-id=""><span>지</span></div>
+							<div class="text" data-id=""><span>안</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>하</span></div>
+							<div class="text" data-id=""><span>연</span></div>
+							<div class="text" data-id=""><span>지</span></div>
+							<div class="text" data-id="2,3"><span>나</span></div>
+							<div class="text" data-id="1"><span>화</span></div>
+							<div class="text" data-id=""><span>현</span></div>
+							<div class="text" data-id=""><span>율</span></div>
+							<div class="text" data-id=""><span>루</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>진</span></div>
+							<div class="text" data-id=""><span>후</span></div>
+							<div class="text" data-id="2"><span>가</span></div>
+							<div class="text" data-id="3"><span>를</span></div>
+							<div class="text" data-id=""><span>주</span></div>
+							<div class="text" data-id="1"><span>내</span></div>
+							<div class="text" data-id=""><span>유</span></div>
+							<div class="text" data-id=""><span>아</span></div>
+						</li>
+						<li>
+							<div class="text" data-id=""><span>희</span></div>
+							<div class="text" data-id="2"><span>리</span></div>
+							<div class="text" data-id=""><span>기</span></div>
+							<div class="text" data-id="3"><span>돌</span></div>
+							<div class="text" data-id=""><span>임</span></div>
+							<div class="text" data-id=""><span>희</span></div>
+							<div class="text" data-id="1"><span>도</span></div>
+							<div class="text" data-id=""><span>권</span></div>
+						</li>
+						<li>
+							<div class="text" data-id="2"><span>라</span></div>
+							<div class="text" data-id=""><span>애</span></div>
+							<div class="text" data-id=""><span>름</span></div>
+							<div class="text" data-id="3"><span>봐</span></div>
+							<div class="text" data-id=""><span>열</span></div>
+							<div class="text" data-id=""><span>제</span></div>
+							<div class="text" data-id=""><span>니</span></div>
+							<div class="text" data-id="1"><span>돼</span></div>
+						</li>
+					</ul>
+					<p class="answerArea" data-id="1" data-ui="P:a l:20 t:20">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1596" height="742" viewBox="0 0 1596 742" fill="none">
+							<path
+								d="M1561.56 635.238C1589.65 647.165 1602.77 679.619 1590.84 707.715C1578.92 735.822 1546.46 748.929 1518.36 737.002L34.5179 107.147C6.42209 95.2198 -6.69568 62.7656 5.23149 34.6698C17.1587 6.57393 49.6129 -6.54382 77.7087 5.38335L1561.56 635.238Z"
+								fill="#CAE8FA" fill-opacity="0.8" />
+						</svg>
+					</p>
+					<p class="answerArea" data-id="2" data-ui="P:a l:60 t:20">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1596" height="741" viewBox="0 0 1596 741" fill="none">
+							<path
+								d="M34.4012 634.326C6.30539 646.253 -6.81238 678.707 5.11479 706.803C17.042 734.909 49.4962 748.017 77.592 736.089L1561.43 106.235C1589.53 94.3077 1602.64 61.8535 1590.72 33.7577C1578.79 5.66185 1546.33 -7.45593 1518.24 4.47124L34.4012 634.326Z"
+								fill="#F4D1E8" fill-opacity="0.8" />
+						</svg>
+					</p>
+					<p class="answerArea" data-id="3" data-ui="P:a l:700 t:40">
+						<svg xmlns="http://www.w3.org/2000/svg" width="111" height="715" viewBox="0 0 111 715" fill="none">
+							<path
+								d="M0.428223 659.095C0.428223 689.625 25.1755 714.373 55.7057 714.373C86.2358 714.373 110.983 689.625 110.983 659.095V56.0821C110.983 25.552 86.2358 0.804688 55.7057 0.804688C25.1755 0.804688 0.428223 25.552 0.428223 56.0821V659.095Z"
+								fill="#D0D1FE" fill-opacity="0.8" />
+						</svg>
+					</p>
+				</div>
 			</div>
 			<script>
-		$(function () {
-    var dragIds = [];
-    var isDragging = false;
+				$(function () {
+					var dragIds = [];
+					var isDragging = false;
 
-    $('#imgArea ul .text').on('mousedown', function () {
-        dragIds = [];
-        isDragging = true;
-        $(this).addClass('on');
-    });
+					$('#imgArea ul .text').on('mousedown', function () {
+						dragIds = [];
+						isDragging = true;
+						$(this).addClass('on');
+					});
 
-    $('#imgArea ul .text').on('mouseenter', function () {
-        if (!isDragging) return;
+					$('#imgArea ul .text').on('mouseenter', function () {
+						if (!isDragging) return;
 
-        var dataIds = $(this).data('id');
-        if (dataIds) {
-            var idsArray = dataIds.toString().split(',');
-            for (var i = 0; i < idsArray.length; i++) {
-                var id = $.trim(idsArray[i]); // trim IE8부터 jQuery가 제공
-                if (id) dragIds.push(id);
-            }
-        }
+						var dataIds = $(this).data('id');
+						if (dataIds) {
+							var idsArray = dataIds.toString().split(',');
+							for (var i = 0; i < idsArray.length; i++) {
+								var id = $.trim(idsArray[i]); // trim IE8부터 jQuery가 제공
+								if (id) dragIds.push(id);
+							}
+						}
 
-        $(this).addClass('on'); // 지나갈 때마다 on 클래스 추가
-    });
+						$(this).addClass('on'); // 지나갈 때마다 on 클래스 추가
+					});
 
-    $(document).on('mouseup', function () {
-        if (!isDragging) return;
-        isDragging = false;
+					$(document).on('mouseup', function () {
+						if (!isDragging) return;
+						isDragging = false;
 
-        // 드래그가 끝나면 on 클래스 초기화
-        $('#imgArea ul .text').removeClass('on');
+						// 드래그가 끝나면 on 클래스 초기화
+						$('#imgArea ul .text').removeClass('on');
 
-        var counts = {};
+						var counts = {};
 
-        for (var i = 0; i < dragIds.length; i++) {
-            var id = dragIds[i];
-            if (!counts[id]) {
-                counts[id] = 1;
-            } else {
-                counts[id]++;
-            }
-        }
+						for (var i = 0; i < dragIds.length; i++) {
+							var id = dragIds[i];
+							if (!counts[id]) {
+								counts[id] = 1;
+							} else {
+								counts[id]++;
+							}
+						}
 
-        $.each(counts, function (id, count) {
-            if (count >= 3) {
-                $('.answerArea[data-id="' + id + '"]').show();
-            }
-        });
-    });
-});
+						$.each(counts, function (id, count) {
+							if (count >= 3) {
+								$('.answerArea[data-id="' + id + '"]').show();
+							}
+						});
+					});
+				});
 
 
 			</script>
