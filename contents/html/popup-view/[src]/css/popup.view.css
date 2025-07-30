@@ -885,19 +885,19 @@ header > [data-question] {
   background-image: url('../../[res]/btns/btn-no.png');
 }
 /**=============
- * 	도덕적 성찰 점검
+ * 	라디오체크
  =============*/
 
-[data-design='도덕적 성찰 점검'] [data-skill='radio'] {
+/*[data-design='라디오체크'] [data-skill='radio'] {
   display: flex;
-}
-[data-design='도덕적 성찰 점검'] [data-skill='radio'] [data-radio] {
+}*/
+[data-design='라디오체크'] [data-skill='radio'] [data-radio] {
   position: relative;
   width: 61px;
   height: 56px;
   font-size: 0;
 }
-[data-design='도덕적 성찰 점검'] [data-skill='radio'] [data-radio].on::after {
+[data-design='라디오체크'] [data-skill='radio'] [data-radio].on::after {
   content: '';
   width: 61px;
   height: 56px;
@@ -1195,21 +1195,25 @@ table .ff-1 {
 quizItem table th.ff-1 {
   font-size: 56px;
 }
-table th.ff-1.round {
+table th.round {
   background-color: transparent;
   padding: 0;
   height: 100%;
 }
-table th.ff-1.round .text {
+table th.round p {
   border-radius: 50px 0 0 50px;
-  background-color: #edf4dc;
   padding: 20px 40px;
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-
+[data-table='녹색'] table th.round p {
+  background-color: #edf4dc;
+}
+[data-table='베이지'] table th.round p {
+  background-color: #EBD6B5;
+}
 quizItem table assessFeedback * {
   line-height: 1.4;
   display: block;

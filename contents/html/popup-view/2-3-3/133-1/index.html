@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>우리가 함께 세우는 성 윤리! 성 윤리 실천 나무 만들기</span></h1>
+		</header>
+
+		<section data-ui="w:1740">
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+
+					<h2 data-question="활동하기"><span>●</span> <span>다음 활동을 통해 우리 학급의 성 윤리 실천 나무를 만들어 보자.</span></h2>
+					<h2 data-question="1"><span>1</span> <span>존중과 배려가 넘치는 학급을 만들기 위해 우리가
+							실천해야 할 성 윤리와 그 까닭을 써 보자.</span></h2>
+
+					<quizItem data-id="q-1" data-table="녹색">
+						<table>
+							<colgroup>
+								<col data-ui="w:320">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>우리가<br>
+										지켜야 할<br>
+										성 윤리
+									</th>
+									<td>
+										<assessmentitem data-response-type="show">
+											<p data-ui="LS:-2.5">예) ‘여자답다.’, ‘남자답다.’라는 표현을 쓰지 않으려고 노력한다.
+											</p>
+											<assessfeedback data-ui="mt:20">
+												<span>남성과 여성을 비하하는 속어를 사용하지 않는다.
+												</span>
+											</assessfeedback>
+										</assessmentitem>
+									</td>
+								</tr>
+								<tr>
+									<th>까닭</th>
+									<td>
+										<assessmentitem data-response-type="show">
+											<assessfeedback>
+												<span>무심코 내뱉는 말이 남성과 여성의 갈등을 유발할 수 있기 때문이다.
+												</span>
+											</assessfeedback>
+										</assessmentitem>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="mt:60">정답</quizBtn>
+					</quizItem>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="2"><span>2</span> <span>각자 제안한 성 윤리를 열매 모양 쪽지에 쓰고, 다짐을 발표하며 성 윤리 실천 나무에 붙여 보자.</span></h2>
+
+					<quizItem data-id="q-2" data-ui="BG:res/bg.png w:1199 h:680 mx:auto mt:-30">
+						<assessmentItem data-response-type="show">
+							<assessFeedback >
+								<p data-ui="P:a r:48 t:269 w:386  Fs:30 LH:50">남성과 여성을 비하하는 속어를 절대 사용하지 않겠다.
+								</p>
+							</assessFeedback>
+						</assessmentItem>
+						<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+					</quizItem>
+				</div>
+
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="3"><span>3</span> <span>성 윤리 실천 나무에 붙은 성 윤리를 실제로 실천하고 느낀 점을 발표해 보자.</span>
+					</h2>
+					<quizItem data-id="q-3">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:510">
+							<assessFeedback>
+								<p>내가 무심코 뱉는 말 중에 혹시 남성, 여성을 비하하는 속어가 있지는 않은지 의식적으로 살폈다. 스스로의 말을 검사하고 평가하는 것이 다소 피곤했지만, 한편으로는 우리 학급에 올바른
+									성 의식을 뿌리내리는 데 도움이 된 것 같아 뿌듯했다.
+								</p>
+							</assessFeedback>
+							<quizBtn data-id="q-3" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+			</div>
+		</section>
+
+	</main>
+</body>
+
+</html>

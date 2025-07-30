@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
+	<!--script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		[data-design='라디오체크'] .text {
+			display: none;
+			font-size: 40px;
+			color: #655fff;
+			font-weight: 800;
+			line-height: 1.5;
+		}
+
+		[data-design='라디오체크'] td {
+			border-left: 0 !important;
+		}
+
+		[data-design='라디오체크'] [data-radio] {
+			border-radius: 8px;
+			border: 4px solid #aaa;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>디지털 공간과 대중 매체 속에서 볼 수 있는 성에 대한 편견</span></h1>
+		</header>
+
+		<section  data-ui="w:1740">
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="1"><span>1</span> <span>가상공간이나 대중 매체에서 성에 대한 편견이 담긴 장면을 찾아보자.</span>
+					</h2>
+
+					<quizItem data-id="q-1" data-ui="BG:res/bg-1.png w:1720 h:474  mt:20">
+						<assessmentItem data-response-type="show">
+							<assessFeedback>
+								<p data-ui="P:a r:90 t:160 w:790 LH:75">예능 프로그램에서 남자 팀은 펀치 기계로 게임을 하고, 여자 팀은 공기놀이를 하는 장면</p>
+							</assessFeedback>
+						</assessmentItem>
+						<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="ml:370 mt:20">정답</quizBtn>
+					</quizItem>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="2"><span>2</span>
+						<span>해당 장면에 어떤 성 역할 고정 관념 또는 성차별적 표현이 나타나 있는지 하나를 선택하여 분석해
+							보자.</span>
+					</h2> 
+
+					<div>
+						<table data-design="라디오체크" class="line-gray">
+							<colgroup>
+								<col data-ui="w:400" />
+								<col />
+							</colgroup>
+							<tbody data-skill="radio">
+								<tr>
+									<th data-ui="pl:30 Ta:left h:140">
+										<div data-radio="1" data-ui="w:45 h:45 mr:5">1</div>
+										<span  data-ui="Fs:40 Fw:800 LS:-1">성 역할 고정 관념</span>
+									</th>
+									<td>
+										<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+									</td>
+								</tr>
+								<tr>
+									<th data-ui="pl:30 Ta:left h:140">
+										<div data-radio="2" data-ui="w:45 h:45 mr:5">2</div>
+										<span  data-ui="Fs:40 Fw:800">성차별적 표현</span>
+									</th>
+									<td>
+										<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<h2 data-question="3" data-ui="mt:50"><span>3</span> <span>해당 장면이 문제가 되는 까닭은 무엇인지 이야기해 보자.</span> </h2>
+					
+					<quizItem data-id="q-2" class="input-text" data-ui="h:80 Bc:#a9aaaa">
+						<assessmentItem data-response-type="show">
+							<assessFeedback>
+								<p data-ui="Fs:40 pl:20 LH:50">남성과 여성에 대한 왜곡된 성 역할 고정 관념이 드러난다.
+								</p>
+							</assessFeedback>
+						</assessmentItem>
+						<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="mt:-20">정답</quizBtn>
+					</quizItem>
+
+				</div>
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="4" data-ui="LS:-1"><span>4</span> <span>성에 대한 편견이 사라진 장면으로 바꾸어 보고, 우리가 할 수 있는 일을 써 보자.</span> </h2>
+
+					<div data-ui="P:r mt:20">
+						<quizItem data-id="q-4" data-ui="BG:res/bg-2.png w:1500 h:462  mt:20">
+							<assessmentItem data-response-type="show">
+								<assessFeedback>
+									<p data-ui="P:a l:100 t:104 w:530 LH:75">남자 팀과 여자 팀 모두 같은 게임을 한다.</p>
+									<p data-ui="P:a l:878 t:145 w:580 LH:70">체육 시간에 자유 활동을 할 때 남학생과 여학생 모두 참여할 수 있는 게임을 한다.</p>
+								</assessFeedback>
+							</assessmentItem>
+							<quizBtn data-id="q-4" data-skill="answerReset" class="center" data-ui="mt:20">정답</quizBtn>
+						</quizItem>
+
+						<a href="https://code.jihak.co.kr/qr/z7DSZ6pR0QYkepJl" target="_blank" data-ui="P:a r:0 t:0 w:214">
+							<img src="res/qr.png" alt="QR을 클릭해주세요." data-ui="w:280" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script>
+		$(function () {
+			//라디오 버튼 체크
+			$('[data-radio]').each(function () {
+				const $el = $(this);
+				const observer = new MutationObserver(function (mutationsList) {
+					mutationsList.forEach(function (mutation) {
+						if (mutation.attributeName === 'class') {
+							if ($el.hasClass('on')) {
+								$('td .text').hide();
+								$el.closest('tr').find('td .text').show();
+							} else {
+								$el.closest('tr').find('td .text').hide();
+							}
+						}
+					});
+				});
+
+				// class 변화 감시
+				observer.observe(this, { attributes: true });
+			});
+		});
+	</script>
+</body>
+
+</html>

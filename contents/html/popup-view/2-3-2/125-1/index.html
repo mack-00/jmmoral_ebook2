@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="생각 열기"><span>생각 열기</span></h1>
+
+		</header>
+
+
+		<section>
+			<div data-skill="tab"> <!--질문-->
+				<div data-tab="1">
+					<h2 data-question="생각 열기"><span>●</span> <span>성에 대한 고정된 시각을 보여 주는 두 그림을 보고 물음에 답해 보자.</span></h2>
+					<div data-ui="Ta:center mt:-20">
+						<img alt="관련이미지" src="res/img-1.png" data-ui="w:620">
+					</div>
+				</div>
+				<div data-tab="2">
+					<h2 data-question="생각 열기"><span>●</span> <span>위의 두 그림을 비교해서 보면 어떤 생각이 드는지 이야기해 보자.</span></h2>
+					<quizItem data-id="q-1">
+
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:344">
+
+							<assessFeedback>
+								<p>파란색은 남자, 분홍은 여자를 표현하는 색이라는 생각이 들었다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+
+						</assessmentItem>
+
+					</quizItem>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+</body>
+
+</html>

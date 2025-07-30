@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="생각 열기"><span>생각 열기</span></h1>
+
+		</header>
+
+
+		<section>
+			<div data-skill="tab"> <!--질문-->
+				<div data-tab="1">
+					<h2 data-question="생각 열기"><span>●</span> <span>성에 대한 고민을 담은 다음 상담 게시판의 글을 보고 물음에 답해 보자.</span></h2>
+					<div data-ui="Ta:center">
+						<img alt="관련이미지" src="res/img-1.png" data-ui="w:660">
+					</div>
+				</div>
+				<div data-tab="2">
+					<h2 data-question="생각 열기"><span>●</span> <span>위 학생에게 필요한 도움은 무엇일까?</span></h2>
+					<quizItem data-id="q-1">
+
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:344">
+
+							<assessFeedback>
+								<p>현재 상담을 원하는 학생은 음란물에 지나치게 몰두하여 일상생활이 힘든 정도이다. 음란물에 대한 지나친 몰입에서 빠져나올 수 있는 방법을 알려 주거나 상담 기관을 안내해 주는 도움이
+									필요하다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+
+						</assessmentItem>
+
+					</quizItem>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+</body>
+
+</html>

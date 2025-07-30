@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		table th.round .text {
+			border-radius: 50px 50px 0 0;
+			border-left: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>남자다움과 여자다움</span></h1>
+		</header>
+
+		<section>
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="활동하기"><span>●</span> <span>다음 활동을 통해 ‘남자다움’과 ‘여자다움’의 의미에 대해 생각해 보자.</span></h2>
+
+					<div class="scroll" data-ui="h:640">
+						<div data-ui="Ta:center">
+							<img src="res/img-1.png" alt="남자다움,여자다움" data-ui="w:1100" />
+						</div>
+
+						<h2 data-question="1" data-ui="mt:20"><span>1</span>
+							<span>남자답다.’, ‘여자답다.’라는 말을 들을 때 떠오르는 표현이나 이미지를 쪽지에 써서 ‘남자다움’,
+								‘여자다움’ 상자에 넣어 보자.</span>
+						</h2>
+
+						<quizItem data-id="q-1" data-table="베이지" data-ui="w:1640 ml:auto">
+							<table>
+								<tr>
+									<th data-ui="w:50%" class="ff-1 round">
+										<p class="text" data-ui="py:10">남자다움</p>
+									</th>
+
+									<th data-ui="w:50%" class="ff-1 round">
+										<p class="text" data-ui="py:10">여자다움</p>
+									</th>
+								</tr>
+								<tr>
+									<td data-ui="Ta:center">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<p>근육질(근육이 남성성의 상징이라고 생각하기 때문이다.) </p>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+
+									<td data-ui="Ta:center">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<p>거울(주로 여자들이 들고 다니는 물건이기 때문이다.) </p>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+								</tr>
+							</table>
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="mt:40">정답</quizBtn>
+						</quizItem>
+					</div>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="2"><span>2</span> <span>상자에 담긴 쪽지를 모두 꺼내 보며 모둠원들과 함께 논의해 보자.</span></h2>
+
+					<quizItem data-id="q-2">
+						<assessmentItem data-response-type="show" data-box="라인" data-ui="px:40  h:640">
+							<div class="scroll">
+								<ul class="list" data-ui="Fw:800 Fw:700 Fs:36 LH:70">
+									<li>
+										<p>① 오직 ‘남자다움’, ‘여자다움’ 상자에만 들어갈 수 있는 쪽지를 골라 보고, 그 까닭을 말해 보자.</p>
+
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>쪽지 내용 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40 ">
+													<p>남자다움, 여자다움 상자에만 들어갈 수 있는 쪽지는 없는 것 같다. </p>
+												</assessFeedback>
+											</div>
+										</div>
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>까닭 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40 ">
+													<p>모든 쪽지의 내용이 남자와 여자 모두 해당될 수 있기 때문이다.
+													</p>
+												</assessFeedback>
+											</div>
+										</div>
+									</li>
+									<li data-ui="mt:30">
+										<p>② 다른 상자에도 들어갈 수 있는 쪽지를 고르고, 그 까닭을 말해 보자.</p>
+
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>쪽지 내용 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40 ">
+													<p>근육질
+													</p>
+												</assessFeedback>
+											</div>
+										</div>
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>까닭 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40 ">
+													<p>근육질은 여자다움 상자에도 들어갈 수 있다. 여자도 근육이 많을 수 있기 때문이다.
+													</p>
+												</assessFeedback>
+											</div>
+										</div>
+									</li>
+									<li data-ui="mt:30">
+										<p>③ 다른 상자에도 들어갈 수 있는 쪽지를 ‘남자다움’, ‘여자다움’ 상자에 넣은 까닭은 무엇인지 말해 보자.</p>
+
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>쪽지 내용 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40 ">
+													<p>근육질
+													</p>
+												</assessFeedback>
+											</div>
+										</div>
+										<div class="bollet com-flex" data-ui="ml:50 mt:10">
+											<span>까닭 : </span>
+											<div class="input-text">
+												<assessFeedback data-ui="P:a l:20 t:-5 Fs:40  LS:-2">
+													<p>대중 매체에서 접하는 남자다운 남자, 여자다운 여자에 대한 고정 관념이 있어서 그런 것 같다.
+													</p>
+												</assessFeedback>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="3"><span>3</span>
+						<span>내가 원하는 표현이나 이미지를 선택하여 쪽지에 쓰고, ‘나다움’ 상자에 넣어 보자.</span>
+					</h2>
+
+					<quizItem data-id="q-3" data-ui="w:1500 h:376 BG:res/img-2.png mt:40 mx:auto">
+						<div data-ui="h:366 P:r">
+							<assessmentitem data-response-type="show">
+								<assessfeedback>
+									<p class="item" data-ui="Fs:30 P:a l:495 t:146"> 건강한 몸 </p>
+									<p class="item" data-ui="Fs:30 P:a l:745 t:160"> 건강한 마음 </p>
+									<p class="item" data-ui="Fs:30 P:a l:1038 t:146"> 친절한 행동 </p>
+								</assessfeedback>
+							</assessmentitem>
+							<quizbtn data-id="q-3" data-skill="answerReset" class="center">정답</quizbtn>
+						</div>
+					</quizItem>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

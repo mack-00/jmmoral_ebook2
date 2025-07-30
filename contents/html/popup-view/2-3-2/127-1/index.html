@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+	<style>
+		table th.round .text {
+			border-radius: 50px 50px 0 0;
+			border-left: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>우리가 경험하는 성차별적 표현</span></h1>
+		</header>
+
+		<section>
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="1" data-ui="LS:-1.5"><span>1</span> <span>다음과 같이 일상생활에서 접하는 성차별적 표현을 찾아 그림으로 표현해 보자.</span>
+					</h2>
+
+					<div data-ui="Ta:center mt:-20">
+						<img src="res/img-1.png" alt="성차별적이미지" />
+					</div>
+
+					<quizItem data-id="q-1" data-ui="BG:res/bg-2.png w:1260 h:263 mx:auto mt:20">
+						<assessmentItem data-response-type="show">
+							<assessFeedback>
+								<p data-ui="pt:40 px:60">선생님이 “무거운 물건은 남학생이 들어야지.”라고<br />
+									하며 남학생들에게만 교구를 옮기게 하는 장면</p>
+							</assessFeedback>
+						</assessmentItem>
+						<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+					</quizItem>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="2"><span>2</span> <span>각자 완성한 그림을 보고 무엇이 문제인지 이야기해 보자.</span></h2>
+
+					<quizItem data-id="q-2" data-table="베이지">
+						<table>
+							<tr>
+								<th data-ui="w:50% " class="round">
+									<p class="text">성차별적 표현</p>
+								</th>
+
+								<th data-ui="w:50%" class="round">
+									<p class="text">문제점</p>
+								</th>
+							</tr>
+							<tr>
+								<td data-ui="py:50 LS:-1">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<p>수업 시간에 모두 함께 사용하는 교구를 옮기는 일은 남학생만 해야 한다는 표현 </p>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+
+								<td data-ui="py:50 LS:-1">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<p>남학생은 힘이 세고, 여학생은 힘이 약하다는 성적 편견이 담겨 있기 때문에 문제가 될 수 있다.
+											</p>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+							</tr>
+						</table>
+						<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="mt:60">정답</quizBtn>
+					</quizItem>
+				</div>
+
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="3"><span>3</span> <span>성차별적 표현을 차별 없는 표현으로 바꾸어 보자.</span> </h2>
+
+					<div class="com-flex" data-ui="P:r">
+
+						<quizItem data-id="q-3" data-table="베이지" data-ui="w:680 mr:100">
+							<table>
+								<tr>
+									<th class="round">
+										<p class="text">성차별적 표현</p>
+									</th>
+								</tr>
+								<tr>
+									<td data-ui="py:40 h:405">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<p>수업 시간에 모두 함께 사용하는 교구를 옮기는 일은 남학생만 해야 한다는 표현</p>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+								</tr>
+							</table>
+							<quizBtn data-id="q-3" data-skill="answerReset" class="center" data-ui="mt:50">정답</quizBtn>
+						</quizItem>
+						<i data-ui="BG:res/arrow-r.png w:66 h:46 P:a t:250 l:696"></i>
+						<quizItem data-id="q-4" data-table="베이지" data-ui="w:680">
+							<table>
+								<tr>
+									<th class="round">
+										<p class="text">차별 없는 표현</p>
+									</th>
+								</tr>
+								<tr>
+									<td data-ui="py:40 h:405">
+										<assessmentItem data-response-type="show">
+											<assessFeedback>
+												<p>“수업 시간에 모두 함께 사용하는 교구니까, 우리 모두 함께 힘을 모아 옮기도록 하자.”</p>
+											</assessFeedback>
+										</assessmentItem>
+									</td>
+								</tr>
+							</table>
+							<quizBtn data-id="q-4" data-skill="answerReset" class="center" data-ui="mt:50">정답</quizBtn>
+						</quizItem>
+
+						<a href="https://code.jihak.co.kr/qr/cTGdTK8VFP6BfO24" target="_blank" data-ui="P:a r:0 t:10 w:214">
+							<img src="res/qr.png" alt="QR을 클릭해주세요." data-ui="w:280" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
