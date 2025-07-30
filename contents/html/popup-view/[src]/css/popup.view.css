@@ -223,39 +223,39 @@ header [data-subject] {
   background-image: url('../../[res]/titles/중단원 마무리 정리하기.png');
 }
 [data-subject='대단원 마무리'] > span:nth-child(1) {
-  width: 512px;
-  height: 91px;
+  width: 475px;
+  height: 100px;
   background-image: url('../../[res]/titles/대단원 마무리.png');
 }
 [data-subject='대단원 마무리-2'] > span:nth-child(1) {
-  width: 512px;
-  height: 91px;
+  width: 475px;
+  height: 100px;
   background-image: url('../../[res]/titles/대단원 마무리-2.png');
 }
 [data-subject='대단원 마무리-3'] > span:nth-child(1) {
-  width: 512px;
-  height: 91px;
+  width: 475px;
+  height: 100px;
   background-image: url('../../[res]/titles/대단원 마무리-3.png');
 }
 [data-subject='대단원 마무리-4'] > span:nth-child(1) {
-  width: 512px;
-  height: 91px;
+  width: 475px;
+  height: 100px;
   background-image: url('../../[res]/titles/대단원 마무리-4.png');
 }
 
 [data-subject='대단원 마무리-2'] > span:nth-child(2) {
   left: -30px;
-  top: 12px;
+  top: 6px;
   background-color: #af9ecb;
 }
 [data-subject='대단원 마무리-3'] > span:nth-child(2) {
   left: -30px;
-  top: 12px;
+  top: 6px;
   background-color: #83c7ec;
 }
 [data-subject='대단원 마무리-4'] > span:nth-child(2) {
   left: -30px;
-  top: 12px;
+  top: 6px;
   background-color: #8dcc95;
 }
 

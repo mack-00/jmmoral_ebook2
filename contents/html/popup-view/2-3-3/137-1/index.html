@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		[data-skill='radio'] [data-radio] {
+			padding: 2px 16px;
+			border-radius: 40px;
+		}
+
+		[data-skill='radio'] [data-radio].on {
+			color: #000;
+			position: relative;
+		}
+
+		[data-skill='radio'] [data-idx='0'].on {
+			background-color: #d1eefc;
+		}
+
+		[data-skill='radio'] [data-idx='1'].on {
+			background-color: #D6D6FF;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="s">
+		<header>
+			<!--주제-->
+			<h1 data-subject="세상속으로"><span>생각 열기</span> <span>교실 밖 <b>생각 수업</b> | 도덕적 딜레마</span></h1>
+		</header>
+		<section data-ui="w:1740">
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="중단원"><span>●</span> <span>정당한 폭력이 존재할까</span></h2>
+					<div data-box="파랑" data-ui="py:26 px:45 h:650 LS:-0.1">
+						<div class="scroll">
+							<p>
+								<img src="res/img-1.png" alt="관련이미지" data-ui="w:650 A:r ml:30 mt:0" />
+							</p>
+							<p>한가로운 주말 아침 갑자기 큰일이 벌어졌다. 국제 테러 집단이 24시간 후에 우리 도시의 가장 큰 건물을
+								폭파한다고 위협하는 협박 동영상이 빠른 속도로 퍼지고 있다. 그 건물이 폭발한다면 최소 100명 이상의
+								사상자와 도시 기능의 마비, 거대한 경제적 손해가 예상된다. 시민들은 혼란에 빠져 있다.
+							</p>
+							<p>그러던 중 성인이 되지 않은 아이가 정보 기관에 체포되었다. 정보 기관 책임자인 이 씨의 주장에 따르면,
+								이 아이가 국제 테러 협박 단체와 밀접한 관련이 있는 유력한 용의자라는 것이다. 이 아이는 테러 관련
+								질문에 어떤 답변도 하지 않고 있다. 정보 기관 책임자인 이 씨는 체포된 아이를 고문해서라도 정보를 얻어
+								우리 도시에서 발생할 테러를 막을지 고민하고 있다. 더 이상 지체할 시간이 없다. 어떤 결정을 내려야
+								할까?</p>
+
+							<p data-ui="Fs:45 mt:20 Ta:r">- 게오르그 린트, 『도덕적 민주적 역량: 어떻게 기를 것인가』 </p>
+						</div>
+					</div>
+				</div>
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="2">
+					<h2 data-question="세상속으로" data-ui="pl:160"><span data-icon="단계">1단계</span> <span>위의 제시문에서 문제가 되는 두 가지 갈등은
+							무엇인가?</span></h2>
+
+					<p data-ui="Ta:center mt:100">
+						<img src="res/img-2.png" alt="관련이미지" />
+					</p>
+				</div>
+				<div data-tab="3">
+					<div class="scroll" data-ui="h:700">
+						<h2 data-question="세상속으로" data-ui="pl:160 LS:-2"><span data-icon="단계">2단계</span>
+							<span>만약 내가 정보 기관의 책임자인 이 씨라면 어떤 결정을 내릴지 선택해 보자.</span>
+						</h2>
+
+						<div data-box="라인" data-ui="ml:160 Fw:700 Ta:center" class="text-lg mh-auto">
+							<div data-skill="radio">체포된 아이를(<div data-radio="yes" data-idx="0" class="on">고문하여 정보를 얻는다</div>/<div
+									data-radio="no" data-idx="1" class="">고문하지 않고 다른 방법으로 정보를 찾는다</div>)
+							</div>
+						</div>
+						<h2 data-question="세상속으로" data-ui="pl:160 mt:40"><span data-icon="단계">2단계</span>
+							<span>그렇게 생각한 까닭은 무엇인가? ‘폭력’, ‘인권’ 등의 용어를 사용하여 근거를 써 보자.</span>
+						</h2>
+						<quizItem data-id="q-1" data-table="">
+							<table>
+								<colgroup>
+									<col data-ui="w:400" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th data-ui="py:10">입장</th>
+										<th data-ui="py:10">근거</th>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-2 BGc:#d1eefc">고문하여 정보를<br />
+											얻는다.</th>
+										<td>
+											<assessmentitem data-response-type="show">
+												<assessfeedback data-ui="LS:-1">
+													<p class="bollet" data-ui="pl:35">최소 100여 명 이상이 테러로 인하여 목숨을 잃을 수 있는 매우 위험한 상황이고, 테러범의
+														‘폭력’적인 행동을 막아야 하기 때문에 고문을 해야 한다.
+													</p>
+													<p class="bollet" data-ui="pl:35">아이의 ‘인권’ 문제가 생길 수 있더라도 테러범일 가능성이 있기 때문에 고문해야 한다.
+													</p>
+													<p class="bollet" data-ui="pl:35">테러로 인한 폭파 시간이 가까워지는 상황에서 할 수 있는 모든 방안을 생각해야 한다.</p>
+												</assessfeedback>
+											</assessmentitem>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-1 BGc:#D6D6FF">고문하지 않고 <br />다른 방법으로 <br />정보를 찾는다. </th>
+										<td>
+											<assessmentitem data-response-type="show">
+												<assessfeedback data-ui="LS:-1">
+												<p class="bollet" data-ui="pl:35">성인이 되지 않은 아이가 체포되었지만 아직 그 아이가 테러 집단과 관련되어 있는지 확신할 수 없다.</p>
+												<p class="bollet" data-ui="pl:35">아이를 고문하는 것은 ‘인권’을 유린하는 행위이다. 테러로 인한 위험한 상황이지만 ‘폭력’적인 고문을 허용할 수는 없다.</p>
+
+												<p class="bollet" data-ui="pl:35">테러 관련 질문에 어떤 답변도 하지 않고 있는 아이가 고문을 한다고 해서 답을 얻을 수 있을지 확실하지 않다.</p>
+
+												</assessfeedback>
+											</assessmentitem>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="mt:60 ml:100">정답</quizBtn>
+						</quizItem>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
