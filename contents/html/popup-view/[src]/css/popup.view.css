@@ -8,6 +8,7 @@
   text-align: justify;
   padding: 30px 90px 60px;
   border-bottom: 1px solid #ddd;
+  word-break: break-all;
 }
 #popup-view.xs {
   padding-inline: 100px;
@@ -110,7 +111,7 @@ header [data-subject] {
   font-size: 50px;
   font-weight: normal;
   color: #fff;
-  padding: 0 40px 0 55px;
+  padding: 0 55px 0 55px;
   height: 70px;
   line-height: 68px;
   border-radius: 0 100px 100px 0;
@@ -266,7 +267,8 @@ header [data-subject] {
 }
 [data-subject='이 단원을들어가며'] > span:nth-child(1) {
   width: 462px;
-  height: 144px;  background-image: url('../../[res]/titles/이 단원을들어가며.png');
+  height: 144px;
+  background-image: url('../../[res]/titles/이 단원을들어가며.png');
 }
 
 /**=============
@@ -592,27 +594,42 @@ header > [data-question] {
 }
 
 .text-dote.s {
-	width: 16px;
-	height: 16px;
-	position: absolute;
-	top:-12px;
-	left:-12px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -12px;
+  left: -12px;
 }
 
-[data-icon='자료'],[data-icon='사례'] {
+[data-icon='자료'],
+[data-icon='사례'] {
+  font-family: 'Nanum';
   display: inline-flex;
-	justify-content: center;
+  justify-content: center;
   vertical-align: middle;
-  background-color: #CFB397;
+  background-color: #cfb397;
   border-radius: 10px;
   color: #000;
   text-align: center;
   width: 100px;
   height: 40px;
-	line-height: 44px;
+  line-height: 44px;
   font-size: 28px;
   font-weight: 900;
   margin-top: -5px;
+}
+
+[data-icon='자료'].lg {
+  width: 120px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 34px;
+}
+
+h2 [data-icon='자료'],
+[data-icon='사례'] {
+  margin-top: -10px;
+  margin-right: 5px;
 }
 
 [data-icon='자료'] b,
@@ -622,9 +639,8 @@ header > [data-question] {
   font-weight: 600;
   line-height: 40px;
   font-family: Arial, Helvetica, sans-serif;
-	margin-left: 10px;
+  margin-left: 10px;
 }
-
 
 [data-icon='스티커'] {
   display: inline-block;
@@ -690,22 +706,37 @@ header > [data-question] {
   border-radius: 0 10px 0 0;
 }
 
-
-[data-icon='숫자 원']{
-	color: #fff;
-	border-radius: 48px;
-	width: 48px;
-	min-width: 48px;
-	height: 48px;
-	line-height: 48px;
+[data-icon='숫자 원'] {
+  color: #fff;
+  border-radius: 48px;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  line-height: 48px;
   background-color: #7a5e50;
-    background-color: #626da6;
-	font-size: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  background-color: #626da6;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+[data-icon='가'] {
+  font-family: 'Nanum';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9fa0a0;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 30px;
+  vertical-align: middle;
+	font-weight: 800;
+	margin-top: -10px;
+	
+}
 /**=============
  * 	mp3
  =============*/
@@ -1108,7 +1139,6 @@ quizItem[data-box] {
  * 	table
  =============*/
 
-
 [data-table] {
   border-radius: 40px;
   overflow: hidden;
@@ -1160,8 +1190,8 @@ table tr > * + * {
   background-color: #ebd6b5;
 }
 
-[data-table='베이지 라운드'] table th{
-	background-color: transparent;
+[data-table='베이지 라운드'] table th {
+  background-color: transparent;
   border-radius: 40px;
   padding: 0;
   border-bottom: 0;
@@ -1169,7 +1199,6 @@ table tr > * + * {
   padding-left: 0 !important;
   padding-right: 0 !important;
   position: relative;
-
 }
 [data-table='베이지 라운드'] table th p {
   background-color: #ebd6b5;
@@ -1201,7 +1230,7 @@ table tr > * + * {
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   border-left: 4px solid #fff;
-  border-radius: 40px 0 0 40px;
+  border-radius: 60px 0 0 60px;
 }
 
 [data-table='베이지 라운드'].line table tr:first-child th p {
@@ -1215,7 +1244,6 @@ table tr > * + * {
   border-bottom-color: #d7bb8e;
   background-color: #fff;
 }
-
 
 table .ff-2 {
   font-family: 'Paper';
@@ -1231,20 +1259,29 @@ table th.round {
   background-color: transparent;
   padding: 0;
   height: 100%;
+  border-bottom: 0;
+  border-top: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 table th.round p {
   border-radius: 50px 0 0 50px;
-  padding: 20px 40px;
+  padding: 20px 10px;
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
+
+  border-left: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 4px solid #fff;
 }
 [data-table='녹색'] table th.round p {
   background-color: #edf4dc;
 }
 [data-table='베이지'] table th.round p {
-  background-color: #EBD6B5;
+  background-color: #ebd6b5;
 }
 quizItem table assessFeedback * {
   line-height: 1.4;
@@ -1255,7 +1292,10 @@ table th.va_m,
 table td.va_m {
   vertical-align: middle;
 }
-
+table th.va_t,
+table td.va_t {
+  vertical-align: top;
+}
 table.default {
   border-radius: 0;
   background-color: transparent;
@@ -1693,13 +1733,26 @@ h2 .badge {
   position: absolute;
   left: 0;
   top: 0px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .input-text {
   position: relative;
   border-bottom: 1px solid #666;
   flex: 1;
+}
+
+.pa-x{
+	position: absolute;
+	top:0;
+	left:50%;
+	transform:translateX(-50%);
+}
+.pa-y{
+	position: absolute;
+	left:0;
+	top:50%;
+	transform:translateY(-50%);
 }
 
 /* 매칭 퀴즈 */

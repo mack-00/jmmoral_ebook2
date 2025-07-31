@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+
+
+	<style>
+		.box {
+			border-radius: 20px;
+			border: 1.5px solid #CFB397;
+
+		}
+
+		.check {
+			display: inline-block;
+			width: 380px;
+			height: 90px;
+			border: 10px solid #655fff;
+			border-radius: 50%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<main id="popup-view">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>무엇이 바람직한 민주적 과정일까</span></h1>
+		</header>
+
+		<section>
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<h2 data-question="활동하기" data-ui="LS:-2"><span>●</span>
+						<span>
+							<span data-icon='가' data-ui="mr:5">가</span>와
+							<span data-icon='가' data-ui="mr:5">나</span>는 모두 학급 회장을 뽑는 선거 사례이다. 각각의 사례가 바람직한 민주적 과정인지를 평가해 보자. </span>
+					</h2>
+
+					<article class="com-flex" data-ui="ml:auto pt:90 LH:65 Fs:48 Fw:800">
+						<div class="box" data-ui="w:840 p:30 P:r mr:40 LS:-1">
+							<img src="res/가.png" alt="가" class="pa-x" data-ui="mt:-95">
+							<p>학급 학생들은 오직 후보를 확인하고 투표만 할 수 있다.
+								후보 연설도 없고 공약 발표도 없다. 그래서 학생들은 후보의 공약이 무엇인지도 모르고,
+								후보가 학급 회장이 되어 어떤 일을 할 생각인지 전혀 모른 채 투표한다.</p>
+						</div>
+						<div class="box" data-ui="w:840 p:30 P:r">
+							<img src="res/가.png" alt="가" class="pa-x" data-ui="mt:-95">
+							<p>학급 학생들은 학급 회장 선거 날에 지지하는 후보에게 공개적으로 손을 들어 투표한다. 후보들도 같이 투표하기 때문에, 어떤 친구가 누구에게 투표했는지 모두가 알 수 있다.</p>
+						</div>
+					</article>
+
+					</article>
+				</div>
+
+				<div data-tab="2">
+					<h2 data-question="활동하기" data-ui="LS:-2"><span>●</span>
+						<span>
+							<span data-icon='가' data-ui="mr:5">가</span>와
+							<span data-icon='가' data-ui="mr:5">나</span>는 모두 학급 회장을 뽑는 선거 사례이다. 각각의 사례가 바람직한 민주적 과정인지를 평가해 보자. </span>
+					</h2>
+					<quizItem data-id="q-1" data-table="베이지">
+						<table>
+							<colgroup>
+								<col data-ui="w:50%">
+								<col data-ui="w:50%">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th data-ui="py:10">
+										<span data-icon='가'>가</span>
+									</th>
+									<th data-ui="py:10">
+										<span data-icon='가'>나</span>
+									</th>
+								</tr>
+								<tr>
+									<td data-ui="Fs:48 pt:30 pb:50" class="va_t">
+										<assessmentitem data-response-type="show">
+											<div data-ui="w:780  mx:auto py:10 Br:50 BGc:#ebd6b5 Ta:center mb:30">
+												( &nbsp;바람직하다. &nbsp;/&nbsp; 바람직하지 않다.&nbsp; )</div>
+											<assessfeedback >
+												<i class="check" data-ui="P:a l:350 t:-118 "></i>
+												<p data-ui="w:770 P:a l:0 t:-16 LH:100 Fs:48 LS:-2.4 Ti:190">후보자의 연셜도, 공약 발표도
+													없어서 누가 더 나은 후보인지도 모르고, 이
+													것을 주제로 토론도 하지 못하기 때문이다.
+												</p>
+
+											</assessfeedback>
+											<div>
+												<p class="com-flex">왜냐하면 <span class="input-text"></span></p>
+												<p class="input-text" data-ui="h:100"></p>
+												<p class="input-text" data-ui="h:100"></p>
+											</div>
+
+										</assessmentitem>
+									</td>
+									<td data-ui="Fs:48 pt:30 pb:50" class="va_t">
+										<assessmentitem data-response-type="show">
+											<div data-ui="w:780  mx:auto py:10 Br:50 BGc:#ebd6b5 Ta:center  mb:30">
+												( &nbsp;바람직하다. &nbsp;/&nbsp; 바람직하지 않다.&nbsp; )</div>
+											<assessfeedback >
+												<i class="check" data-ui="P:a l:350 t:-118"></i>
+												<p data-ui="w:770 P:a l:0 t:-16 LH:100 Fs:48 LS:-2 Ti:190">공개적으로 투표하여 진심으로 자신이 지지 하는 후보를 뽑지 못하고
+													친구들의 눈치를 보아야 하기 때문이다.
+												</p>
+
+										</assessmentitem>
+
+
+										<div>
+											<p class="com-flex">왜냐하면 <span class="input-text"></span></p>
+											<p class="input-text" data-ui="h:100"></p>
+											<p class="input-text" data-ui="h:100"></p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="mt:60">정답</quizBtn>
+					</quizItem>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+</body>
+
+</html>

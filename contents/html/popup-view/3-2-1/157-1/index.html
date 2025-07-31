@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+		<header>
+			<!--주제-->
+			<h1 data-subject="생각 열기"><span>생각 열기</span></h1>
+		</header>
+
+		<section>
+			<div data-skill="tab">
+				<div data-tab="1">
+					<!--질문-->
+					<h2 data-question="생각 열기"><span>●</span> <span>다음 자료를 보고 물음에 답해 보자.</span>
+					</h2>
+					<div data-box="회색" data-ui="Ta:center">
+						<span data-icon="자료" data-ui="P:a l:50 t:40">자료 <b>1</b></span>
+						<img src="res/img-1.png" alt="자료">
+
+					</div>
+				</div>
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="생각 열기"><span>●</span> <span>다음 자료를 보고 물음에 답해 보자.</span>
+					</h2>
+					<div data-box="회색" data-ui="h:620">
+						<div class="scroll">
+							<div class="com-flex align-center" data-ui="mb:30">
+								<span data-icon="자료" data-ui="mr:20">자료 <b>2</b></span>
+								<p>2021년도 어린이·청소년의 주관적 행복 - 국제 비교 연구</p>
+							</div>
+							<div data-ui="Ta:center">
+								<img src="res/table.png" data-ui="w:100%" alt="자료">
+
+							</div>
+							<p data-ui="mt:30">
+
+								우리나라 어린이와 청소년의 ‘삶의 만족도 점수’는 경제 협력 개발 기구(OECD)의 주요 국가 가운데 가장 낮았고,
+								‘주관적 행복 지수’도 지난해보다 낮아진 것으로 조사됐다.<br>
+								주관적 행복 지수를 평가하는 여섯 가지 항목(주관적 건강, 삶의 만족,
+								학교생활 만족, 어울림, 소속감, 외로움) 가운데 주관적 건강 지수와
+								삶의 만족도가 지난해에 비하여 큰 폭으로 낮아졌다.
+								자신의 건강 상태가 좋다고 응답한 비율 (주관적 건강 지수)과
+								자신의 삶에 대해 만족한다고 응답한 비율(삶의 만족도)은 22개국 가운데 한국이 가장 낮았다.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div data-tab="3">
+					<!--질문-->
+					<h2 data-question="생각 열기"><span>●</span> <span>‘우리나라’를 떠올리면 가장 먼저 어떤 생각이 드는지 써 보자.</span>
+					</h2>
+					<quizItem data-id="q-2">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:344 px:50">
+							<assessFeedback>
+								<p>‘우리나라’를 떠올리면 작지만 강한 나라라는 생각이 떠오른다. 비록 영토는 그리 크지 않지만, 각종 국제 스포츠 대회에서 좋은 성적으로 세계를 놀라게 하기 때문이다.</p>
+							</assessFeedback>
+
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+
+</html>
