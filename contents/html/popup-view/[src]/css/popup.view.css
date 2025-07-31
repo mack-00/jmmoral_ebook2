@@ -266,8 +266,7 @@ header [data-subject] {
 }
 [data-subject='이 단원을들어가며'] > span:nth-child(1) {
   width: 462px;
-  height: 144px;
-  background-image: url('../../[res]/titles/이 단원을들어가며.png');
+  height: 144px;  background-image: url('../../[res]/titles/이 단원을들어가며.png');
 }
 
 /**=============
@@ -562,7 +561,7 @@ header > [data-question] {
   margin-top: 13px;
 }
 
-/*[data-icon='사례'] {
+[data-icon='사례'].lg {
   font-family: 'Paper';
   display: inline-block;
   background-color: #b79b82;
@@ -577,12 +576,12 @@ header > [data-question] {
   vertical-align: middle;
   margin-top: -5px;
 }
-[data-icon='사례'] .number {
+[data-icon='사례'].lg .number {
   display: inline-block;
   color: #fff;
   font-style: normal;
   line-height: 60px;
-}*/
+}
 
 .text-dote {
   background-color: #f2706c;
@@ -592,30 +591,40 @@ header > [data-question] {
   display: flex;
 }
 
-[data-icon='사례'] {
-  display: inline-block;
-  background-color: #b79b82;
+.text-dote.s {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top:-12px;
+	left:-12px;
+}
+
+[data-icon='자료'],[data-icon='사례'] {
+  display: inline-flex;
+	justify-content: center;
+  vertical-align: middle;
+  background-color: #CFB397;
   border-radius: 10px;
   color: #000;
   text-align: center;
   width: 100px;
-  height: 45px;
-  line-height: 48px;
-  font-size: 30px;
+  height: 40px;
+	line-height: 44px;
+  font-size: 28px;
   font-weight: 900;
-  vertical-align: middle;
   margin-top: -5px;
 }
+
+[data-icon='자료'] b,
 [data-icon='사례'] b {
-  display: inline-block;
-  vertical-align: middle;
   color: #fff;
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 45px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: -5px;
+	margin-left: 10px;
 }
+
 
 [data-icon='스티커'] {
   display: inline-block;
@@ -679,6 +688,22 @@ header > [data-question] {
   color: #fff;
   background-color: #7a5e50;
   border-radius: 0 10px 0 0;
+}
+
+
+[data-icon='숫자 원']{
+	color: #fff;
+	border-radius: 48px;
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
+	line-height: 48px;
+  background-color: #7a5e50;
+    background-color: #626da6;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /**=============
@@ -1083,64 +1108,10 @@ quizItem[data-box] {
  * 	table
  =============*/
 
-[data-table='베이지'].line {
-  border-radius: 0;
-}
-[data-table='베이지'].line table td {
-  border-bottom: 4px solid #d7bb8e;
-  border-top: 4px solid #d7bb8e;
-  border-right: 4px solid #d7bb8e;
-}
-[data-table='베이지'].line table th p {
-  background-color: #ebd6b5;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-left: 0;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  border-left: 4px solid #fff;
-  border-radius: 40px 0 0 40px;
-}
-
-[data-table='베이지'].line table tr:first-child th p {
-  border-top: 4px solid #fff;
-}
-[data-table='베이지'].line table tr:last-child th p {
-  border-bottom: 4px solid #fff;
-}
-[data-table='베이지'].line table td {
-  border-top-color: #d7bb8e;
-  border-bottom-color: #d7bb8e;
-  background-color: #fff;
-}
 
 [data-table] {
   border-radius: 40px;
   overflow: hidden;
-}
-[data-table='베이지'] table th {
-  background-color: transparent;
-  border-radius: 40px;
-  padding: 0;
-  border-bottom: 0;
-  border-top: 0;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  position: relative;
-}
-[data-table='베이지'] table th p {
-  background-color: #ebd6b5;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-left: 4px solid #fff;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
 }
 
 table {
@@ -1184,6 +1155,67 @@ table tr:last-child th {
 table tr > * + * {
   border-left: 4px solid #fff;
 }
+
+[data-table='베이지'] table th {
+  background-color: #ebd6b5;
+}
+
+[data-table='베이지 라운드'] table th{
+	background-color: transparent;
+  border-radius: 40px;
+  padding: 0;
+  border-bottom: 0;
+  border-top: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+
+}
+[data-table='베이지 라운드'] table th p {
+  background-color: #ebd6b5;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-left: 4px solid #fff;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+[data-table='베이지 라운드'].line {
+  border-radius: 0;
+}
+[data-table='베이지 라운드'].line table td {
+  border-bottom: 4px solid #d7bb8e;
+  border-top: 4px solid #d7bb8e;
+  border-right: 4px solid #d7bb8e;
+}
+[data-table='베이지 라운드'].line table th p {
+  background-color: #ebd6b5;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-left: 0;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 4px solid #fff;
+  border-radius: 40px 0 0 40px;
+}
+
+[data-table='베이지 라운드'].line table tr:first-child th p {
+  border-top: 4px solid #fff;
+}
+[data-table='베이지 라운드'].line table tr:last-child th p {
+  border-bottom: 4px solid #fff;
+}
+[data-table='베이지 라운드'].line table td {
+  border-top-color: #d7bb8e;
+  border-bottom-color: #d7bb8e;
+  background-color: #fff;
+}
+
 
 table .ff-2 {
   font-family: 'Paper';
@@ -1649,7 +1681,7 @@ h2 .badge {
   font-size: 56px;
   font-family: 'Nanum';
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .bollet {
@@ -1666,7 +1698,7 @@ h2 .badge {
 
 .input-text {
   position: relative;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #666;
   flex: 1;
 }
 
