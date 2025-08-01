@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" ></script-->
+</head>
+
+<body>
+	<main id="popup-view">
+		<header>
+			<!--주제-->
+			<h1 data-subject="탐구"><span>탐구</span> <span>어디에서 왔니</span></h1>
+		</header>
+
+		<section>
+
+			<quizItem data-id="q-1" data-ui="BG:res/bg-1.png w:1686 h:544 mt:50">
+				<div data-ui="P:a t:-50  l:700">
+					<img src="res/선생님.png" alt="선생님" data-ui="mr:30 mt:0">
+					<p class="text-lg" data-ui="mt:35 LH:60 D:ib w:700"> 여러분이 매일 사용하는 옷이나 신발, 가방이 나 학용품의 생산지는 어디일까요? 다음의 빈칸에 써
+						볼까요?</p>
+				</div>
+				<div data-ui="P:a t:530 r:0" class="nowrap">
+					<img src="res/선생님.png" alt="선생님" data-ui="mr:30 mt:0">
+					<p class="text-lg " data-ui="mt:35 LH:60 D:ib LS:-1">이처럼 우리는 세계 여러 나라와 직간접적으로 교류하며 살아가요. </p>
+				</div>
+
+
+				<assessmentItem data-response-type="show">
+					<assessFeedback data-ui="P:a r:90 t:250 w:790  LH:80">
+						<p class="bullet">옷: 베트남, 중국 등</p>
+						<p class="bullet">신발: 인도네시아, 중국 등 </p>
+						<p class="bullet">학용품: 한국, 일본, 독일 등 </p>
+					</assessFeedback>
+				</assessmentItem>
+				<quizBtn data-id="q-1" data-skill="answerReset" class="" data-ui="l:1170 mt:320">정답</quizBtn>
+			</quizItem>
+		</section>
+	</main>
+</body>
+
+</html>

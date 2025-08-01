@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<script type="text/javascript" src="../../[src]/js/jquery-1.12.4.min.js"></script>
+	<style>
+		.range {
+			border: 0px solid red;
+			width: 190px;
+			height: 92px;
+			transition: 0.3s ease;
+		}
+
+		.range.range_1 {
+			bottom: 268px;
+			left: 152px;
+			border-width: 4px;
+		}
+
+		.range.range_2 {
+			bottom: 176px;
+			left: 152px;
+			border-width: 4px;
+		}
+
+		.range.range_3 {
+			bottom: 84px;
+			left: 152px;
+			border-width: 4px;
+		}
+
+		.check-list li {
+			box-sizing: border-box;
+
+		}
+
+		li [data-radio] {
+			width: 500px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view" class="xs">
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>나의 세계시민 지수</span></h1>
+			<h2 data-question="활동하기"><span>●</span>
+				<span>나의 세계시민 지수를 점검표를 통해 확인해 보고, 나에게 뛰어난 점과 부족한 점은 무엇인지 찾아보자.
+				</span>
+			</h2>
+
+		</header>
+		<section data-ui="w:1740">
+			<div class="scroll" data-ui="h:560 mt:-20">
+				<div data-ui="BG:res/img-1.png w:1720 h:1051 pt:58">
+
+					<ul class="check-list" data-design='라디오체크' data-ui="w:1580 h:765 ml:100">
+						<li data-note="1" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:60 px:20 Ta:center  Fw:900">질문</p>
+							<div class="com-flex">
+								<div data-ui="w:180 h:60 LH:70 Ta:center Fw:900" class="text-md">그렇다</div>
+								<div data-ui="w:180 h:60 LH:70 Ta:center Fw:900" class="text-md">보통이다</div>
+								<div data-ui="w:180 h:60 LH:70 Ta:center Fw:900" class="text-md">아니다</div>
+							</div>
+						</li>
+						<li data-note="1" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">나는 ‘지구촌’이라는 단어를 실감한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="2" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">우리나라와 세계 여러 나라 사이의 관계가 더욱 돈독해져야 한다고 생각한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="3" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">외국인 친구와 같은 교실에서 공부한다면 우리나라 친구와 똑같이 대할 것이다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="4" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">나는 서로 다른 생각을 가진 사람들과 협력하여 문제를 해결하는 것을 좋아한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="5" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">어떤 나라가 못사는 것은 지구촌 공동의 문제이므로 도와줘야 한다고 생각한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="6" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">나의 행동이 지구촌에 영향을 미칠 수 있다고 생각한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="7" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">다른 문화권에 사는 사람들과 스스럼없이 어울릴 수 있다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="8" class="com-flex">
+							<p class="text-md col-1" data-ui="pt:15 LH:40 px:20">전쟁, 가난, 환경 파괴 등 세계의 문제를 해결하는 일에 참여한 적이 있다.(자원봉사 나
+								기부 등)</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:106">1</div>
+								<div data-radio="3" data-ui="w:180 h:106">2</div>
+								<div data-radio="1" data-ui="w:180 h:106">3</div>
+							</div>
+						</li>
+						<li data-note="9" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">최근 한 달 내에 일어난 지구촌 문제를 다른 사람에게 설명할 수 있다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="10" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:70 px:20">지구상의 물 부족이 나와 관련이 있다고 생각한다.</p>
+							<div data-skill="radio" class="com-flex">
+								<div data-radio="5" data-ui="w:180 h:73">5</div>
+								<div data-radio="3" data-ui="w:180 h:73">3</div>
+								<div data-radio="1" data-ui="w:180 h:73">1</div>
+							</div>
+						</li>
+						<li data-note="10" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:60 px:20 Ta:center Fw:900">항목 총점</p>
+							<div data-skill="radio" class="com-flex">
+								<div class="text-md" data-ui="w:180 h:60 LH:60 Ta:r px:20"><span id="sumYes"></span> 점</div>
+								<div class="text-md" data-ui="w:180 h:60 LH:60 Ta:r px:20"><span id="sumNeutral"></span> 점</div>
+								<div class="text-md" data-ui="w:180 h:60 LH:60 Ta:r px:20"><span id="sumNo"></span> 점</div>
+							</div>
+						</li>
+						<li data-note="10" class="com-flex">
+							<p class="text-md col-1" data-ui="LH:65 px:20 Ta:center Fw:900">나의 점수</p>
+							<div data-skill="radio" class="com-flex">
+								<div class="col-1 text-md" data-ui="Ta:r LH:65 px:20 w:540">
+
+									<span id="totalScore"></span> 점
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+			<div class="com-flex between" data-ui="mt:20 Fs:26">
+				<p>
+					<img src="res/arrow-r.png" alt="화살표" data-ui="mr:10 w:30">40점 이상: 4단계 / 30~39점: 3단계 / 20~29점: 2단계 / 10~19점: 1단계
+				</p>
+				<p>- 서울특별시교육청, 『교실에서 만나는 세계시민 교육』</p>
+			</div>
+		</section>
+		<script>
+			$(function () {
+				// 총점 계산
+				$('.check-list [data-radio]').click(function () {
+					var $this = $(this);
+					var $parent = $this.closest('[data-skill="radio"]');
+
+					$parent.find('[data-radio]').removeClass('radio-on');
+					$this.addClass('radio-on');
+
+					// 클릭할 때마다 선택된 값 집계
+					var yesCount = 0;
+					var neutralCount = 0;
+					var noCount = 0;
+					var total = 0;
+
+					$('.check-list li').each(function () {
+						var selected = $(this).find('.radio-on[data-radio]').data('radio');
+						if (selected) {
+							var score = parseInt(selected);
+							total += score;
+							if (score === 5) yesCount++;
+							else if (score === 3) neutralCount++;
+							else if (score === 1) noCount++;
+						}
+					});
+
+					// 값 화면에 넣기
+					$('#sumYes').text(yesCount * 5);
+					$('#sumNeutral').text(neutralCount * 3);
+					$('#sumNo').text(noCount * 1);
+					$('#totalScore').text(total);
+				});
+			});
+
+		</script>
+	</main>
+</body>
+
+</html>

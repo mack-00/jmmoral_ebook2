@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+	<style>
+		[data-skill="tab"]>.tab-head>.tab-index {
+			position: absolute;
+			top: -145px;
+			right: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<main id="popup-view">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>미얀마 시민의 저항은 시민불복종일까</span></h1>
+			<h2 data-question="활동하기"><span>●</span> <span>미얀마 시민의 저항은 시민불복종에 해당하는지 다음 사항을 점검하고, 자신의 의견과 근거를 발표해 보자.</span>
+			</h2>
+		</header>
+
+		<section>
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+
+					<div data-box="녹색" data-ui="LS:-0.5">
+						<div class="scroll">
+							<img src="res/img-1.png" alt="관련이미지" data-ui="w:530 A:r ml:30 D:i P:r mt:10" />
+
+							<p>2021년 미얀마 전역에서 미얀마 시민은 아웅 산 수 치 국가 고문을 구금한 미얀마 군부에 대항하여 민주화 운동을 벌였다.
+								시민은 처음에 평화 시위를 이어 갔지만, 군부가 시위대를 총으로 무차별 학살하기 시작하자 시민 방위군을 창설하였다.
+								무장한 시민 방위군과 군부가 충돌하면서 미얀마는 내전에 접어들었다.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-tab="2">
+
+					<!--질문-->
+					<h2 data-question="1"><span>1</span><span>위의 사례가 시민불복종 조건에 합당한지 다음 조건을 확인하며 생각해 보자.</span>
+					</h2>
+					<article data-table="녹색">
+						<table>
+							<colgroup>
+								<col>
+								<col data-ui="w:300">
+								<col data-ui="w:300">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th data-ui="LH:50">불복종 조건</th>
+									<th data-ui="LH:50">예</th>
+									<th data-ui="LH:50">아니오</th>
+								</tr>
+								<tr>
+									<td data-ui="LH:60">행위의 목적은 정당한가?
+										<quizBtn data-id="q-1" data-connect="1" data-skill="answer" class="has-text" data-ui="ml:20 mt:10">
+											정답</quizBtn>
+									</td>
+									<td data-ui="LH:60">
+										<quizItem data-id="q-1">
+											<assessmentItem data-response-type="show">
+												<assessFeedback data-ui="center">
+													<i class="icon-check"></i>
+												</assessFeedback>
+											</assessmentItem>
+										</quizItem>
+									</td>
+									<td data-ui="LH:60"></td>
+								</tr>
+								<tr>
+									<td data-ui="LH:60">평화로운 수단을 사용하였는가?
+										<quizBtn data-id="q-2" data-connect="1" data-skill="answer" class="has-text" data-ui="ml:20 mt:10">
+											정답</quizBtn>
+									</td>
+									<td data-ui="LH:60"></td>
+									<td data-ui="LH:60">
+										<quizItem data-id="q-2">
+											<assessmentItem data-response-type="show">
+												<assessFeedback data-ui="center">
+													<i class="icon-check"></i>
+												</assessFeedback>
+											</assessmentItem>
+										</quizItem>
+									</td>
+								</tr>
+								<tr>
+									<td data-ui="LH:60">마지막 수단이었는가?
+										<quizBtn data-id="q-3" data-connect="1" data-skill="answer" class="has-text" data-ui="ml:20 mt:10">
+											정답</quizBtn>
+									</td>
+									<td data-ui="LH:60">
+									</td>
+									<td data-ui="LH:60">
+										<quizItem data-id="q-3">
+											<assessmentItem data-response-type="show">
+												<assessFeedback data-ui="center">
+													<i class="icon-check"></i>
+												</assessFeedback>
+											</assessmentItem>
+										</quizItem>
+									</td>
+								</tr>
+								<tr>
+									<td data-ui="LH:60">처벌을 감수하였는가?
+										<quizBtn data-id="q-4" data-connect="1" data-skill="answer" class="has-text" data-ui="ml:20 mt:10">
+											정답</quizBtn>
+									</td>
+									<td data-ui="LH:60">
+										<quizItem data-id="q-4">
+											<assessmentItem data-response-type="show">
+												<assessFeedback data-ui="center">
+													<i class="icon-check"></i>
+												</assessFeedback>
+											</assessmentItem>
+										</quizItem>
+									</td>
+									<td data-ui="LH:60"></td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+				</div>
+
+
+				<div data-tab="3">
+
+					<!--질문-->
+					<h2 data-question="2"><span>2</span><span>위의 점검표를 근거로 자신의 의견을 발표해 보자.</span>
+					</h2>
+					<quizItem data-id="q-5">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336 px:50">
+							<assessFeedback>
+								<p>미얀마 시민의 저항도 시민불복종에 해당한다고 본다. 마지막 수단이 아니고 평화로운 수단도 아니었지만, 미얀마 군부의 기본권 침해는 매우 심각했기 때문이다.
+								</p>
+							</assessFeedback>
+							<quizBtn data-id="q-5" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

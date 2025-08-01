@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		[data-skill="tab"]>.tab-head>.tab-index {
+			position: absolute;
+			top: -80px;
+			right: 0;
+		}
+	</style>
+
+</head>
+
+<body>
+	<main id="popup-view">
+
+		<header data-ui="w:1740">
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>사례로 알아보는 국가의 역할</span></h1>
+			<h2 data-question="활동하기"  data-ui="LS:-1.8"><span>●</span> <span> 다음은 국가가 제대로 역할을 하지 못하는 사례이다. 글을 읽고 물음에 답해 보자.</span>
+			</h2>
+			</h2>
+		</header>
+
+		<section data-ui="w:1740">
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<div data-box="녹색" data-ui="h:640">
+						<div class="scroll">
+							<img src="res/img-1.png" alt="관련이미지" data-ui="w:650 A:r ml:30 mt:0" />
+							<p>아프리카의 동북부에 있는 소말리아가 수년째 이어진 내전과 테러, 기근 등으로 급격히 피폐해지고 있다.
+								 AP 통신은 8일(현지 시간) 소말리아 수도 모가디슈에 있는 한 카페에서 폭탄
+								공격으로 최소 6명이 숨졌다고 보도했다. 현지 경찰에 따르면 이날 오후 모가디슈 
+								시내 중심부에 있는 한 카페 앞에서 갑자기 폭발물이 탑재된 차량 한 대가 폭발했다. 이폭발 로 당시 이
+								카페 야외석에 앉아 있던 손님과 보행자 등 민간인 6명이 사
+								망하고 10명 이상이 다쳤다.</p>
+							<p data-ui="Fs:45 mt:20 Ta:r">- 『세계일보』, 2017. 5. 9.</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="1"><span>1</span><span>위 사례에서 국가는 어떤 역할을 하지 못했는지를 써 보자.</span>
+					</h2>
+
+					<quizItem data-id="q-1">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336">
+							<assessFeedback>
+								<p>내전, 테러, 기근을 막지 못해 시민들이 큰 고통을 받았고, 그 결과 테러로 인해 6명이 사망 하는 등 큰 피해를 입었다. 이는 국가가 국민 을 보호하는 역할을 하지 못한 것이다.</p>
+							</assessFeedback>
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+
+
+				<div data-tab="3">
+
+					<!--질문-->
+					<h2 data-question="2"><span>2</span><span>위 사례의 국가가 해야 하는 가장 중요한 역할은 무엇인지를 써 보자.</span>
+					</h2>
+					<quizItem data-id="q-2">
+						<assessmentItem data-response-type="show" data-box="종이" data-ui="h:336">
+							<assessFeedback>
+								<p>나는 국가가 시민을 보호하는 역할을 더 철저하게 해야 한다고 생각한다. 테러를 방지하고, 범죄를 막고, 내전을 종식해야 한다.</p>
+							</assessFeedback>
+							<quizBtn data-id="q-2" data-skill="answerReset" class="center">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>

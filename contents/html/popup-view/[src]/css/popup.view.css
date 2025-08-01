@@ -52,6 +52,10 @@ h1 b {
   word-break: break-all;
 }
 
+.nowrap{
+	white-space: nowrap;
+}
+
 /**=============
  * 	subject
  =============*/
@@ -453,13 +457,14 @@ header > [data-question] {
 }
 
 [data-note='점'] {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 [data-note='점'] > *:nth-child(1) {
   position: absolute;
   left: 0;
   top: 0px;
   font-weight: 900;
+	font-size: 48px;
 }
 
 [data-note='소점'] {
@@ -713,12 +718,30 @@ h2 [data-icon='자료'],
   min-width: 48px;
   height: 48px;
   line-height: 48px;
-  background-color: #7a5e50;
   background-color: #626da6;
   font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+[data-icon='숫자 원'].line{
+  border:1.5px solid #000;
+	color:#000;
+	background-color: transparent;
+	font-weight: 600;
+}
+
+[data-icon='숫자 원'].s {
+  border-radius: 36px;
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  line-height: 40px;
+  background-color: #000;
+  font-size: 30px;
+	font-weight: 600;
+	align-items: normal;
 }
 
 [data-icon='가'] {
@@ -1205,7 +1228,6 @@ table tr > * + * {
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: center;
   height: 100%;
   border-left: 4px solid #fff;
   border-top: 2px solid #fff;
@@ -1220,13 +1242,6 @@ table tr > * + * {
   border-right: 4px solid #d7bb8e;
 }
 [data-table='베이지 라운드'].line table th p {
-  background-color: #ebd6b5;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-left: 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
   border-left: 4px solid #fff;
@@ -1267,11 +1282,8 @@ table th.round {
 table th.round p {
   border-radius: 50px 0 0 50px;
   padding: 20px 10px;
-  display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-
+  text-align: center;
   border-left: 0;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
@@ -1417,6 +1429,27 @@ quizBtn[data-skill='answerReset'].on {
   display: none;
   /*background-image:url('../../[res]/btns/btn-reset.png');*/
 }
+
+  quizBtn[data-skill='answer'].has-text  {
+    width: 90px;
+    height: 43px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 43px;
+    display: inline-block;
+    background: rgb(139, 199, 81);
+    margin-top: -5px;
+    margin-left: 10px;
+  }
+  quizBtn[data-skill='answer'].has-text:hover {
+    background-color: #2a9524;
+    color: #fff;
+  }
+
+
 
 /**=============
  * 	show
@@ -1724,16 +1757,17 @@ h2 .badge {
   line-height: 1.3;
 }
 
-.bollet {
+.bullet {
   position: relative;
-  padding-left: 25px;
+  padding-left: 30px;
 }
-.bollet::before {
+.bullet::before {
   content: '•';
   position: absolute;
   left: 0;
   top: 0px;
   font-weight: 300;
+	font-size: 48px;
 }
 
 .input-text {
@@ -2075,9 +2109,6 @@ h2 .badge {
   width: auto;
   height: auto;
   line-height: 86px;
-  /*background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='3'%3E%3Ccircle cx='1.5' cy='1.5' r='1.5' fill='%236F9BC8' /%3E%3C/svg%3E");
-background-repeat: repeat-x;
-background-size: 10px 3px;*/
 }
 
 [data-response-type].quiz-table .box.on {

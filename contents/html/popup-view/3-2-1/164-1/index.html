@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<!--메타 데이타-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--COMMON CSS-->
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.reset.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.ui.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.media.css" />
+	<link rel="stylesheet" type="text/css" href="../../../../com/css/module.quiz.css" />
+	<!--COMMON JS-->
+	<script type="text/javascript" src="../../../../com/js/module.exe.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.util.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.fn.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.media.js"></script>
+	<script type="text/javascript" src="../../../../com/js/module.quiz.js"></script>
+	<!-- VIEW SRC-->
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.skill.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/popup.view.css" />
+	<link rel="stylesheet" type="text/css" href="../../[src]/css/screen.css" />
+	<script type="text/javascript" src="../../[src]/js/popup.skill.js"></script>
+	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
+	<!-- VIEW -->
+	<!--script type="text/javascript" src="index.js" ></script-->
+
+	<style>
+		[data-table='베이지 라운드'].line table th p {
+			border-radius: 40px 0 0 40px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<main id="popup-view">
+
+		<header>
+			<!--주제-->
+			<h1 data-subject="활동하기"><span>활동하기</span> <span>미얀마 시민의 저항은 시민불복종일까</span></h1>
+			</h2>
+		</header>
+
+		<section>
+			<!--data-tab="아이콘 타입"-->
+			<div data-skill="tab">
+				<!--data-tab="1~|file|activity"-->
+				<div data-tab="1">
+					<!--질문-->
+					<h2 data-question="1"><span>1</span><span>모둠별로 시민불복종을 실천한 인물을 찾고 탐구해 보자.</span>
+					</h2>
+
+					<div data-id="q-1" data-ui="BG:res/bg-1.png w:1720 h:493 t:30">
+					</div>
+				</div>
+
+				<div data-tab="2">
+					<!--질문-->
+					<h2 data-question="1"><span>1</span><span>모둠별로 시민불복종을 실천한 인물을 찾고 탐구해 보자.</span>
+					</h2>
+
+          <div class="com-flex" data-ui="mb:10">
+						<img src="res/인물탐구.png" alt="인물탐구"> 
+					</div>
+					<quizItem data-id="q-2" data-table="베이지 라운드" class="line" style="overflow: visible;">
+
+								<assessmentItem data-response-type="show">
+										<assessFeedback>
+					<span  data-ui="P:a l:220 t:-80 D:ib Fc:#fff Fs:32 Fw:700  Ta:center h:64 LH:64  Br:50 w:260  BGc:#98580F">마틴 루서 킹</span>
+										</assessFeedback>
+									</assessmentItem>
+						<table data-ui="h:500px">
+							<colgroup>
+								<col style="width: 780px;">
+								<col style="width: auto;">
+							</colgroup>
+							<tr>
+								<th class="ff-1 round">
+									<p class="text" data-ui="Fs:45 LS:-1 Ta:left px:30">어떤 일을 했던 사람일까?</p>
+								</th>
+								<td data-ui="py:10 LS:-1 h:135">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<span data-ui="LH:65 Fs:45">원래 목사였다.
+											</span>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+							</tr>
+							<tr>
+								<th class="ff-1 round">
+									<p class="text" data-ui="Fs:45 LS:-1 Ta:left px:30">어떤 법에 저항했을까?</p>
+								</th>
+								<td data-ui="py:10 LS:-1 h:135">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<span data-ui="LH:65 Fs:45">미국의 「인종분리법」
+											</span>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+							</tr>
+							<tr>
+								<th class="ff-1 round">
+									<p class="text" data-ui="Fs:45 LS:-3 Ta:left px:30" >법에 저항한 목적과 방법은 무엇이었을까?</p>
+								</th>
+								<td data-ui="py:10 LS:-2 h:135">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<span data-ui="LH:65 Fs:45">목적은 인종 간의 평등한 대우이고, 방법은 비폭력 시위 행진이었다.
+											</span>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+							</tr>
+							<tr>
+								<th class="ff-1 round">
+									<p class="text" data-ui="Fs:45 LS:-1 Ta:left px:30">법을 어기고 난 후 어떻게 행동했을까? </p>
+								</th>
+								<td data-ui="py:10 LS:-1 h:135">
+									<assessmentItem data-response-type="show">
+										<assessFeedback>
+											<span data-ui="LH:65 Fs:45">처벌을 두려워하지 않았다.
+											</span>
+										</assessFeedback>
+									</assessmentItem>
+								</td>
+							</tr>
+
+
+						</table>
+						<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="ml:350">정답</quizBtn>
+					</quizItem>
+				</div>
+
+
+				<div data-tab="3">
+
+					<!--질문-->
+					<h2 data-question="2"><span>2</span><span>위에서 탐구한 인물의 입장에서 자기가 한 시민불복종 행위의 정당성을 호소하는 카드 뉴스를 만들어 보자.</span>
+					</h2>
+					<quizItem data-id="q-5" data-ui="BG:res/card.png w:1623 h:542 mx:auto">
+						<assessmentItem data-response-type="show" >
+							<assessFeedback >
+						  	<img src="res/card-on.png" alt="카드뉴스" >
+							</assessFeedback>
+							<quizBtn data-id="q-5" data-skill="answerReset" class="center" data-ui="mt:-30">정답</quizBtn>
+						</assessmentItem>
+					</quizItem>
+				</div>
+
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
