@@ -27,25 +27,14 @@
 	<!--script type="text/javascript" src="index.js" ></script-->
 
 	<style>
-		[data-design='라디오체크'] .text {
-			font-size: 40px;
-			color: #655fff;
-			font-weight: 800;
-			line-height: 1.5;
-			display: none;
-		}
-
-		[data-design='라디오체크'] td {
+		table.line-gray td {
 			border-left: 0 !important;
 		}
 
-		[data-design='라디오체크'] [data-radio] {
+		table.line-gray [data-radio] {
 			border-radius: 8px;
 			border: 4px solid #aaa;
 			display: inline-block;
-		}
-		.icon-check{
-			display: none;
 		}
 	</style>
 </head>
@@ -83,51 +72,50 @@
 					</h2>
 
 					<div>
-						<table data-design="라디오체크" class="line-gray">
-							<colgroup>
-								<col data-ui="w:400" />
-								<col />
-							</colgroup>
-							<tbody data-skill="">
-								<tr>
-									<th data-ui="pl:30 Ta:left h:140 P:r">
-										<span data-radio="1" data-ui="w:45 h:45 mr:5"></span>
-										<i class="icon-check" data-ui="P:a l:30 t:30"></i>
-										<span data-ui="Fs:40 Fw:800 LS:-1">성 역할 고정 관념</span>
-									</th>
-									<td>
-										<div data-ui="P:r">
-											
-											<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
-											<quizBtn data-skill="answerReset" class="center BtnRadio">정답</quizBtn>
-										</div>
 
-									</td>
-								</tr>
-								<tr>
-									<th data-ui="pl:30 Ta:left h:140 P:r">
-										<span data-radio="2" data-ui="w:45 h:45 mr:5"></span>
-										<i class="icon-check" data-ui="P:a l:30 t:30"></i>
-										<span data-ui="Fs:40 Fw:800">성차별적 표현</span>
-									</th>
-									<td>
+						<quizItem data-id="q-2-1">
+							<table class="line-gray">
+								<colgroup>
+									<col data-ui="w:400" />
+									<col />
+								</colgroup>
+								<tbody data-skill="">
+									<tr>
+										<th data-ui="pl:30 Ta:left h:172">
+											<span data-radio="1" data-ui="w:45 h:45 mr:5"></span>
+											<span data-ui="Fs:40 Fw:800 LS:-1">성 역할 고정 관념</span>
+										</th>
+										<td>
+											<div data-ui="P:r">
+												<assessmentItem data-response-type="show">
+													<assessFeedback>
 
-										<div data-ui="P:r">
-											<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+														<i class="icon-check" data-ui="P:a l:-400 t:30"></i>
+														<p data-ui="LS:-1 LH:70">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+													</assessFeedback>
+												</assessmentItem>
 
-											<quizBtn data-skill="answerReset" class="center BtnRadio">정답</quizBtn>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="pl:30 Ta:left h:172 P:r">
+											<span data-radio="2" data-ui="w:45 h:45 mr:5"></span>
+											<span data-ui="Fs:40 Fw:800">성차별적 표현</span>
+										</th>
+										<td>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<quizBtn data-id="q-2-1" data-skill="answerReset" class="center" data-ui="ml:150">정답</quizBtn>
+						</quizItem>
 					</div>
 					<h2 data-question="3" data-ui="mt:50"><span>3</span> <span>해당 장면이 문제가 되는 까닭은 무엇인지 이야기해 보자.</span> </h2>
 
 					<quizItem data-id="q-2-3" class="input-text" data-ui="h:80 Bc:#a9aaaa">
 						<assessmentItem data-response-type="show">
 							<assessFeedback>
-								<p data-ui="Fs:40 pl:20 LH:50">남성과 여성에 대한 왜곡된 성 역할 고정 관념이 드러난다.
+								<p data-ui="pl:20 LH:50">남성과 여성에 대한 왜곡된 성 역할 고정 관념이 드러난다.
 								</p>
 							</assessFeedback>
 						</assessmentItem>
@@ -148,7 +136,7 @@
 									<p data-ui="P:a l:878 t:145 w:580 LH:70">체육 시간에 자유 활동을 할 때 남학생과 여학생 모두 참여할 수 있는 게임을 한다.</p>
 								</assessFeedback>
 							</assessmentItem>
-							<quizBtn data-id="q-4" data-skill="answerReset" class="center" data-ui="mt:20">정답</quizBtn>
+							<quizBtn data-id="q-4" data-skill="answerReset" class="center" data-ui="mt:20 ml:33">정답</quizBtn>
 						</quizItem>
 
 						<a href="https://code.jihak.co.kr/qr/z7DSZ6pR0QYkepJl" target="_blank" data-ui="P:a r:0 t:0 w:214">
@@ -160,39 +148,6 @@
 		</section>
 	</main>
 
-	<script>
-		$(function () {
-			//라디오 버튼 체크
-			//$('[data-radio]').each(function () {
-			//	const $el = $(this);
-			//	const observer = new MutationObserver(function (mutationsList) {
-			//		mutationsList.forEach(function (mutation) {
-			//			if (mutation.attributeName === 'class') {
-			//				if ($el.hasClass('on')) {
-			//					$('td .text').hide();
-			//					$el.closest('tr').find('td .text').show();
-			//				} else {
-			//					$el.closest('tr').find('td .text').hide();
-			//				}
-			//			}
-			//		});
-			//	});
-
-			//	// class 변화 감시
-			//	observer.observe(this, { attributes: true });
-			//});
-
-			$('.BtnRadio').click(function () {
-				const $el = $(this);
-				$('.BtnRadio').removeClass('on');
-				$('[data-design="라디오체크"]').find('.text').hide();
-				$('[data-design="라디오체크"]').find('.icon-check').hide();
-				$el.closest('tr').find('td .text').show();
-				$el.closest('tr').find('.icon-check').show();
-
-			})
-		});
-	</script>
 </body>
 
 </html>
