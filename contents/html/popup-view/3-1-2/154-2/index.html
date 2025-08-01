@@ -51,19 +51,23 @@
 		[data-design="십자말풀이"] .puzzle em {
 			font-size: 30px;
 		}
+
+		[data-design='십자말풀이'] quizBtn[data-skill='answer'] {
+			margin-top: 0;
+		}
 	</style>
 </head>
 
 <body>
 	<main id="popup-view">
-		<header data-ui="w:1740">
+		<header>
 			<!--주제-->
 			<h1 data-subject="중단원 마무리 풀어보기"><span>중단원 마무리 풀어보기</span></h1>
 
 		</header>
 
-		<section data-design="십자말풀이" data-ui="w:1740">
-			<div data-ui="Fs:40 LH:70 w:998 pl:20">
+		<section data-design="십자말풀이">
+			<div data-ui="Fs:40 LH:70 w:913 pl:20">
 				<i data-ui="P:a t:0 l:0">
 					<svg xmlns="http://www.w3.org/2000/svg" width="4" height="710" viewBox="0 0 4 710" fill="none">
 						<path d="M2 0L1.99997 710" stroke="#4C71AD" stroke-width="3.5" />
@@ -73,11 +77,11 @@
 						가로
 					</dt>
 					<dd data-note="①" class="index">
-						<span>우리가 주체적으로 살아가기 위해 꼭 필요한 자유 예 신체의 자유</span>
+						<span>우리가 주체적으로 살아가기 위해 꼭 필요한 자유 <img src="res/예.svg" alt="예" data-ui="mt:5"> 신체의 자유</span>
 						<quizBtn data-id="q-1" data-connect="1" data-skill="answer" class="bg-pink" data-ui="ml:10">정답</quizBtn>
 					</dd>
 					<dd data-note="②" class="index">
-						<span>공평하고 올바름 예 ‘법을 ◯◯하게 집행한다.’</span>
+						<span>공평하고 올바름  <img src="res/예.svg" alt="예" data-ui="mt:5">  ‘법을 ◯◯하게 집행한다.’</span>
 						<quizBtn data-id="q-2" data-connect="1" data-skill="answer" class="bg-pink">정답</quizBtn>
 					</dd>
 					<dd data-note="③" class="index">
@@ -85,7 +89,7 @@
 						<quizBtn data-id="q-3" data-connect="1" data-skill="answer" class="bg-pink">정답</quizBtn>
 					</dd>
 					<dd data-note="④" class="index">
-						<span>『논어』에 나오는 구절로, 이익(利)보다 의로움(義)을 중시해야 한다는 <br>
+						<span>『논어』에 나오는 구절로, 이익(利)보다 의로움(義)을 중시해야 한다는 
 							사자성어</span>
 						<quizBtn data-id="q-4" data-connect="1" data-skill="answer" class="bg-pink">정답</quizBtn>
 					</dd>
@@ -104,8 +108,8 @@
 						<quizBtn data-id="q-2-1" data-connect="1" data-skill="answer" class="bg-blue" data-ui="ml:10">정답</quizBtn>
 					</dd>
 					<dd data-note="2" class="fill index">
-						<span>중요한 정책 사안 등에 관해 해당 분야의 학식과 경험이 풍부한 전문가<br>
-							나 이해 당사자 등의 의견을 듣기 위해 행정 기관이나 공공 단체 등에<br>
+						<span>중요한 정책 사안 등에 관해 해당 분야의 학식과 경험이 풍부한 전문가
+							나 이해 당사자 등의 의견을 듣기 위해 행정 기관이나 공공 단체 등에
 							서 개최하는 회의</span>
 						<quizBtn data-id="q-2-2" data-connect="1" data-skill="answer" class="bg-blue">정답</quizBtn>
 					</dd>
@@ -129,7 +133,7 @@
 			<div data-ui="BG:res/puzzle.png P:a r:0 t:20 w:668 h:696 ">
 				<quizItem data-id="q-1">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:2 t:156">
+						<assessFeedback data-ui="P:a l:2 t:156">
 							<p class="com-flex c-pink">
 								<span class="puzzle"><em>기</em></span>
 								<span class="puzzle"><em>본</em></span>
@@ -143,7 +147,7 @@
 
 				<quizItem data-id="q-2">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a r:2 t:78">
+						<assessFeedback data-ui="P:a r:2 t:78">
 							<p class="com-flex c-pink">
 								<span class="puzzle"><em data-ui="LH:85">공</em></span>
 								<span class="puzzle"><em data-ui="LH:85">정</em></span>
@@ -154,7 +158,7 @@
 
 				<quizItem data-id="q-3">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:418 t:234">
+						<assessFeedback data-ui="P:a l:418 t:234">
 							<p class="com-flex c-pink">
 								<span class="puzzle"><em>국</em></span>
 								<span class="puzzle"><em>회</em></span>
@@ -165,7 +169,7 @@
 
 				<quizItem data-id="q-4">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:2 t:544">
+						<assessFeedback data-ui="P:a l:2 t:544">
 							<p class="com-flex c-pink">
 								<span class="puzzle"><em>견</em></span>
 								<span class="puzzle"><em>리</em></span>
@@ -178,7 +182,7 @@
 
 				<quizItem data-id="q-5">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:418 t:542">
+						<assessFeedback data-ui="P:a l:418 t:542">
 							<p class="com-flex  c-pink">
 								<span class="puzzle"><em>주</em></span>
 								<span class="puzzle"><em>체</em></span>
@@ -190,7 +194,7 @@
 
 				<quizItem data-id="q-2-1">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:168 t:2">
+						<assessFeedback data-ui="P:a l:168 t:2">
 							<p class="com-flex column">
 								<span class="puzzle"><em>민</em></span>
 								<span class="puzzle"><em>주</em></span>
@@ -204,7 +208,7 @@
 				</quizItem>
 				<quizItem data-id="q-2-2">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:500 t:80">
+						<assessFeedback data-ui="P:a l:500 t:80">
 							<p class="com-flex column">
 								<span class="puzzle"><em data-ui="LH:85">공</em></span>
 								<span class="puzzle"><em>청</em></span>
@@ -215,7 +219,7 @@
 				</quizItem>
 				<quizItem data-id="q-2-3">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:2 t:466">
+						<assessFeedback data-ui="P:a l:2 t:466">
 							<p class="com-flex column">
 								<span class="puzzle"><em>이</em></span>
 								<span class="puzzle"><em>견</em></span>
@@ -225,7 +229,7 @@
 				</quizItem>
 				<quizItem data-id="q-2-4">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:252 t:466">
+						<assessFeedback data-ui="P:a l:252 t:466">
 							<p class="com-flex column">
 								<span class="puzzle"><em>정</em></span>
 								<span class="puzzle"><em>의</em></span>
@@ -236,7 +240,7 @@
 				</quizItem>
 				<quizItem data-id="q-2-5">
 					<assessmentItem data-response-type="show">
-						<assessFeedback  data-ui="P:a l:418 t:386">
+						<assessFeedback data-ui="P:a l:418 t:386">
 							<p class="com-flex column">
 								<span class="puzzle"><em>능</em></span>
 								<span class="puzzle"><em>력</em></span>

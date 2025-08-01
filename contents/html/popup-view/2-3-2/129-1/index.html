@@ -28,11 +28,11 @@
 
 	<style>
 		[data-design='라디오체크'] .text {
-			display: none;
 			font-size: 40px;
 			color: #655fff;
 			font-weight: 800;
 			line-height: 1.5;
+			display: none;
 		}
 
 		[data-design='라디오체크'] td {
@@ -42,6 +42,10 @@
 		[data-design='라디오체크'] [data-radio] {
 			border-radius: 8px;
 			border: 4px solid #aaa;
+			display: inline-block;
+		}
+		.icon-check{
+			display: none;
 		}
 	</style>
 </head>
@@ -53,7 +57,7 @@
 			<h1 data-subject="활동하기"><span>활동하기</span> <span>디지털 공간과 대중 매체 속에서 볼 수 있는 성에 대한 편견</span></h1>
 		</header>
 
-		<section  data-ui="w:1740">
+		<section data-ui="w:1740">
 			<!--data-tab="아이콘 타입"-->
 			<div data-skill="tab">
 				<!--data-tab="1~|file|activity"-->
@@ -76,7 +80,7 @@
 					<h2 data-question="2"><span>2</span>
 						<span>해당 장면에 어떤 성 역할 고정 관념 또는 성차별적 표현이 나타나 있는지 하나를 선택하여 분석해
 							보자.</span>
-					</h2> 
+					</h2>
 
 					<div>
 						<table data-design="라디오체크" class="line-gray">
@@ -84,44 +88,57 @@
 								<col data-ui="w:400" />
 								<col />
 							</colgroup>
-							<tbody data-skill="radio">
+							<tbody data-skill="">
 								<tr>
-									<th data-ui="pl:30 Ta:left h:140">
-										<div data-radio="1" data-ui="w:45 h:45 mr:5">1</div>
-										<span  data-ui="Fs:40 Fw:800 LS:-1">성 역할 고정 관념</span>
+									<th data-ui="pl:30 Ta:left h:140 P:r">
+										<span data-radio="1" data-ui="w:45 h:45 mr:5"></span>
+										<i class="icon-check" data-ui="P:a l:30 t:30"></i>
+										<span data-ui="Fs:40 Fw:800 LS:-1">성 역할 고정 관념</span>
 									</th>
 									<td>
-										<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+										<div data-ui="P:r">
+											
+											<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+											<quizBtn data-skill="answerReset" class="center BtnRadio">정답</quizBtn>
+										</div>
+
 									</td>
 								</tr>
 								<tr>
-									<th data-ui="pl:30 Ta:left h:140">
-										<div data-radio="2" data-ui="w:45 h:45 mr:5">2</div>
-										<span  data-ui="Fs:40 Fw:800">성차별적 표현</span>
+									<th data-ui="pl:30 Ta:left h:140 P:r">
+										<span data-radio="2" data-ui="w:45 h:45 mr:5"></span>
+										<i class="icon-check" data-ui="P:a l:30 t:30"></i>
+										<span data-ui="Fs:40 Fw:800">성차별적 표현</span>
 									</th>
 									<td>
-										<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+
+										<div data-ui="P:r">
+											<p class="text" data-ui="LS:-1">남성은 힘을 과시하는 게임을 하고, 여성은 섬세함을 강조하는 게임을 하게 한다. </p>
+
+											<quizBtn data-skill="answerReset" class="center BtnRadio">정답</quizBtn>
+										</div>
 									</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<h2 data-question="3" data-ui="mt:50"><span>3</span> <span>해당 장면이 문제가 되는 까닭은 무엇인지 이야기해 보자.</span> </h2>
-					
-					<quizItem data-id="q-2" class="input-text" data-ui="h:80 Bc:#a9aaaa">
+					<h2 data-question=" 3" data-ui="mt:50"><span>3</span> <span>해당 장면이 문제가 되는 까닭은 무엇인지 이야기해 보자.</span> </h2>
+
+					<quizItem data-id="q-2-3" class="input-text" data-ui="h:80 Bc:#a9aaaa">
 						<assessmentItem data-response-type="show">
 							<assessFeedback>
 								<p data-ui="Fs:40 pl:20 LH:50">남성과 여성에 대한 왜곡된 성 역할 고정 관념이 드러난다.
 								</p>
 							</assessFeedback>
 						</assessmentItem>
-						<quizBtn data-id="q-2" data-skill="answerReset" class="center" data-ui="mt:-20">정답</quizBtn>
+						<quizBtn data-id="q-2-3" data-skill="answerReset" class="center" data-ui="mt:-20">정답</quizBtn>
 					</quizItem>
 
 				</div>
 				<div data-tab="3">
 					<!--질문-->
-					<h2 data-question="4" data-ui="LS:-1"><span>4</span> <span>성에 대한 편견이 사라진 장면으로 바꾸어 보고, 우리가 할 수 있는 일을 써 보자.</span> </h2>
+					<h2 data-question="4" data-ui="LS:-1"><span>4</span> <span>성에 대한 편견이 사라진 장면으로 바꾸어 보고, 우리가 할 수 있는 일을 써
+							보자.</span> </h2>
 
 					<div data-ui="P:r mt:20">
 						<quizItem data-id="q-4" data-ui="BG:res/bg-2.png w:1500 h:462  mt:20">
@@ -142,28 +159,59 @@
 			</div>
 		</section>
 	</main>
+	<style>
+		[data-skill="tab"] [data-tab="1"] {
+				display: none !important;
+		}
+		
+		[data-skill="tab"] [data-tab="2"] {
+				display: block !important;
+		}
+		
+		[data-skill="tab"] [data-tab="3"] {
+				display: none !important;
+		}
+		
+		[data-skill="tab"] [data-tab="4"] {
+				display: none !important;
+		}
+		
+		[data-skill="tab"] [data-tab="5"] {
+				display: block !important;
+		}
+	</style>
 
 	<script>
 		$(function () {
 			//라디오 버튼 체크
-			$('[data-radio]').each(function () {
-				const $el = $(this);
-				const observer = new MutationObserver(function (mutationsList) {
-					mutationsList.forEach(function (mutation) {
-						if (mutation.attributeName === 'class') {
-							if ($el.hasClass('on')) {
-								$('td .text').hide();
-								$el.closest('tr').find('td .text').show();
-							} else {
-								$el.closest('tr').find('td .text').hide();
-							}
-						}
-					});
-				});
+			//$('[data-radio]').each(function () {
+			//	const $el = $(this);
+			//	const observer = new MutationObserver(function (mutationsList) {
+			//		mutationsList.forEach(function (mutation) {
+			//			if (mutation.attributeName === 'class') {
+			//				if ($el.hasClass('on')) {
+			//					$('td .text').hide();
+			//					$el.closest('tr').find('td .text').show();
+			//				} else {
+			//					$el.closest('tr').find('td .text').hide();
+			//				}
+			//			}
+			//		});
+			//	});
 
-				// class 변화 감시
-				observer.observe(this, { attributes: true });
-			});
+			//	// class 변화 감시
+			//	observer.observe(this, { attributes: true });
+			//});
+
+			$('.BtnRadio').click(function () {
+				const $el = $(this);
+				$('.BtnRadio').removeClass('on');
+				$('[data-design="라디오체크"]').find('.text').hide();
+				$('[data-design="라디오체크"]').find('.icon-check').hide();
+				$el.closest('tr').find('td .text').show();
+				$el.closest('tr').find('.icon-check').show();
+
+			})
 		});
 	</script>
 </body>

@@ -24,6 +24,13 @@
 	<script type="text/javascript" src="../../[src]/js/popup.view.js"></script>
 	<!-- VIEW -->
 	<!--script type="text/javascript" src="index.js" ></script-->
+	<style>
+		[data-skill="tab"]>.tab-head>.tab-index {
+			position: absolute;
+			top: -78px;
+			right: 0;
+		}
+	</style>
 </head>
 
 <body>
@@ -32,62 +39,107 @@
 		<header>
 			<!--주제-->
 			<h1 data-subject="활동하기"><span>활동하기</span> <span>나의 갈등 분석하기</span></h1>
+			<h2 data-question="활동하기"><span>●</span>
+
+				<span>내가 경험했던 갈등을 떠올려 보고 그 유형과 원인을 분석하여 보자.</span>
+			</h2>
+
 		</header>
 
 		<section>
-			<div>
 
-				<h2 data-question="활동하기"><span>●</span> <span>내가 경험했던 갈등을 떠올려 보고 그 유형과 원인을 분석하여 보자.</span></h2>
+			<div data-skill="tab">
+				<div data-tab="1">
+					<div class="scroll" data-ui="h:600">
+						<article data-id="q-1" data-table="">
+							<table>
+								<colgroup>
+									<col data-ui="w:380" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th data-ui="px:10 LS:-2 BGc:#d1eefc">갈등 경험
+										</th>
+										<td>
+											<p>내가 속한 동아리의 회장이 학교 축제 준비를 위해 모든 동아리 구성원에게 방과 후에 남으라고 단체 대화방에 글을 올렸다. 학원 수업 등으로 참석할 수 없다는
+												학생에게도
+												개인적인 일보다 학교 축제 준비가 우선이기 때문에 참석하지 않으면 동아리에서 탈퇴시키거나 선생님께 알리겠다며 참석을 강요하였다.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 유형
+										</th>
+										<td>
+											<p>집단 내 갈등</p>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 원인
+										</th>
+										<td>
+											<p>가치관과 관점의 차이 :</p>
+											<p>학교 축제 준비가 우선이라는 동아리의 회장과 개인적인 일이 우선이라는 구성원 간의 갈등 </p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</article>
+					</div>
+				</div>
+				<div data-tab="2">
+					<div class="scroll" data-ui="h:600">
+						<quizItem data-id="q-1" data-table="">
+							<table>
+								<colgroup>
+									<col data-ui="w:380" />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th data-ui="px:10 LS:-2 BGc:#d1eefc">갈등 경험
+										</th>
+										<td>
+											<assessmentitem data-response-type="show">
+												<assessfeedback data-ui="LS:-1">
+													<p>학교에서 실시한 장래희망 조사에 대해 아버지께서는 무조건 의사라고 적으라고 하셨다. 나는 훗날 미술을 전공하고 싶은데, 내게는 장래희망에 대해 어떠한 질문이나
+														대화도 없이 의사가 되어야 한다고 강압적으로 말씀하시어 갈등이 발생했다.
+													</p>
+												</assessfeedback>
+											</assessmentitem>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 유형
+										</th>
+										<td>
+											<assessmentitem data-response-type="show">
+												<assessfeedback data-ui="LS:-1">
+													<p>개인 간의 갈등</p>
 
-				<div class="scroll" data-ui="h:600">
-					<quizItem data-id="q-1" data-table="">
-						<table>
-							<colgroup>
-								<col data-ui="w:380" />
-								<col />
-							</colgroup>
-							<tbody>
-								<tr>
-									<th data-ui="px:10 LS:-2 BGc:#d1eefc">갈등 경험
-									</th>
-									<td>
-										<assessmentitem data-response-type="show">
-											<assessfeedback data-ui="LS:-1">
-												<p>내가 속한 동아리의 회장이 학교 축제 준비를 위해 모든 동아리 구성원에게 방과 후에 남으라고 단체 대화방에 글을 올렸다. 학원 수업 등으로 참석할 수 없다는 학생에게도
-													개인적인 일보다 학교 축제 준비가 우선이기 때문에 참석하지 않으면 동아리에서 탈퇴시키거나 선생님께 알리겠다며 참석을 강요하였다.
-												</p>
-											</assessfeedback>
-										</assessmentitem>
-									</td>
-								</tr>
-								<tr>
-									<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 유형
-									</th>
-									<td>
-										<assessmentitem data-response-type="show">
-											<assessfeedback data-ui="LS:-1">
-												<p>집단 내 갈등</p>
-
-											</assessfeedback>
-										</assessmentitem>
-									</td>
-								</tr>
-								<tr>
-									<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 원인
-									</th>
-									<td>
-										<assessmentitem data-response-type="show">
-											<assessfeedback data-ui="LS:-1">
-												<p data-ui="Fc:#332f9f LS:2">가치관과 관점의 차이</p>
-												<p>학교 축제 준비가 우선이라는 동아리의 회장과 개인적인 일이 우선이라는 구성원 간의 갈등 </p>
-											</assessfeedback>
-										</assessmentitem>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="ml:100">정답</quizBtn>
-					</quizItem>
+												</assessfeedback>
+											</assessmentitem>
+										</td>
+									</tr>
+									<tr>
+										<th data-ui="px:10 LS:-1 BGc:#FCDEDC">갈등 원인
+										</th>
+										<td>
+											<assessmentitem data-response-type="show">
+												<assessfeedback data-ui="LS:-1">
+													<p>원활하지 않은 의사소통 :
+													</p>
+													<p>자녀와 소통하지 않고 권위적인 태도를 보이는 아버지와 아버지에게 자신의 의견을 제대로 전달하지 못하는 자녀 사이의 갈등</p>
+												</assessfeedback>
+											</assessmentitem>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<quizBtn data-id="q-1" data-skill="answerReset" class="center" data-ui="ml:100">정답</quizBtn>
+						</quizItem>
+					</div>
 				</div>
 			</div>
 		</section>
